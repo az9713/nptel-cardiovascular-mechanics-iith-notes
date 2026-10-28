@@ -1,0 +1,336 @@
+{
+  "chapter": 3,
+  "title": "The heart as a cyclic pump",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+  "recordings": [
+    {
+      "video_id": "P8Mi0nvkidI",
+      "playlist_position": 1,
+      "lecture_label": "Lecture 5",
+      "duration_seconds": 2013,
+      "decoded_audio_duration_seconds": 2012.2535,
+      "complete_decoded_audio": true,
+      "media_sha256": "9dd0b5f90632b68b3ee0ff1563f18915023bd49dbfa01d0378b9d73b4d2ffb56",
+      "transcript_first_start": 0.0,
+      "transcript_last_end": 2004.38,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 23,
+      "visual_boundary": "Selected lesson5 valve/arterial-pressure frames and lesson7 cycle frame; no full audiovisual audit"
+    },
+    {
+      "video_id": "UvcbjRxSjEs",
+      "playlist_position": 2,
+      "lecture_label": "Lecture 7",
+      "duration_seconds": 2404,
+      "decoded_audio_duration_seconds": 2403.1935,
+      "complete_decoded_audio": true,
+      "media_sha256": "3d565452ea7016ddb7e0a03f8374eb6786f5bea12e203769da5c4dc4f3ec3a5f",
+      "transcript_first_start": 0.0,
+      "transcript_last_end": 2403.12,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 27,
+      "visual_boundary": "Selected lesson5 valve/arterial-pressure frames and lesson7 cycle frame; no full audiovisual audit"
+    }
+  ],
+  "sections": [
+    {
+      "section": "The anatomy separates receiving, pumping and directing flow L5 \u00b7 00:46 L7 \u00b7 00:35",
+      "anchor": "anatomy",
+      "video_id": "P8Mi0nvkidI",
+      "start": 46,
+      "end": 642,
+      "lecture_material": "Cardiovascular function, heart wall layers and myocardial architecture.",
+      "research_extension": "Original compartment interpretation and bounds on towel analogy; primary directional-myocardium context.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 46,
+          "end": 642
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 35,
+          "end": 788
+        }
+      ]
+    },
+    {
+      "section": "Two side-by-side pumps belong to one series circulation L5 \u00b7 10:43 L7 \u00b7 13:08",
+      "anchor": "two-pumps",
+      "video_id": "P8Mi0nvkidI",
+      "start": 643,
+      "end": 792,
+      "lecture_material": "Chambers, pulmonary/systemic routes and two side-by-side pumps.",
+      "research_extension": "Original explicitly bounded compartment conservation and equal mean flow; resistance rather than distance-only reasoning.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 643,
+          "end": 792
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 788,
+          "end": 1006
+        }
+      ]
+    },
+    {
+      "section": "A valve responds to the pressure difference across it L5 \u00b7 13:22 L7 \u00b7 16:46",
+      "anchor": "valves",
+      "video_id": "P8Mi0nvkidI",
+      "start": 802,
+      "end": 998,
+      "lecture_material": "Atrioventricular/semilunar structures and directed flow.",
+      "research_extension": "Explicit transvalvular pressure differences, ideal diode law, chamber balance and stenosis/regurgitation distinction.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 802,
+          "end": 998
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 1006,
+          "end": 1340
+        }
+      ]
+    },
+    {
+      "section": "Read the cardiac cycle as a sequence of pressure inequalities L5 \u00b7 16:38 L7 \u00b7 22:20",
+      "anchor": "cycle",
+      "video_id": "P8Mi0nvkidI",
+      "start": 998,
+      "end": 1510,
+      "lecture_material": "Filling, isovolumic contraction, ejection and relaxation; pressure/volume timing.",
+      "research_extension": "Pressure-inequality sequence, beat-specific EDV, corrected systole boundary and nonuniversal timing.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 998,
+          "end": 1510
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 1340,
+          "end": 2138
+        }
+      ]
+    },
+    {
+      "section": "Arterial pressure is not ventricular diastolic pressure L5 \u00b7 25:21 L7 \u00b7 36:19",
+      "anchor": "pressure-storage",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1521,
+      "end": 1633,
+      "lecture_material": "Arterial and ventricular waveform discussion; slide explicitly labels120/80 aortic and24/8 pulmonary arterial.",
+      "research_extension": "Original compliant-reservoir conservation and exponential decay; pressure-reference and respiratory-pump limits.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1521,
+          "end": 1633
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 2179,
+          "end": 2245
+        }
+      ]
+    },
+    {
+      "section": "Stroke volume and ejection fraction describe different quantities L5 \u00b7 27:13 L7 \u00b7 35:53",
+      "anchor": "output",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1633,
+      "end": 1715,
+      "lecture_material": "Stroke volume, chamber volumes and output definitions.",
+      "research_extension": "Original same-EF/different-forward-output counterexample and signed regurgitant-flow extension.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1633,
+          "end": 1715
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 2153,
+          "end": 2245
+        }
+      ]
+    },
+    {
+      "section": "The pressure\u2013volume loop measures boundary work L5 \u00b7 25:10",
+      "anchor": "work",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1510,
+      "end": 1633,
+      "lecture_material": "Source pressure and volume time histories motivate work accounting.",
+      "research_extension": "Original closed-loop integral, rectangular work/power example and distinction from local/biochemical expenditure.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1510,
+          "end": 1633
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 1340,
+          "end": 1867
+        }
+      ]
+    },
+    {
+      "section": "Loading and contractile response interact L5 \u00b7 28:35 L7 \u00b7 37:25",
+      "anchor": "loading",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1715,
+      "end": 1860,
+      "lecture_material": "Filling/EDV and force/load/ESV dependence.",
+      "research_extension": "Primary Suga1971 bounded experimental context plus clearly separate original end-systolic intersection construction.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1715,
+          "end": 1860
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 2245,
+          "end": 2328
+        }
+      ]
+    },
+    {
+      "section": "Execute conservation, work and load checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "What a pump model still needs",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=P8Mi0nvkidI",
+      "title": "Official lesson5, Heart Part1",
+      "supports": "Full local ASR reading; selected valve/arterial-pressure diagrams inspected."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=UvcbjRxSjEs",
+      "title": "Official lesson7, Review of Heart Part1",
+      "supports": "Full local ASR reading; selected cycle diagram inspected; source distinguishes corrected ventricular phase sequence."
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/heart/anatomy",
+      "title": "NHLBI, Heart anatomy",
+      "supports": "Directly inspected basic chamber/wall organization; no clinical inference imported."
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/heart/blood-flow",
+      "title": "NHLBI, How blood flows through the heart",
+      "supports": "Directly inspected chamber/valve connections and flow direction."
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/heart/heart-beats",
+      "title": "NHLBI, How the heart beats",
+      "supports": "Directly inspected electrical coordination and arterial-pressure definitions; no personal advice imported."
+    },
+    {
+      "url": "https://www.jstage.jst.go.jp/article/ihj1960/12/2/12_2_153/_article",
+      "title": "Suga, Time-varying pressure/volume ratio (1971)",
+      "supports": "Primary paper summary, methods, results/discussion text and appendix inspected; historical dog-experiment context only; figures/tables not digitized."
+    },
+    {
+      "url": "https://www.jstage.jst.go.jp/article/ihj1960/12/2/12_2_153/_pdf/-char/en",
+      "title": "Suga1971 full primary paper",
+      "supports": "Text inspection as above; original endpoint numbers are not a replication of the paper."
+    },
+    {
+      "url": "https://biomechanics.stanford.edu/me338_09/me338_h04.pdf",
+      "title": "Holzapfel and Ogden, Constitutive modelling of passive myocardium (2009)",
+      "supports": "Inspected morphology/directional framework; bounds on simple towel analogy and context for next tissue chapter."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent graph-theory course reviewer",
+      "reviewed_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full frozen body, eight solutions, exact code and primary evidence; R1 additionally complete ASR05/07 and selected frames"
+    },
+    {
+      "round": 2,
+      "reviewer": "Independent lead coordinator",
+      "reviewed_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full frozen body, eight solutions, exact code and primary evidence; R1 additionally complete ASR05/07 and selected frames"
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Fallible machine ASR and selected frames only; no comprehensive audiovisual audit",
+    "Ideal pressure-driven valves, lumped compartments and separate illustrative reservoir/endpoint constructions",
+    "No tissue calibration, individual diagnosis or treatment selection"
+  ],
+  "article_words_including_math_code": 4064,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 8,
+  "executable_listings": 1
+}

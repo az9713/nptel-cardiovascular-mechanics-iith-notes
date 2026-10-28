@@ -1,0 +1,224 @@
+{
+  "chapter": 8,
+  "title": "Coupling the circulation: conservation, feedback and inference",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+  "recordings": [
+    {
+      "video_id": "MeaVvfB56Cc",
+      "playlist_position": 16,
+      "lecture_label": "Additional course discussion",
+      "duration_seconds": 2611,
+      "decoded_audio_duration_seconds": 2610.0158125,
+      "complete_decoded_audio": true,
+      "media_sha256": "23614b136d92fc58ad35f2f5739cc0287927642137a82a6b6f905c21bb31b955",
+      "transcript_first_start": 0.0,
+      "transcript_last_end": 2609.28,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second core chunks with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 30,
+      "visual_boundary": "No comprehensive audiovisual or chat-screen audit"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Identify the question before increasing model complexity Discussion \u00b7 14:27 Discussion \u00b7 39:48",
+      "anchor": "scope",
+      "video_id": "MeaVvfB56Cc",
+      "start": 867,
+      "end": 1451,
+      "lecture_material": "Course recap and brief mathematical-modeling question.",
+      "research_extension": "Original input-output problem specification and distinctions between spatial and compartment models.",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "source_spans": [
+        {
+          "video_id": "MeaVvfB56Cc",
+          "start": 867,
+          "end": 1451
+        },
+        {
+          "video_id": "MeaVvfB56Cc",
+          "start": 2388,
+          "end": 2425
+        }
+      ]
+    },
+    {
+      "section": "Keep gravitational head and perfusion pressure distinct Discussion \u00b7 27:06",
+      "anchor": "gravity",
+      "video_id": "MeaVvfB56Cc",
+      "start": 1626,
+      "end": 1736,
+      "lecture_material": "Brief posture question; qualitative coordination answer. Acute-hemorrhage question explicitly declined.",
+      "research_extension": "Original hydrostatic cancellation versus local loading analysis; no clinical response prediction.",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "source_spans": [
+        {
+          "video_id": "MeaVvfB56Cc",
+          "start": 1626,
+          "end": 1736
+        }
+      ]
+    },
+    {
+      "section": "Reduce two compliant stores without losing volume conservation",
+      "anchor": "stores",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Define what a pressure compensator actually changes",
+      "anchor": "feedback",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Derive residual error and transient stability",
+      "anchor": "response",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Test a changed assumption instead of transferring a stability verdict",
+      "anchor": "delay",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Check the mechanical energy ledger as well as the pressure trace",
+      "anchor": "energy",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Determine which parameters the chosen measurement can identify",
+      "anchor": "identify",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Unchanged global pressure does not establish unchanged organ perfusion",
+      "anchor": "regional",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Original exact parallel-network counterexample; Fu2006, Xu2017 and Laurin2017 primary abstracts support multiple observables and timing, not calibration.",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Execute conservation, stability and identifiability checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    },
+    {
+      "section": "Sources and limits of inspection",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=MeaVvfB56Cc",
+      "title": "Additional course discussion",
+      "supports": "Full local ASR read, including setup/idle intervals; selective substantive spans mapped, not a continuous technical lecture."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17008377/",
+      "title": "Fu et al., sustained upright posture (2006)",
+      "supports": "Primary abstract read and selected results/discussion returned by primary search inspected; not full paper or data reproduction."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28626082/",
+      "title": "Xu et al., cardiopostural interaction (2017)",
+      "supports": "Primary abstract read for17-participant signals/protocol and cardiopostural interaction; not full paper or calibrated controller."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28663324/",
+      "title": "Laurin et al., microneurographic indices (2017)",
+      "supports": "Primary abstract read for11-man graded lower-body negative-pressure protocol and timing analysis; not full paper or a universal delay value."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent thermodynamics course reviewer",
+      "reviewed_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full frozen body, nine solutions, exact code, raw-byte reconciliation and primary abstracts; R1 additionally entire additional discussion ASR"
+    },
+    {
+      "round": 2,
+      "reviewer": "Independent lead coordinator",
+      "reviewed_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full frozen body, nine solutions, exact code, raw-byte reconciliation and primary abstracts; R1 additionally entire additional discussion ASR"
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Long setup/idle intervals retained as acquisition coverage, not invented technical content",
+    "Original linearized and pure-delay models are distinct teaching systems, not fitted physiological models",
+    "Full ASR read; no comprehensive audiovisual audit; primary supplement inspected at bounded abstract/selected-text level"
+  ],
+  "article_words_including_math_code": 3231,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 9,
+  "executable_listings": 1
+}

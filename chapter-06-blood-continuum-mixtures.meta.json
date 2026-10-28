@@ -1,0 +1,319 @@
+{
+  "chapter": 6,
+  "title": "Continuum and mixture models of blood",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+  "recordings": [
+    {
+      "video_id": "6WgMx8hOOtE",
+      "playlist_position": 11,
+      "lecture_label": "Lecture 10",
+      "duration_seconds": 2165,
+      "decoded_audio_duration_seconds": 2164.4735,
+      "complete_decoded_audio": true,
+      "media_sha256": "80d4986e4e94a5a4e252e68519f18eeda8eeede9c9fd7bb8675a4f86fce46ef7",
+      "transcript_first_start": 0.0,
+      "transcript_last_end": 2164.44,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR; 90-second cores with 2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 25,
+      "visual_boundary": "No comprehensive audiovisual or numerical graph audit"
+    },
+    {
+      "video_id": "rh595rXepQ8",
+      "playlist_position": 10,
+      "lecture_label": "Lecture 12",
+      "duration_seconds": 3561,
+      "decoded_audio_duration_seconds": 3560.1735,
+      "complete_decoded_audio": true,
+      "media_sha256": "1c8814db64f47e946513f0f939aca421f87566832ec55a5dda193201a9df2f42",
+      "transcript_first_start": 0.0,
+      "transcript_last_end": 3552.56,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR; 90-second cores with 2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 40,
+      "visual_boundary": "No comprehensive audiovisual or numerical graph audit"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Continuum validity is a separation of scales, not a magic diameter L10 \u00b7 00:56 L12 \u00b7 00:51",
+      "anchor": "continuum",
+      "video_id": "6WgMx8hOOtE",
+      "start": 56,
+      "end": 129,
+      "lecture_material": "Continuum homogenization and cell-size/domain comparison.",
+      "research_extension": "Representative averaging scales and distinction from gas Knudsen criterion; no universal800micron threshold.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 56,
+          "end": 129
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 51,
+          "end": 282
+        }
+      ]
+    },
+    {
+      "section": "Specify the yielded and unyielded branches of a scalar law L10 \u00b7 02:09 L12 \u00b7 04:52",
+      "anchor": "scalar",
+      "video_id": "6WgMx8hOOtE",
+      "start": 129,
+      "end": 178,
+      "lecture_material": "Casson scalar yield/shear model.",
+      "research_extension": "Dimensionally correct square-root branches, original exact plug/pipe integral and independent quadrature.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 129,
+          "end": 178
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 292,
+          "end": 358
+        }
+      ]
+    },
+    {
+      "section": "Extend a shear curve through an objective rate invariant L10 \u00b7 02:58 L12 \u00b7 05:58",
+      "anchor": "objective-viscosity",
+      "video_id": "6WgMx8hOOtE",
+      "start": 178,
+      "end": 269,
+      "lecture_material": "Cross and generalized Newtonian shear-thinning models.",
+      "research_extension": "Explicit D/A1 convention, invariant rate, dissipation and monotone-stress derivative.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 178,
+          "end": 269
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 358,
+          "end": 470
+        }
+      ]
+    },
+    {
+      "section": "A spring\u2013dashpot derivation does not uniquely determine a three-dimensional law L10 \u00b7 07:46 L12 \u00b7 10:28",
+      "anchor": "maxwell",
+      "video_id": "6WgMx8hOOtE",
+      "start": 466,
+      "end": 912,
+      "lecture_material": "Series/parallel spring\u2013dashpot derivation and objective tensor extension.",
+      "research_extension": "Correct time units, phenomenological versus molecular meaning, nonunique objective extensions and solvent/polymer elimination conditions.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 466,
+          "end": 912
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 628,
+          "end": 1218
+        }
+      ]
+    },
+    {
+      "section": "Models with the same shear viscosity can predict very different other stresses",
+      "anchor": "normal-stress",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original complete steady-simple-shear tensor solution and extensional singularity comparison; parameters not blood-calibrated."
+    },
+    {
+      "section": "Positive driving stress can coexist with an instant of reverse deformation L10 \u00b7 18:12 L12 \u00b7 23:32",
+      "anchor": "recoil",
+      "video_id": "6WgMx8hOOtE",
+      "start": 1092,
+      "end": 1203,
+      "lecture_material": "Pulsatile simulation with locally reversed flow.",
+      "research_extension": "Original stress-controlled Maxwell counterexample, energy identity and bounded Newtonian maximum-principle control; not full source simulation.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 1092,
+          "end": 1203
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 1412,
+          "end": 1579
+        }
+      ]
+    },
+    {
+      "section": "Evolving natural configurations organize energy and relaxation L10 \u00b7 20:03 L12 \u00b7 28:46",
+      "anchor": "natural",
+      "video_id": "6WgMx8hOOtE",
+      "start": 1203,
+      "end": 1808,
+      "lecture_material": "Multiple natural configurations and2004/2013 blood models.",
+      "research_extension": "Original SPD conformation energy/dissipation proof; bounded primary historical comparison and GENERIC connection.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 1203,
+          "end": 1808
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 1726,
+          "end": 3126
+        }
+      ]
+    },
+    {
+      "section": "A mixture has constituent balances and more than one useful mean velocity L10 \u00b7 30:08 L12 \u00b7 52:06",
+      "anchor": "mixture",
+      "video_id": "6WgMx8hOOtE",
+      "start": 1808,
+      "end": 2034,
+      "lecture_material": "Interacting plasma/RBC continua and platelet redistribution.",
+      "research_extension": "Intrinsic/partial densities, volume/mass velocity distinction, drag power and drift momentum; platelet enrichment limits.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 1808,
+          "end": 2034
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 3126,
+          "end": 3427
+        }
+      ]
+    },
+    {
+      "section": "Enrichment is a transport prediction, not a complete clotting model",
+      "anchor": "platelets",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary2017 constituent/transport and crevice experimental text/caption inspected; surrogate particles/ghosts and qualitative scope retained; original distinct flux/conservative example.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer."
+    },
+    {
+      "section": "Execute limiting cases and conservative transport",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer."
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer."
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=6WgMx8hOOtE",
+      "title": "Official lesson10",
+      "supports": "Entire local ASR read; no full audiovisual audit."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=rh595rXepQ8",
+      "title": "Official lesson12",
+      "supports": "Entire local ASR read; no full audiovisual audit."
+    },
+    {
+      "url": "https://pages.ipb.pt/~ruimec/index_ficheiros/FCTmbs/ref_6.pdf",
+      "title": "Pries et al., tube resistance (1992)",
+      "supports": "Primary abstract and early experimental scope previously read; no data refit."
+    },
+    {
+      "url": "https://www.cs.cmu.edu/~sangria/publications/MAKRR2004.pdf",
+      "title": "Anand and Rajagopal (2004)",
+      "supports": "Primary abstract,introduction,natural-configuration/low-rate discussion inspected; no numerical parameter reproduction."
+    },
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0020722513001006",
+      "title": "Anand, Kwack and Masud (2013)",
+      "supports": "Primary abstract inspected; smooth low-rate improvement, full article not read."
+    },
+    {
+      "url": "https://www.math.cmu.edu/cna/Publications/publications2017/papers/17-CNA-009.pdf",
+      "title": "Wu, Aubry, Massoudi and Antaki (2017)",
+      "supports": "Abstract,constituent balances/transport and crevice text/figure caption inspected; surrogate experiment and qualitative comparison limits retained."
+    },
+    {
+      "url": "https://arxiv.org/abs/2010.06903",
+      "title": "Pelech et al., natural configurations and GENERIC (2020/2021)",
+      "supports": "Primary abstract inspected; no independent proof audit of the full framework."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent graph-theory course reviewer",
+      "reviewed_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full frozen body, nine solutions, exact code and primary evidence; R1 additionally complete ASR10/12"
+    },
+    {
+      "round": 2,
+      "reviewer": "Independent lead coordinator",
+      "reviewed_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full frozen body, nine solutions, exact code and primary evidence; R1 additionally complete ASR10/12"
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Fallible local ASR and no comprehensive audiovisual audit",
+    "Original scalar/tensor/conformation/transport examples not fitted blood or device models",
+    "Surrogate concentration comparison does not establish platelet adhesion or a complete thrombosis prediction"
+  ],
+  "article_words_including_math_code": 3614,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 9,
+  "executable_listings": 1
+}

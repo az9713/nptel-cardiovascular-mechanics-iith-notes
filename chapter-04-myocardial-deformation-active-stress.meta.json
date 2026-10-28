@@ -1,0 +1,338 @@
+{
+  "chapter": 4,
+  "title": "Myocardial deformation, anisotropy and active stress",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+  "recordings": [
+    {
+      "video_id": "entWodZ5lrM",
+      "playlist_position": 14,
+      "lecture_label": "Lecture 6",
+      "duration_seconds": 1961,
+      "decoded_audio_duration_seconds": 1960.3335,
+      "complete_decoded_audio": true,
+      "media_sha256": "960e965907ca8ccc1eb2cbdb2b4944849c161bccb1d48b343ca0669b7a7847df",
+      "transcript_first_start": 0,
+      "transcript_last_end": 1952.72,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 22,
+      "visual_boundary": "Selected lesson6 geometry/marker-map/membrane frames and lesson8 membrane frame; no comprehensive audiovisual audit"
+    },
+    {
+      "video_id": "gQtXtfIhgEM",
+      "playlist_position": 15,
+      "lecture_label": "Lecture 8",
+      "duration_seconds": 2198,
+      "decoded_audio_duration_seconds": 2197.8135,
+      "complete_decoded_audio": true,
+      "media_sha256": "c9f31f6d9974ce46f4ceaa36832486da9663badb151e4ba99e32f472731f00e1",
+      "transcript_first_start": 0,
+      "transcript_last_end": 2190.28,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 25,
+      "visual_boundary": "Selected lesson6 geometry/marker-map/membrane frames and lesson8 membrane frame; no comprehensive audiovisual audit"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Geometry supplies a domain, not a constitutive law L6 \u00b7 00:48 L8 \u00b7 01:11",
+      "anchor": "geometry",
+      "video_id": "entWodZ5lrM",
+      "start": 48,
+      "end": 299,
+      "lecture_material": "Idealized ventricular geometry, prolate spheroidal coordinates and organ-mass allometry.",
+      "research_extension": "Hyperbolic coordinate identity, explicitly illustrative shell-volume/mass calculation and fitted allometric dimensions.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 48,
+          "end": 299
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 71,
+          "end": 251
+        }
+      ]
+    },
+    {
+      "section": "Material symmetry is a transformation statement L6 \u00b7 04:59 L8 \u00b7 04:11",
+      "anchor": "symmetry",
+      "video_id": "entWodZ5lrM",
+      "start": 299,
+      "end": 674,
+      "lecture_material": "Layered fibre directions, local symmetry, through-wall organization and heterogeneity.",
+      "research_extension": "Precise transverse-isotropy/orthotropy definitions; varying-layer orientation does not alone prove effective orthotropy; primary passive-tissue scope.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 299,
+          "end": 674
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 251,
+          "end": 898
+        }
+      ]
+    },
+    {
+      "section": "Unloaded tissue need not be stress-free L6 \u00b7 11:14 L8 \u00b7 14:58",
+      "anchor": "reference-state",
+      "video_id": "entWodZ5lrM",
+      "start": 674,
+      "end": 844,
+      "lecture_material": "Unperfused-tissue incompressibility approximation and residual stress.",
+      "research_extension": "Bulk-versus-shear scale distinction, unloaded versus released reference and bounded primary rat cutting evidence.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 674,
+          "end": 844
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 898,
+          "end": 1048
+        }
+      ]
+    },
+    {
+      "section": "Recover the complete in-plane map before imposing incompressibility L6 \u00b7 14:04 L8 \u00b7 17:28",
+      "anchor": "slab-map",
+      "video_id": "entWodZ5lrM",
+      "start": 844,
+      "end": 939,
+      "lecture_material": "Biaxial stretch/shortening, wall-thickness change and shear.",
+      "research_extension": "Complete affine marker map, full determinant, principal-stretch distinction and measurement-conditioning requirements; testing portions additionally mapped.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 844,
+          "end": 939
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1048,
+          "end": 1255
+        },
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 1193,
+          "end": 1688
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1397,
+          "end": 1934
+        }
+      ]
+    },
+    {
+      "section": "A passive energy stores work; it does not reproduce arbitrary hysteresis L6 \u00b7 15:39 L8 \u00b7 20:55",
+      "anchor": "passive-energy",
+      "video_id": "entWodZ5lrM",
+      "start": 939,
+      "end": 1193,
+      "lecture_material": "Nonlinear elastic approximation, stored-energy stress relation and identification from testing.",
+      "research_extension": "Single-valued energy versus hysteresis; original objective toy energies with explicit limits.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 939,
+          "end": 1193
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1255,
+          "end": 1397
+        }
+      ]
+    },
+    {
+      "section": "A perfect biaxial fit can leave a shear parameter completely unknown L6 \u00b7 19:53 L8 \u00b7 23:17",
+      "anchor": "identifiability",
+      "video_id": "entWodZ5lrM",
+      "start": 1193,
+      "end": 1688,
+      "lecture_material": "Myocardial slab testing and deformation reconstruction for constitutive calibration.",
+      "research_extension": "Original exact biaxial-invisible shear coupling, informative shear experiment, primary loading-mode context and bounded generative/Bayesian inference extension.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 1193,
+          "end": 1688
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1397,
+          "end": 1934
+        }
+      ]
+    },
+    {
+      "section": "Membrane force per length differs from three-dimensional stress L6 \u00b7 28:08 L8 \u00b7 32:14",
+      "anchor": "membranes",
+      "video_id": "entWodZ5lrM",
+      "start": 1688,
+      "end": 1818,
+      "lecture_material": "Endocardial/epicardial membrane response and polynomial/exponential energy families.",
+      "research_extension": "Force-per-length versus bulk stress, primary bovine comparison and original one-parameter surface-energy derivative.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 1688,
+          "end": 1818
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1934,
+          "end": 2090
+        }
+      ]
+    },
+    {
+      "section": "Active contraction requires a source beyond a passive energy",
+      "anchor": "active",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original conceptual active-stress extension beyond the passive calibration in these recordings; objective current fibre direction and reaction example; no activation kinetics or biochemical calibration."
+    },
+    {
+      "section": "Execute deformation and identification checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "What a fitted tissue law has established",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=entWodZ5lrM",
+      "title": "Official lesson6, Heart Part2",
+      "supports": "Full local ASR read; selected205/1550/1790s frames inspected."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=gQtXtfIhgEM",
+      "title": "Official lesson8, Review of Heart Part2",
+      "supports": "Full local ASR read; selected2060s membrane frame inspected."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5843618/",
+      "title": "Stahl, Organ weights in primates and other mammals (1965)",
+      "supports": "Primary abstract inspected; general allometric relation, no universal individual scaling coefficient adopted."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/3695429/",
+      "title": "Humphrey and Yin, passive cardiac constitutive relations (1987)",
+      "supports": "Primary abstract inspected; protocol-bounded near-transverse-isotropy and limits transferring uniaxial to multiaxial response."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2295143/",
+      "title": "Omens and Fung, Residual strain in rat left ventricle (1990)",
+      "supports": "Available primary abstract inspected; cutting/marker measurement and unloaded/released reference distinction; not a full stress-field audit."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/8764270/",
+      "title": "Kang, Humphrey and Yin, paired endocardial/epicardial testing (1996)",
+      "supports": "Primary abstract inspected; excised bovine membrane differences and species qualifications; source graph not digitized."
+    },
+    {
+      "url": "https://biomechanics.stanford.edu/me338_09/me338_h04.pdf",
+      "title": "Holzapfel and Ogden, Constitutive modelling of passive myocardium (2009)",
+      "supports": "Abstract, morphology and constitutive/experimental sections3\u20135 inspected; directional structure and test-mode context, not fitted polynomial toy parameters."
+    },
+    {
+      "url": "https://arxiv.org/abs/2305.03184",
+      "title": "Yin and colleagues, Generative constitutive-law families (2023)",
+      "supports": "Primary abstract inspected; generative/Bayesian family methodology and murine-aorta scope only; no neural training/reproduction performed."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent graph-theory course reviewer",
+      "reviewed_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full corrected body, nine solutions, exact code and primary evidence; R1 additionally complete ASR06/08 and selected frames"
+    },
+    {
+      "round": 2,
+      "reviewer": "Independent lead coordinator",
+      "reviewed_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Full corrected body, nine solutions, exact code and primary evidence; R1 additionally complete ASR06/08 and selected frames"
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Fallible machine ASR and selected frames only; no comprehensive audiovisual audit",
+    "Incompressible passive toy energies and a clearly separate conceptual active extension; no fitted tissue or neural model",
+    "No tissue calibration, individual diagnosis or treatment selection"
+  ],
+  "review_history": {
+    "required_repair": "Retain incompressibility multiplier in nominal stress; it contributes zero work along admissible isochoric increments",
+    "status": "Closed at the current accepted body before both final reviews"
+  },
+  "article_words_including_math_code": 4182,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 9,
+  "executable_listings": 1
+}

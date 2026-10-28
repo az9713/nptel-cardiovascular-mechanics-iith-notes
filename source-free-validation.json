@@ -1,0 +1,58 @@
+{
+  "passed": true,
+  "public_file_count": 71,
+  "html_count": 12,
+  "byte_identical_html_rebuild": true,
+  "changed_html": [],
+  "raw_source_files_available": false,
+  "browser_checks_requested": true,
+  "git_archive_commit": null,
+  "export_method": "fresh allowlisted file copy",
+  "scope": "A source-free export inside ignored work/; no acquisition sources or private review reports copied. Existing Python packages and installed Chrome are used; this is not a pristine-machine dependency installation test.",
+  "html_sha256": {
+    "chapter-01-structure-function-modeling.html": "b9301439bc0d9919ff026597d0ffe35876e2c5d94edd8f91f2bdc4c847bd314a",
+    "chapter-02-continuum-kinematics-constitutive-laws.html": "5f4edcfe8c8d63490aa2d3c7413f1bcf5f9dce2416225f558003055467c1bc53",
+    "chapter-03-heart-cyclic-pump.html": "9538f5e9771de4434fd71cc6fac34bd4e3f9e13163ef5eb03a649d5c81575159",
+    "chapter-04-myocardial-deformation-active-stress.html": "60c5303b5c687263ead6b5f2175e6221ba98759c936b76dab52eeb065a32d8cd",
+    "chapter-05-blood-cells-rheology.html": "0d5122fb0cc72438b518fcbadbc3285fb09de5fdffb5b4a1531c95434f2b4f38",
+    "chapter-06-blood-continuum-mixtures.html": "a70074cafb0ccd3fcb01411b476cc89196e166513596731ced610f25c7bea180",
+    "chapter-07-vascular-wall-mechanics.html": "6e66f215b7ce967852125266180bf0d56df92caf93c9fdc767688441ba780d81",
+    "chapter-08-course-discussion-synthesis.html": "4556bad9a94ae13e57884305434cd9e391e0181afd8c14667815fd87343294ad",
+    "index.html": "e24c1adab2b35a1b2df9182de832374f93e7d4d2459ca8e671c27ca946e67305",
+    "numerical-lab.html": "1694856e975518d4da6300b0231f2b18a028fd36ac0bdd624ceaa1cc55c7c47e",
+    "references.html": "a0aeb38245c92e5184d39752931dd2b8c7ad5946b9198649429b377ba75c70ed",
+    "source-map.html": "d05aec51a57bf3d640e899b7c82c42c07f99b4da0950bac0f1fdd92320403e6b"
+  },
+  "checks": [
+    {
+      "command": "python tools/build_book.py",
+      "returncode": 0,
+      "stdout": "Built 8 chapters and reader navigation\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/check_chapter_code.py",
+      "returncode": 0,
+      "stdout": "chapter-01-structure-function-modeling.html bed PASS\nchapter-02-continuum-kinematics-constitutive-laws.html kinematics PASS\nchapter-03-heart-cyclic-pump.html pump PASS\nchapter-04-myocardial-deformation-active-stress.html tissue PASS\nchapter-05-blood-cells-rheology.html code/ch05_rheology.py PASS\nchapter-06-blood-continuum-mixtures.html code/ch06_models.py PASS\nchapter-07-vascular-wall-mechanics.html code/ch07_vessels.py PASS\nchapter-08-course-discussion-synthesis.html code/ch08_synthesis.py PASS\nnumerical-lab.html lab-reference PASS\n",
+      "stderr": ""
+    },
+    {
+      "command": "python numerical_lab.py",
+      "returncode": 0,
+      "stdout": "rigid-tube flow: 0.981748 mL/s\nstroke: 70.0 mL; EF: 0.583333; output: 4.900 L/min\nrectangular pressure-volume loop work: 0.839931 J\nisochoric stretch J: 1.000000; E11: 0.220000\nsimple-shear invariant: 10.000000 1/s\nillustrative viscosities Pa s: 0.016000, 0.012025, 0.004849, 0.004085\nneo-Hookean nominal/Cauchy stress: 5055.555556, 6066.666667 Pa\ninvisible biaxial coupling; shear energy gap: 40.000000 J/m^3\nshear stress gap from independent finite differences: 400.000000 Pa\nindependent limiting, symmetry and scaling checks passed\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/validate_books.py --browser",
+      "returncode": 0,
+      "stdout": "Static reader checks: True\nOffline browser checks: True\n",
+      "stderr": ""
+    },
+    {
+      "command": "python tools/audit_public.py",
+      "returncode": 0,
+      "stdout": "Public package: 71 files; privacy inventory passed\n",
+      "stderr": ""
+    }
+  ]
+}

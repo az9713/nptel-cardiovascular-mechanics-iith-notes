@@ -1,0 +1,106 @@
+{
+  "scope": "Actual isolated execution of authored listings; numerical checks are not a proof audit.",
+  "passed": true,
+  "listing_count": 9,
+  "results": [
+    {
+      "chapter": "chapter-01-structure-function-modeling.html",
+      "listing": "bed",
+      "code_sha256": "c5e2bc925c1e40d2a8c6170c7403cfc61bde2b67d96ccb84d2c5b597557517d0",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch01_bed.py",
+      "exported_bytes_match": true,
+      "stdout": "initial flow: 0.058905 L/min\ninitial oxygen extraction: 0.176715 mmol/min\nflow after radius halving: 0.003682 L/min\nrequired venous oxygen content: -39.000 mmol/L\ncapacity-bound radius ratio: 0.759836\nwall-shear ratio at fixed pressure drop: 0.500\nwall-shear ratio at fixed flow: 8.000\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "listing": "kinematics",
+      "code_sha256": "8f2e0c42968ba0a6f44e7f038b7c08d7e9a7a04c8aa24820bbb9f84a226fca7a",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch02_kinematics.py",
+      "exported_bytes_match": true,
+      "stdout": "Shear J: 1.000000\nGreen E12, E22: 0.200000, 0.080000\nPrincipal stretches: 0.819804, 1.000000, 1.219804\nRigid rotation Green/linear xx: 0.000000, -1.000000\nShear-rate invariant: 10.000000 1/s\nNewtonian shear stress: 0.040000 Pa\nNominal/Cauchy axial stress: 5055.555556, 6066.666667 Pa\nObjectivity, metric and stress-area checks passed\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-03-heart-cyclic-pump.html",
+      "listing": "pump",
+      "code_sha256": "3d2587e4ace822898a0c9e34421a9a3bbc13967b655e307de93b94d72e12ff8a",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch03_pump.py",
+      "exported_bytes_match": true,
+      "stdout": "Stroke volume: 70.000 mL; EF: 0.583333\nOutput per pump: 5.250 L/min\nLoop work: 0.839931 J; mean boundary power: 1.049914 W\nDiastolic arterial reservoir pressure: 73.070475 mmHg\nEa 1.5: SV 62.857143 mL, ESV 57.142857 mL\nEa 3.0: SV 44.000000 mL, ESV 76.000000 mL\nSame chamber stroke with mitral backflow: forward output 3.750 L/min\nPulmonary accumulation for 0.2 L/min mismatch over 30 s: 100.0 mL\nConservation, loop-sign and end-systolic intersection checks passed\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html",
+      "listing": "tissue",
+      "code_sha256": "f38309cda88f8685008a9722b02a62ca1653455cc08e6736a36fa0a468ceac2c",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch04_tissue.py",
+      "exported_bytes_match": true,
+      "stdout": "Illustrative full ellipsoidal wall: 70.685835 mL\nMass at 1.05 g/mL: 74.220126 g\nSheared biaxial thickness ratio: 0.793651; J: 1.000000\nBiaxially invisible parameter: shear energy gap 40.000000 J/m3\nShear traction gap: 400.000000 Pa\nIllustrative membrane nominal resultant: 132.200373 N/m\nConstrained active bar reaction: 0.050000 N\nGeometry, incompressibility, energy-derivative and identifiability checks passed\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-05-blood-cells-rheology.html",
+      "listing": "code/ch05_rheology.py",
+      "code_sha256": "e9d9727e6caef40efb5e0fb1c78d876c05af74058287d8cb98c9e69853b4c76c",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch05_rheology.py",
+      "exported_bytes_match": true,
+      "stdout": "Equal-volume sphere area: 97.120848 um^2; reduced volume: 0.610194\nSpherocylinder r=1.5 um: length=10.732395 um; area=129.424778 um^2; area budget permits=True\nSpherocylinder r=1.3 um: length=15.218081 um; area=145.540594 um^2; area budget permits=False\nToy saturation: S(100)=0.974347; S(40)=0.761898; released=4.248975 mL/dL\nNewtonian torque: 3.015928947e-06 N m; power-law naive/correct rim stress: 1.142857\nMaxwell stop: before=1.000000 Pa; after=0.650000 Pa; at lambda=0.239122 Pa\nOscillatory moduli at omega=5 rad/s: Gprime=0.016250 Pa; Gdoubleprime=0.033750 Pa\nSame gamma=10 after preshear 1/100: 0.672273/0.098727 Pa; common steady stress=0.385500 Pa\nAll geometry, torque inversion, relaxation and structural-history checks passed.\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-06-blood-continuum-mixtures.html",
+      "listing": "code/ch06_models.py",
+      "code_sha256": "cdd712633ca5c8071e15d6596f771285768a0cd988d9aaccc53a5b30fbe7ef0a",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch06_models.py",
+      "exported_bytes_match": true,
+      "stdout": "Cross viscosity at gamma=100: 0.005217686 Pa s\nCasson plug radius/R=.25: Q/Q_Newtonian=0.190290179\nOldroyd-B steady shear: total xy=1.000000 Pa; N1=26.000000 Pa\nNonnegative stress forcing, scalar Maxwell: minimum normalized rate=-0.414213562\nConformation rest: stored energy=1.806853 J/m^3; initial dissipation=13.750000 W/m^3\nVolume/mass velocities: 0.014000000/0.014230769 m/s; drag loss=100.000000 W/m^3\nNo-flux transport: total=1.000000000; max equilibrium error=0.000000000; wall/center=5.092053\nAll constitutive, conformation, drag and conservative transport checks passed.\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-07-vascular-wall-mechanics.html",
+      "listing": "code/ch07_vessels.py",
+      "code_sha256": "441eefd75bb1d7cc3067406f4e14cea84d16c8c1eadad12f59a5d8c8a3133a9e",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch07_vessels.py",
+      "exported_bytes_match": true,
+      "stdout": "Parallel capillary toy: total area=0.050265482 m^2; mean speed=0.001657864 m/s; 1mm transit=0.603186 s\nOne dilated equal bed: fixed-pressure flow gain=2.073600; fixed-total share=0.674648621\nThin wall hoop/fluid shear: 133000.000000/0.165050 Pa\nThick cylinder: inner hoop=34580.000000 Pa; thickness average=26600.000000 Pa\nNeo-Hookean inflation: current outer radius=4.920366 mm; pressure=13845.183844 Pa\nTwo fibres: I4=1.382500; nominal circumferential contribution=59474.926046 Pa\nLinear tube wave speed=4.856429 m/s; fourfold modulus speed=9.712859 m/s\nAll conservation, stress, inflation, fibre derivative and wave checks passed.\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "chapter-08-course-discussion-synthesis.html",
+      "listing": "code/ch08_synthesis.py",
+      "code_sha256": "4b1adee3b5325e82c334f3e263e18d9bb6a43bee97ce5a7c834e0d773861ad91",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": "code/ch08_synthesis.py",
+      "exported_bytes_match": true,
+      "stdout": "Reduced compliance: 1.000000 mL/mmHg\nSteady pressure/control deviations: -3.333333 mmHg, 6.666667 mL/s\nPoles: real -0.750000; imaginary magnitude 0.968246 1/s\n20-s pressure/control: -3.333334, 6.666664; RK4 refinement passed\nParallel-bed flows: 45.0/45.0 to 30.0/60.0 mL/s\n30-cm hydrostatic pressure magnitude: 23.398771 mmHg\nDelayed-model imaginary-root frequency/delay: 1.732051 1/s, 1.209200 s\nBaseline hydraulic power: 1.079911 W; conservation and identifiability checks passed\n",
+      "stderr": ""
+    },
+    {
+      "chapter": "numerical-lab.html",
+      "listing": "lab-reference",
+      "code_sha256": "2ecff0a272cbca9c5da1fd3e8f96bf09780e0692566aa6ec8acc531de0fbd224",
+      "returncode": 0,
+      "passed": true,
+      "exported_path": null,
+      "exported_bytes_match": true,
+      "stdout": "Flow: 0.058905 L/min\nWall shear: 5.000 Pa\nConsumption: 0.176715 mmol/min\nMinimum fixed-pressure radius ratio: 0.759836\n",
+      "stderr": ""
+    }
+  ]
+}

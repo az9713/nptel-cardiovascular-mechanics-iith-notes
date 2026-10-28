@@ -1,0 +1,389 @@
+{
+  "chapter": 5,
+  "title": "Blood cells, plasma and whole-blood rheology",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+  "recordings": [
+    {
+      "video_id": "i-1ZJizdpnE",
+      "playlist_position": 9,
+      "lecture_label": "Lecture 9",
+      "duration_seconds": 1810,
+      "decoded_audio_duration_seconds": 1809.4135,
+      "complete_decoded_audio": true,
+      "media_sha256": "f8dd3fb73c355785a46436f451623282990ad2872c881a453ef1ddf80cb127ef",
+      "transcript_first_start": 0,
+      "transcript_last_end": 1798.82,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR; 90-second cores with 2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 21,
+      "visual_boundary": "No comprehensive audiovisual or graph-reading audit"
+    },
+    {
+      "video_id": "C6o_WgMUQyE",
+      "playlist_position": 13,
+      "lecture_label": "Lecture 11",
+      "duration_seconds": 2904,
+      "decoded_audio_duration_seconds": 2903.9535,
+      "complete_decoded_audio": true,
+      "media_sha256": "420d4bb85c99923fedb1704d87dd3dad2ac6c2889804600363984dbe8985ced8",
+      "transcript_first_start": 0,
+      "transcript_last_end": 2896.16,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR; 90-second cores with 2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 33,
+      "visual_boundary": "No comprehensive audiovisual or graph-reading audit"
+    },
+    {
+      "video_id": "HJ0GgBPtZos",
+      "playlist_position": 12,
+      "lecture_label": "Alternate Blood1 upload",
+      "duration_seconds": 1810,
+      "decoded_audio_duration_seconds": 1809.4381875,
+      "complete_decoded_audio": true,
+      "media_sha256": "e235590e7b83c11540521f522e742a7c78d92d2009f7179355a731094ececd9d",
+      "transcript_first_start": 0,
+      "transcript_last_end": 1802,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 21,
+      "visual_boundary": "No comprehensive audiovisual identity or graph-reading audit"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Define the amount of each constituent before assigning a material law L9 \u00b7 10:48 L11 \u00b7 10:56",
+      "anchor": "composition",
+      "video_id": "i-1ZJizdpnE",
+      "start": 648,
+      "end": 768,
+      "lecture_material": "Blood composition and hematocrit.",
+      "research_extension": "Count/volume distinction, dimensional density repair, explicit source-percentage interpretation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 648,
+          "end": 768
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 656,
+          "end": 1040
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 648,
+          "end": 768
+        }
+      ]
+    },
+    {
+      "section": "Transport specialization still requires cellular energy L9 \u00b7 04:52 L11 \u00b7 05:45",
+      "anchor": "transport",
+      "video_id": "i-1ZJizdpnE",
+      "start": 292,
+      "end": 648,
+      "lecture_material": "Red-cell structure, hemoglobin oxygen binding and carbon-dioxide exchange.",
+      "research_extension": "Biologically active cells, primary metabolic corrections, original Hill curve and capacity calculation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 292,
+          "end": 648
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 345,
+          "end": 656
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 292,
+          "end": 648
+        }
+      ]
+    },
+    {
+      "section": "Deformability means changing shape under constraints L9 \u00b7 06:01 L11 \u00b7 18:34",
+      "anchor": "cell-geometry",
+      "video_id": "i-1ZJizdpnE",
+      "start": 361,
+      "end": 421,
+      "lecture_material": "Cell deformability and micropipette experiments.",
+      "research_extension": "Isoperimetric/reduced-volume analysis, original spherocylinder budget and primary aspiration volume-loss boundary.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 361,
+          "end": 421
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1114,
+          "end": 1313
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 361,
+          "end": 421
+        }
+      ]
+    },
+    {
+      "section": "A measured torque is an integral, not a local viscosity L9 \u00b7 13:16 L11 \u00b7 21:53",
+      "anchor": "rheometry",
+      "video_id": "i-1ZJizdpnE",
+      "start": 796,
+      "end": 979,
+      "lecture_material": "Component rheology and rotating-plate/micropipette measurement.",
+      "research_extension": "Original complete torque integral and non-Newtonian rim-stress inversion with assumptions.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 796,
+          "end": 979
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1313,
+          "end": 1604
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 796,
+          "end": 979
+        }
+      ]
+    },
+    {
+      "section": "Shear thinning concerns a steady stress-rate relation L9 \u00b7 16:19 L11 \u00b7 26:44",
+      "anchor": "steady",
+      "video_id": "i-1ZJizdpnE",
+      "start": 979,
+      "end": 1208,
+      "lecture_material": "Aggregation/disaggregation, deformation and whole-blood shear thinning.",
+      "research_extension": "Steady versus differential viscosity, units and source-reported levels without universal-constant claim.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 979,
+          "end": 1208
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1604,
+          "end": 1916
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 979,
+          "end": 1208
+        }
+      ]
+    },
+    {
+      "section": "Elastic stress and delayed recovery require time-resolved observations L9 \u00b7 25:10 L11 \u00b7 40:04",
+      "anchor": "relaxation",
+      "video_id": "i-1ZJizdpnE",
+      "start": 1510,
+      "end": 1644,
+      "lecture_material": "Cessation and rate-dependent stress decay.",
+      "research_extension": "Delayed versus permanent deformation, exact scalar solvent-Maxwell model and amplitude-normalized relaxation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 1510,
+          "end": 1644
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 2404,
+          "end": 2797
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 1510,
+          "end": 1644
+        }
+      ]
+    },
+    {
+      "section": "Frequency response supplies an independent axis of evidence L9 \u00b7 20:08 L11 \u00b7 31:56",
+      "anchor": "oscillation",
+      "video_id": "i-1ZJizdpnE",
+      "start": 1208,
+      "end": 1290,
+      "lecture_material": "Whole-blood viscoelasticity and shear dependence.",
+      "research_extension": "Primary Thurston oscillatory context and original storage/loss modulus derivation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 1208,
+          "end": 1290
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1916,
+          "end": 1991
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 1208,
+          "end": 1290
+        }
+      ]
+    },
+    {
+      "section": "A steady curve does not distinguish instantaneous thinning from structural memory",
+      "anchor": "structure-memory",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original aggregation-state ODE, invariant interval and exact transient comparison to an observationally identical steady instantaneous law; thixotropy without residual elastic shear stress."
+    },
+    {
+      "section": "Changing the deformation mode can expose a hidden mechanism",
+      "anchor": "plasma-extension",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary Brust2013 abstract and original experiment-design/inference discussion; no apparatus or numerical pressure reproduction.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Execute geometry, torque and history checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Sources and limits of inspection",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=i-1ZJizdpnE",
+      "title": "Official lesson 9",
+      "supports": "Full local ASR read; no full audiovisual audit."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=C6o_WgMUQyE",
+      "title": "Official lesson 11",
+      "supports": "Full local ASR read; no full audiovisual audit."
+    },
+    {
+      "url": "https://www.nhlbi.nih.gov/health/blood-tests",
+      "title": "NHLBI Blood tests",
+      "supports": "CBC definitions inspected; no clinical range calculations adopted."
+    },
+    {
+      "url": "https://biolincc.nhlbi.nih.gov/publications/597b6438d5e94ee18d6328382adb8876/",
+      "title": "REDS donor glycolysis study record",
+      "supports": "Primary research record/abstract inspected for mature-cell glycolytic ATP production."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30151891/",
+      "title": "Aibibula et al., platelet metabolic flexibility (2018)",
+      "supports": "Primary abstract inspected: glucose uptake, mitochondrial oxygen consumption and flexible fuels; no model reproduction."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/836934/",
+      "title": "Jay and Canham, red-cell area and volume during aspiration (1977)",
+      "supports": "Primary abstract inspected for approximately constant area and volume loss under studied aspiration conditions."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1244886/",
+      "title": "Evans and Hochmuth, Membrane viscoelasticity (1976)",
+      "supports": "Primary abstract inspected for membrane-dominated projection relaxation; full paper not read."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5056964/",
+      "title": "Thurston, Viscoelasticity of human blood (1972)",
+      "supports": "Primary abstract inspected for oscillatory10Hz measurements and amplitude/concentration dependence; full paper not read."
+    },
+    {
+      "url": "https://arxiv.org/abs/1302.4102",
+      "title": "Brust et al., plasma shear versus extension (2013)",
+      "supports": "Primary abstract inspected for shear Newtonian within resolution and extensional elasticity; full experiment not reproduced."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HJ0GgBPtZos",
+      "title": "Alternate Blood1 upload",
+      "supports": "Full ASR read and compared with lesson9; no additional substantive topic found. Twelve distributed decoded-audio windows with codec alignment corroborate the same sequence; not byte identity or a full audiovisual audit."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent graph-theory course reviewer",
+      "reviewed_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Complete earlier scientific reviews carried forward by exact one-sentence source-amendment comparison; both focused closures read full alternate ASR; no math/code/solution changes"
+    },
+    {
+      "round": 2,
+      "reviewer": "Independent lead coordinator",
+      "reviewed_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0,
+      "verdict": "ACCEPT; zero unresolved required findings",
+      "scope": "Complete earlier scientific reviews carried forward by exact one-sentence source-amendment comparison; both focused closures read full alternate ASR; no math/code/solution changes"
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Fallible local ASR; no comprehensive audiovisual audit",
+    "Original geometry/rheometry/transient models not donor-calibrated; no personal medical inference",
+    "Alternate-upload full ASR comparison and distributed audio windows support the same topic sequence; not a full audiovisual identity audit"
+  ],
+  "review_history": {
+    "prior_accepted_scientific_body_sha256": "8fd6c0228b93358dd6d341275ee546602c1636dbcb133006a0b43ec010419c98",
+    "initial_required_repair": "Positive Hill parameters and positive-pressure logarithm domain; closed before source amendment",
+    "final_source_amendment": "Only introductory pending-source sentence replaced; full alternate ASR compared independently in two focused closures; equations/code/solutions unchanged"
+  },
+  "article_words_including_math_code": 3916,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 9,
+  "executable_listings": 1
+}

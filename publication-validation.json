@@ -1,0 +1,5 @@
+{
+  "passed": false,
+  "status": "Pre-release placeholder; live publication not yet probed",
+  "scope": "A future probe hashes all other public files including completion.json, and separately requires this served report to exist. This report excludes its own inherently circular content hash."
+}

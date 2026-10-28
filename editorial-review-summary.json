@@ -1,0 +1,277 @@
+{
+  "accepted": true,
+  "chapter_count": 8,
+  "independent_rounds_required": 2,
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "chapter-01-structure-function-modeling.html",
+      "authored_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course agent",
+          "reviewed_body_sha256": "9c76090aa251abcbdb648165cfc8627011788175bad02220ce37cbbe0e278ebb",
+          "verdict": "One required FDA source-link repair; zero core-science blockers",
+          "required_repairs": [
+            {
+              "id": "M1",
+              "status": "repaired",
+              "description": "Both FDA links replaced with verified product-code POL device page and matching source metadata."
+            }
+          ],
+          "revised_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+          "accepted": false
+        },
+        {
+          "round": 2,
+          "reviewer": "Lead coordinator, independent of chapter author",
+          "reviewed_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+          "verdict": "ACCEPT; zero blocking, major or minor substantive findings",
+          "required_repairs": [],
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0
+        }
+      ],
+      "worked_solutions": 7,
+      "words_including_math_code": 4778
+    },
+    {
+      "chapter": 2,
+      "file": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "authored_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course agent",
+          "reviewed_body_sha256": "5b8680c59a7e48ad0bcd8b6c3b177ee01f64fc5ab88e45beb1686b95e3c83ffd",
+          "verdict": "Core scientific content acceptable; one grouped minor TeX-spacing repair required",
+          "required_repairs": [
+            {
+              "id": "m1",
+              "status": "repaired",
+              "description": "Restored the leading TeX backslash in six qquad spacing commands across four display equations."
+            }
+          ],
+          "revised_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+          "accepted": false
+        },
+        {
+          "round": 2,
+          "reviewer": "Lead coordinator, independent of chapter author and R1 reviewer",
+          "reviewed_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+          "verdict": "ACCEPT; zero remaining blocking, major or minor findings",
+          "required_repairs": [],
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0
+        }
+      ],
+      "worked_solutions": 8,
+      "words_including_math_code": 4090
+    },
+    {
+      "chapter": 3,
+      "file": "chapter-03-heart-cyclic-pump.html",
+      "authored_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course reviewer",
+          "reviewed_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, eight solutions, exact code and primary evidence; R1 additionally complete ASR05/07 and selected frames"
+        },
+        {
+          "round": 2,
+          "reviewer": "Independent lead coordinator",
+          "reviewed_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, eight solutions, exact code and primary evidence; R1 additionally complete ASR05/07 and selected frames"
+        }
+      ],
+      "worked_solutions": 8,
+      "words_including_math_code": 4064
+    },
+    {
+      "chapter": 4,
+      "file": "chapter-04-myocardial-deformation-active-stress.html",
+      "authored_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course reviewer",
+          "reviewed_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full corrected body, nine solutions, exact code and primary evidence; R1 additionally complete ASR06/08 and selected frames"
+        },
+        {
+          "round": 2,
+          "reviewer": "Independent lead coordinator",
+          "reviewed_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full corrected body, nine solutions, exact code and primary evidence; R1 additionally complete ASR06/08 and selected frames"
+        }
+      ],
+      "worked_solutions": 9,
+      "words_including_math_code": 4182
+    },
+    {
+      "chapter": 5,
+      "file": "chapter-05-blood-cells-rheology.html",
+      "authored_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course reviewer",
+          "reviewed_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Complete earlier scientific reviews carried forward by exact one-sentence source-amendment comparison; both focused closures read full alternate ASR; no math/code/solution changes"
+        },
+        {
+          "round": 2,
+          "reviewer": "Independent lead coordinator",
+          "reviewed_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Complete earlier scientific reviews carried forward by exact one-sentence source-amendment comparison; both focused closures read full alternate ASR; no math/code/solution changes"
+        }
+      ],
+      "worked_solutions": 9,
+      "words_including_math_code": 3916
+    },
+    {
+      "chapter": 6,
+      "file": "chapter-06-blood-continuum-mixtures.html",
+      "authored_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course reviewer",
+          "reviewed_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, nine solutions, exact code and primary evidence; R1 additionally complete ASR10/12"
+        },
+        {
+          "round": 2,
+          "reviewer": "Independent lead coordinator",
+          "reviewed_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, nine solutions, exact code and primary evidence; R1 additionally complete ASR10/12"
+        }
+      ],
+      "worked_solutions": 9,
+      "words_including_math_code": 3614
+    },
+    {
+      "chapter": 7,
+      "file": "chapter-07-vascular-wall-mechanics.html",
+      "authored_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent graph-theory course reviewer",
+          "reviewed_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, nine solutions, exact code and primary evidence; R1 additionally complete ASR13/14"
+        },
+        {
+          "round": 2,
+          "reviewer": "Independent lead coordinator",
+          "reviewed_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, nine solutions, exact code and primary evidence; R1 additionally complete ASR13/14"
+        }
+      ],
+      "worked_solutions": 9,
+      "words_including_math_code": 3719
+    },
+    {
+      "chapter": 8,
+      "file": "chapter-08-course-discussion-synthesis.html",
+      "authored_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+      "accepted": true,
+      "review_rounds": [
+        {
+          "round": 1,
+          "reviewer": "Independent thermodynamics course reviewer",
+          "reviewed_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, nine solutions, exact code, raw-byte reconciliation and primary abstracts; R1 additionally entire additional discussion ASR"
+        },
+        {
+          "round": 2,
+          "reviewer": "Independent lead coordinator",
+          "reviewed_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+          "accepted": true,
+          "blocking_findings": 0,
+          "major_findings": 0,
+          "minor_findings": 0,
+          "verdict": "ACCEPT; zero unresolved required findings",
+          "scope": "Full frozen body, nine solutions, exact code, raw-byte reconciliation and primary abstracts; R1 additionally entire additional discussion ASR"
+        }
+      ],
+      "worked_solutions": 9,
+      "words_including_math_code": 3231
+    }
+  ],
+  "scope": "Public attestations summarize separately performed scientific reviews at exact authored-body digests. They are not generated proof verification; code, source integrity, browser and publication checks remain separate.",
+  "limits": [
+    "No clinical calibration or personal medical inference",
+    "No complete audiovisual/board audit",
+    "Primary sources used only at the inspection scope recorded in chapter sidecars"
+  ]
+}

@@ -1,0 +1,296 @@
+{
+  "chapter": 1,
+  "title": "Structure, function and cardiovascular modeling",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+  "recordings": [
+    {
+      "video_id": "3vz6e0wgxFY",
+      "playlist_position": 3,
+      "lecture_label": "Lecture 1",
+      "duration_seconds": 2897,
+      "decoded_audio_duration_seconds": 2896.1335,
+      "complete_decoded_audio": true,
+      "media_sha256": "c8431f800046fcc5b9b6253cdf2ef68ee2818118477e72ca79d890be65f26a0b",
+      "transcript_first_start": 0,
+      "transcript_last_end": 2888.6,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 33,
+      "visual_boundary": "Selected frames only; no full audiovisual review"
+    },
+    {
+      "video_id": "5PMOTIzETZA",
+      "playlist_position": 6,
+      "lecture_label": "Lecture 3",
+      "duration_seconds": 2622,
+      "decoded_audio_duration_seconds": 2621.5135,
+      "complete_decoded_audio": true,
+      "media_sha256": "1bf6829b37f748cefe05027ab3887e2653d8c0374bd155dd29170643095914cf",
+      "transcript_first_start": 0,
+      "transcript_last_end": 2613.44,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 30,
+      "visual_boundary": "Selected frames only; no full audiovisual review"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Why anatomy alone leaves an engineering question L1 \u00b7 01:15",
+      "anchor": "motivation",
+      "video_id": "3vz6e0wgxFY",
+      "start": 75,
+      "end": 624,
+      "lecture_material": "Mechanical motivation, historical population burden, interventional problem classes, and structure\u2013function questions.",
+      "research_extension": "Historical cohort definitions and FDA device-scope definitions.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 75,
+          "end": 624
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 50,
+          "end": 454
+        }
+      ]
+    },
+    {
+      "section": "Mechanical fields meet living cells L1 \u00b7 10:24 L3 \u00b7 07:34",
+      "anchor": "cell-mechanics",
+      "video_id": "3vz6e0wgxFY",
+      "start": 624,
+      "end": 939,
+      "lecture_material": "Endothelial force sensing, pressure/shear examples, active cardiac cells and remodeling.",
+      "research_extension": "Dai et al. controlled endothelial-cell arterial-waveform experiments; wall shear and hoop normal stress distinguished.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 624,
+          "end": 939
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 454,
+          "end": 1005
+        }
+      ]
+    },
+    {
+      "section": "What a continuum field averages L1 \u00b7 17:34 L3 \u00b7 16:45",
+      "anchor": "continuum",
+      "video_id": "3vz6e0wgxFY",
+      "start": 1054,
+      "end": 1236,
+      "lecture_material": "Continuum field approximation, representative material volume and scale separation.",
+      "research_extension": "Gas Knudsen analogy is separated from the original cell-count averaging construction.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 1054,
+          "end": 1236
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 1005,
+          "end": 1375
+        }
+      ]
+    },
+    {
+      "section": "Organization, circulation and regulated function L1 \u00b7 20:36 L3 \u00b7 22:59",
+      "anchor": "structure-function",
+      "video_id": "3vz6e0wgxFY",
+      "start": 1236,
+      "end": 2614,
+      "lecture_material": "Biological hierarchy, circulation, heart wall/pump structure, capillary exchange and homeostatic feedback.",
+      "research_extension": "Red-cell energy-pathway evidence corrects the simplification that mature erythrocytes are metabolically inactive.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 1236,
+          "end": 2614
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 1379,
+          "end": 2400
+        }
+      ]
+    },
+    {
+      "section": "A vessel model must connect flow to delivery L1 \u00b7 32:42",
+      "anchor": "transport-model",
+      "video_id": "3vz6e0wgxFY",
+      "start": 1962,
+      "end": 2614,
+      "lecture_material": "Flow distribution, stenosis-related mechanics and flow-demand reasoning motivate an original transport problem.",
+      "research_extension": "Original conservation and Newtonian-tube derivations; no claim of patient-specific calibration.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 1962,
+          "end": 2614
+        }
+      ]
+    },
+    {
+      "section": "From an image to a functional quantity L1 \u00b7 43:49 L3 \u00b7 40:07",
+      "anchor": "functional-severity",
+      "video_id": "3vz6e0wgxFY",
+      "start": 2629,
+      "end": 2752,
+      "lecture_material": "Imaging, flow modeling and fractional flow reserve as functional assessment.",
+      "research_extension": "Pijls et al. 1995 abstract supports the functional-flow ratio and maximal-vasodilation setting.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 2629,
+          "end": 2752
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 2407,
+          "end": 2569
+        }
+      ]
+    },
+    {
+      "section": "An executable check of the complete example",
+      "anchor": "executable-check",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording"
+    },
+    {
+      "section": "What the model establishes and what remains open",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording"
+    },
+    {
+      "section": "Problems and worked solutions",
+      "anchor": "exercises",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording"
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=3vz6e0wgxFY",
+      "title": "Lecture 1, Course Overview",
+      "supports": "Full sequential ASR reading supplies course motivation, continuum approximation, biological organization and functional modeling."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=5PMOTIzETZA",
+      "title": "Lecture 3, Review of Course Overview",
+      "supports": "Full sequential ASR reading supplies review expansions on cells, structure/function, feedback, vascular mechanics and FFR."
+    },
+    {
+      "url": "https://nptel.ac.in/courses/102106819",
+      "title": "Official course outline",
+      "supports": "Verified actual course title, instructor, IIT Hyderabad attribution and outline."
+    },
+    {
+      "url": "https://archive.nptel.ac.in/content/syllabus_pdf/102106819.pdf",
+      "title": "official syllabus",
+      "supports": "Official intended syllabus and course attribution."
+    },
+    {
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1311890",
+      "title": "Cardiovascular Risk and Events in 17 Low-, Middle-, and High-Income Countries",
+      "supports": "Historical cohort event/case-fatality definitions; not current national mortality estimates."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC522013/",
+      "title": "Distinct endothelial phenotypes evoked by arterial waveforms",
+      "supports": "Controlled cultured endothelial-cell responses to arterial waveforms; not a clinical risk predictor."
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5141275/",
+      "title": "Multi-omics Evidence for Inheritance of Energy Pathways in Red Blood Cells",
+      "supports": "Mature red-cell energy pathways and active metabolism despite lack of mitochondria."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7586302/",
+      "title": "Fractional flow reserve: a useful index to evaluate the influence of an epicardial coronary stenosis on myocardial blood flow",
+      "supports": "Original FFR definition as a ratio of maximal flow and its pressure-based theoretical setting; abstract inspected."
+    },
+    {
+      "url": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfTPLC/tplc.cfm?id=POL",
+      "title": "FDA neurovascular mechanical thrombectomy device (POL)",
+      "supports": "Verified official device definition: endovascular mechanical thrombus removal for acute ischemic stroke; no treatment selection recommendation."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent graph-theory course agent",
+      "reviewed_body_sha256": "9c76090aa251abcbdb648165cfc8627011788175bad02220ce37cbbe0e278ebb",
+      "verdict": "One required FDA source-link repair; zero core-science blockers",
+      "required_repairs": [
+        {
+          "id": "M1",
+          "status": "repaired",
+          "description": "Both FDA links replaced with verified product-code POL device page and matching source metadata."
+        }
+      ],
+      "revised_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+      "accepted": false
+    },
+    {
+      "round": 2,
+      "reviewer": "Lead coordinator, independent of chapter author",
+      "reviewed_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+      "verdict": "ACCEPT; zero blocking, major or minor substantive findings",
+      "required_repairs": [],
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Fallible local ASR, including boundary repetitions and technical/numeric errors",
+    "Selected frame inspection, not full audiovisual verification",
+    "No individual diagnosis, treatment selection, clinical calibration or rupture prediction"
+  ],
+  "article_words_including_math_code": 4778,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 7,
+  "executable_listings": 1
+}

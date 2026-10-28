@@ -1,0 +1,1685 @@
+{
+  "sections": [
+    {
+      "section": "Why anatomy alone leaves an engineering question L1 \u00b7 01:15",
+      "anchor": "motivation",
+      "video_id": "3vz6e0wgxFY",
+      "start": 75,
+      "end": 624,
+      "lecture_material": "Mechanical motivation, historical population burden, interventional problem classes, and structure\u2013function questions.",
+      "research_extension": "Historical cohort definitions and FDA device-scope definitions.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 75,
+          "end": 624
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 50,
+          "end": 454
+        }
+      ],
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "Mechanical fields meet living cells L1 \u00b7 10:24 L3 \u00b7 07:34",
+      "anchor": "cell-mechanics",
+      "video_id": "3vz6e0wgxFY",
+      "start": 624,
+      "end": 939,
+      "lecture_material": "Endothelial force sensing, pressure/shear examples, active cardiac cells and remodeling.",
+      "research_extension": "Dai et al. controlled endothelial-cell arterial-waveform experiments; wall shear and hoop normal stress distinguished.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 624,
+          "end": 939
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 454,
+          "end": 1005
+        }
+      ],
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "What a continuum field averages L1 \u00b7 17:34 L3 \u00b7 16:45",
+      "anchor": "continuum",
+      "video_id": "3vz6e0wgxFY",
+      "start": 1054,
+      "end": 1236,
+      "lecture_material": "Continuum field approximation, representative material volume and scale separation.",
+      "research_extension": "Gas Knudsen analogy is separated from the original cell-count averaging construction.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 1054,
+          "end": 1236
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 1005,
+          "end": 1375
+        }
+      ],
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "Organization, circulation and regulated function L1 \u00b7 20:36 L3 \u00b7 22:59",
+      "anchor": "structure-function",
+      "video_id": "3vz6e0wgxFY",
+      "start": 1236,
+      "end": 2614,
+      "lecture_material": "Biological hierarchy, circulation, heart wall/pump structure, capillary exchange and homeostatic feedback.",
+      "research_extension": "Red-cell energy-pathway evidence corrects the simplification that mature erythrocytes are metabolically inactive.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 1236,
+          "end": 2614
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 1379,
+          "end": 2400
+        }
+      ],
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "A vessel model must connect flow to delivery L1 \u00b7 32:42",
+      "anchor": "transport-model",
+      "video_id": "3vz6e0wgxFY",
+      "start": 1962,
+      "end": 2614,
+      "lecture_material": "Flow distribution, stenosis-related mechanics and flow-demand reasoning motivate an original transport problem.",
+      "research_extension": "Original conservation and Newtonian-tube derivations; no claim of patient-specific calibration.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 1962,
+          "end": 2614
+        }
+      ],
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "From an image to a functional quantity L1 \u00b7 43:49 L3 \u00b7 40:07",
+      "anchor": "functional-severity",
+      "video_id": "3vz6e0wgxFY",
+      "start": 2629,
+      "end": 2752,
+      "lecture_material": "Imaging, flow modeling and fractional flow reserve as functional assessment.",
+      "research_extension": "Pijls et al. 1995 abstract supports the functional-flow ratio and maximal-vasodilation setting.",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "source_spans": [
+        {
+          "video_id": "3vz6e0wgxFY",
+          "start": 2629,
+          "end": 2752
+        },
+        {
+          "video_id": "5PMOTIzETZA",
+          "start": 2407,
+          "end": 2569
+        }
+      ],
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "An executable check of the complete example",
+      "anchor": "executable-check",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "What the model establishes and what remains open",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "Problems and worked solutions",
+      "anchor": "exercises",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary support cited beside supported claims; inspection scope stated in chapter",
+      "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
+      "chapter": "chapter-01-structure-function-modeling.html"
+    },
+    {
+      "section": "Mass is a measure; density needs an assumption L2 \u00b7 01:10 L4 \u00b7 00:27",
+      "anchor": "body-density",
+      "video_id": "ANXLnQJRc9A",
+      "start": 70,
+      "end": 251,
+      "lecture_material": "Body, mass and volume measures, density and material mass conservation.",
+      "research_extension": "Radon\u2013Nikodym absolute continuity and a.e. density conditions; original point-mass counterexample and local Jacobian derivation.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 70,
+          "end": 251
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 27,
+          "end": 538
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Follow a particle or inspect a fixed position L2 \u00b7 04:22 L4 \u00b7 10:39",
+      "anchor": "material-derivative",
+      "video_id": "ANXLnQJRc9A",
+      "start": 262,
+      "end": 555,
+      "lecture_material": "Motion, material/spatial representations and chain-rule acceleration.",
+      "research_extension": "Original regular isochoric exponential motion and steady-but-accelerating numerical check; algebraic domain restrictions.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 262,
+          "end": 555
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 639,
+          "end": 1034
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "The deformation gradient maps local material lines L2 \u00b7 09:15 L4 \u00b7 17:27",
+      "anchor": "deformation-gradient",
+      "video_id": "ANXLnQJRc9A",
+      "start": 555,
+      "end": 974,
+      "lecture_material": "Local line mapping and Cartesian deformation-gradient components.",
+      "research_extension": "Original simple-shear and diagonal-stretch constructions; local versus global invertibility distinction.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 555,
+          "end": 974
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1047,
+          "end": 1412
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Separate stretch from rotation before measuring strain L2 \u00b7 16:14 L4 \u00b7 23:32",
+      "anchor": "finite-strain",
+      "video_id": "ANXLnQJRc9A",
+      "start": 974,
+      "end": 1148,
+      "lecture_material": "Cauchy\u2013Green tensors, polar decomposition, Green and Almansi strain.",
+      "research_extension": "Metric derivation, principal-stretch calculation and rigid-rotation counterexample to small-gradient strain.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 974,
+          "end": 1148
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1412,
+          "end": 1441
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "A fluid responds to stretching rate, not accumulated stretch alone L2 \u00b7 19:08 L4 \u00b7 24:01",
+      "anchor": "stretching-rate",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1148,
+      "end": 1422,
+      "lecture_material": "Velocity-gradient relation and physical stretching-rate interpretation.",
+      "research_extension": "Line-length rate proof, pullback of Green strain rate and explicit scalar-rate factors.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1148,
+          "end": 1422
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1441,
+          "end": 1802
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Changing observer must not create a material response L2 \u00b7 23:42 L4 \u00b7 30:02",
+      "anchor": "objectivity",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1422,
+      "end": 1722,
+      "lecture_material": "Frame-indifference motivation and D versus L.",
+      "research_extension": "Correct general observer transformations, inertial-frame distinction, isotropy distinction and rigid-rotation falsification.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1422,
+          "end": 1722
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1802,
+          "end": 1921
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Turn an energy into a stress, with the area convention stated L2 \u00b7 28:51",
+      "anchor": "solid-law",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1731,
+      "end": 1776,
+      "lecture_material": "Neo-Hookean and Mooney\u2013Rivlin stress examples.",
+      "research_extension": "Explicit energy/area conventions, traction-free uniaxial solution and passive directional myocardium context.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1731,
+          "end": 1776
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1921,
+          "end": 1960
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Viscosity, rate dependence and memory are separate choices L2 \u00b7 29:36 L4 \u00b7 32:01",
+      "anchor": "fluid-law",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1776,
+      "end": 1989,
+      "lecture_material": "Newtonian, generalized Newtonian, power-law and memory-model examples; corrected upper-convected derivative.",
+      "research_extension": "Dissipation/rate-limit checks, observer-cancellation proof, Maxwell relaxation and solvent\u2013polymer Oldroyd-B parameter relation.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1776,
+          "end": 1989
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1921,
+          "end": 2314
+        }
+      ],
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Execute metric, observer and stress-area checks",
+      "anchor": "computed-check",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "What the kinematics does not determine",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-02-continuum-kinematics-constitutive-laws.html"
+    },
+    {
+      "section": "The anatomy separates receiving, pumping and directing flow L5 \u00b7 00:46 L7 \u00b7 00:35",
+      "anchor": "anatomy",
+      "video_id": "P8Mi0nvkidI",
+      "start": 46,
+      "end": 642,
+      "lecture_material": "Cardiovascular function, heart wall layers and myocardial architecture.",
+      "research_extension": "Original compartment interpretation and bounds on towel analogy; primary directional-myocardium context.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 46,
+          "end": 642
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 35,
+          "end": 788
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Two side-by-side pumps belong to one series circulation L5 \u00b7 10:43 L7 \u00b7 13:08",
+      "anchor": "two-pumps",
+      "video_id": "P8Mi0nvkidI",
+      "start": 643,
+      "end": 792,
+      "lecture_material": "Chambers, pulmonary/systemic routes and two side-by-side pumps.",
+      "research_extension": "Original explicitly bounded compartment conservation and equal mean flow; resistance rather than distance-only reasoning.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 643,
+          "end": 792
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 788,
+          "end": 1006
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "A valve responds to the pressure difference across it L5 \u00b7 13:22 L7 \u00b7 16:46",
+      "anchor": "valves",
+      "video_id": "P8Mi0nvkidI",
+      "start": 802,
+      "end": 998,
+      "lecture_material": "Atrioventricular/semilunar structures and directed flow.",
+      "research_extension": "Explicit transvalvular pressure differences, ideal diode law, chamber balance and stenosis/regurgitation distinction.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 802,
+          "end": 998
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 1006,
+          "end": 1340
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Read the cardiac cycle as a sequence of pressure inequalities L5 \u00b7 16:38 L7 \u00b7 22:20",
+      "anchor": "cycle",
+      "video_id": "P8Mi0nvkidI",
+      "start": 998,
+      "end": 1510,
+      "lecture_material": "Filling, isovolumic contraction, ejection and relaxation; pressure/volume timing.",
+      "research_extension": "Pressure-inequality sequence, beat-specific EDV, corrected systole boundary and nonuniversal timing.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 998,
+          "end": 1510
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 1340,
+          "end": 2138
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Arterial pressure is not ventricular diastolic pressure L5 \u00b7 25:21 L7 \u00b7 36:19",
+      "anchor": "pressure-storage",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1521,
+      "end": 1633,
+      "lecture_material": "Arterial and ventricular waveform discussion; slide explicitly labels120/80 aortic and24/8 pulmonary arterial.",
+      "research_extension": "Original compliant-reservoir conservation and exponential decay; pressure-reference and respiratory-pump limits.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1521,
+          "end": 1633
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 2179,
+          "end": 2245
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Stroke volume and ejection fraction describe different quantities L5 \u00b7 27:13 L7 \u00b7 35:53",
+      "anchor": "output",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1633,
+      "end": 1715,
+      "lecture_material": "Stroke volume, chamber volumes and output definitions.",
+      "research_extension": "Original same-EF/different-forward-output counterexample and signed regurgitant-flow extension.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1633,
+          "end": 1715
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 2153,
+          "end": 2245
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "The pressure\u2013volume loop measures boundary work L5 \u00b7 25:10",
+      "anchor": "work",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1510,
+      "end": 1633,
+      "lecture_material": "Source pressure and volume time histories motivate work accounting.",
+      "research_extension": "Original closed-loop integral, rectangular work/power example and distinction from local/biochemical expenditure.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1510,
+          "end": 1633
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 1340,
+          "end": 1867
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Loading and contractile response interact L5 \u00b7 28:35 L7 \u00b7 37:25",
+      "anchor": "loading",
+      "video_id": "P8Mi0nvkidI",
+      "start": 1715,
+      "end": 1860,
+      "lecture_material": "Filling/EDV and force/load/ESV dependence.",
+      "research_extension": "Primary Suga1971 bounded experimental context plus clearly separate original end-systolic intersection construction.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "P8Mi0nvkidI",
+          "start": 1715,
+          "end": 1860
+        },
+        {
+          "video_id": "UvcbjRxSjEs",
+          "start": 2245,
+          "end": 2328
+        }
+      ],
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Execute conservation, work and load checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "What a pump model still needs",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-03-heart-cyclic-pump.html"
+    },
+    {
+      "section": "Geometry supplies a domain, not a constitutive law L6 \u00b7 00:48 L8 \u00b7 01:11",
+      "anchor": "geometry",
+      "video_id": "entWodZ5lrM",
+      "start": 48,
+      "end": 299,
+      "lecture_material": "Idealized ventricular geometry, prolate spheroidal coordinates and organ-mass allometry.",
+      "research_extension": "Hyperbolic coordinate identity, explicitly illustrative shell-volume/mass calculation and fitted allometric dimensions.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 48,
+          "end": 299
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 71,
+          "end": 251
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Material symmetry is a transformation statement L6 \u00b7 04:59 L8 \u00b7 04:11",
+      "anchor": "symmetry",
+      "video_id": "entWodZ5lrM",
+      "start": 299,
+      "end": 674,
+      "lecture_material": "Layered fibre directions, local symmetry, through-wall organization and heterogeneity.",
+      "research_extension": "Precise transverse-isotropy/orthotropy definitions; varying-layer orientation does not alone prove effective orthotropy; primary passive-tissue scope.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 299,
+          "end": 674
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 251,
+          "end": 898
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Unloaded tissue need not be stress-free L6 \u00b7 11:14 L8 \u00b7 14:58",
+      "anchor": "reference-state",
+      "video_id": "entWodZ5lrM",
+      "start": 674,
+      "end": 844,
+      "lecture_material": "Unperfused-tissue incompressibility approximation and residual stress.",
+      "research_extension": "Bulk-versus-shear scale distinction, unloaded versus released reference and bounded primary rat cutting evidence.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 674,
+          "end": 844
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 898,
+          "end": 1048
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Recover the complete in-plane map before imposing incompressibility L6 \u00b7 14:04 L8 \u00b7 17:28",
+      "anchor": "slab-map",
+      "video_id": "entWodZ5lrM",
+      "start": 844,
+      "end": 939,
+      "lecture_material": "Biaxial stretch/shortening, wall-thickness change and shear.",
+      "research_extension": "Complete affine marker map, full determinant, principal-stretch distinction and measurement-conditioning requirements; testing portions additionally mapped.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 844,
+          "end": 939
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1048,
+          "end": 1255
+        },
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 1193,
+          "end": 1688
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1397,
+          "end": 1934
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "A passive energy stores work; it does not reproduce arbitrary hysteresis L6 \u00b7 15:39 L8 \u00b7 20:55",
+      "anchor": "passive-energy",
+      "video_id": "entWodZ5lrM",
+      "start": 939,
+      "end": 1193,
+      "lecture_material": "Nonlinear elastic approximation, stored-energy stress relation and identification from testing.",
+      "research_extension": "Single-valued energy versus hysteresis; original objective toy energies with explicit limits.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 939,
+          "end": 1193
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1255,
+          "end": 1397
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "A perfect biaxial fit can leave a shear parameter completely unknown L6 \u00b7 19:53 L8 \u00b7 23:17",
+      "anchor": "identifiability",
+      "video_id": "entWodZ5lrM",
+      "start": 1193,
+      "end": 1688,
+      "lecture_material": "Myocardial slab testing and deformation reconstruction for constitutive calibration.",
+      "research_extension": "Original exact biaxial-invisible shear coupling, informative shear experiment, primary loading-mode context and bounded generative/Bayesian inference extension.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 1193,
+          "end": 1688
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1397,
+          "end": 1934
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Membrane force per length differs from three-dimensional stress L6 \u00b7 28:08 L8 \u00b7 32:14",
+      "anchor": "membranes",
+      "video_id": "entWodZ5lrM",
+      "start": 1688,
+      "end": 1818,
+      "lecture_material": "Endocardial/epicardial membrane response and polynomial/exponential energy families.",
+      "research_extension": "Force-per-length versus bulk stress, primary bovine comparison and original one-parameter surface-energy derivative.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "entWodZ5lrM",
+          "start": 1688,
+          "end": 1818
+        },
+        {
+          "video_id": "gQtXtfIhgEM",
+          "start": 1934,
+          "end": 2090
+        }
+      ],
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Active contraction requires a source beyond a passive energy",
+      "anchor": "active",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original conceptual active-stress extension beyond the passive calibration in these recordings; objective current fibre direction and reaction example; no activation kinetics or biochemical calibration.",
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Execute deformation and identification checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "What a fitted tissue law has established",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-04-myocardial-deformation-active-stress.html"
+    },
+    {
+      "section": "Define the amount of each constituent before assigning a material law L9 \u00b7 10:48 L11 \u00b7 10:56",
+      "anchor": "composition",
+      "video_id": "i-1ZJizdpnE",
+      "start": 648,
+      "end": 768,
+      "lecture_material": "Blood composition and hematocrit.",
+      "research_extension": "Count/volume distinction, dimensional density repair, explicit source-percentage interpretation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 648,
+          "end": 768
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 656,
+          "end": 1040
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 648,
+          "end": 768
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Transport specialization still requires cellular energy L9 \u00b7 04:52 L11 \u00b7 05:45",
+      "anchor": "transport",
+      "video_id": "i-1ZJizdpnE",
+      "start": 292,
+      "end": 648,
+      "lecture_material": "Red-cell structure, hemoglobin oxygen binding and carbon-dioxide exchange.",
+      "research_extension": "Biologically active cells, primary metabolic corrections, original Hill curve and capacity calculation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 292,
+          "end": 648
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 345,
+          "end": 656
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 292,
+          "end": 648
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Deformability means changing shape under constraints L9 \u00b7 06:01 L11 \u00b7 18:34",
+      "anchor": "cell-geometry",
+      "video_id": "i-1ZJizdpnE",
+      "start": 361,
+      "end": 421,
+      "lecture_material": "Cell deformability and micropipette experiments.",
+      "research_extension": "Isoperimetric/reduced-volume analysis, original spherocylinder budget and primary aspiration volume-loss boundary.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 361,
+          "end": 421
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1114,
+          "end": 1313
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 361,
+          "end": 421
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "A measured torque is an integral, not a local viscosity L9 \u00b7 13:16 L11 \u00b7 21:53",
+      "anchor": "rheometry",
+      "video_id": "i-1ZJizdpnE",
+      "start": 796,
+      "end": 979,
+      "lecture_material": "Component rheology and rotating-plate/micropipette measurement.",
+      "research_extension": "Original complete torque integral and non-Newtonian rim-stress inversion with assumptions.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 796,
+          "end": 979
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1313,
+          "end": 1604
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 796,
+          "end": 979
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Shear thinning concerns a steady stress-rate relation L9 \u00b7 16:19 L11 \u00b7 26:44",
+      "anchor": "steady",
+      "video_id": "i-1ZJizdpnE",
+      "start": 979,
+      "end": 1208,
+      "lecture_material": "Aggregation/disaggregation, deformation and whole-blood shear thinning.",
+      "research_extension": "Steady versus differential viscosity, units and source-reported levels without universal-constant claim.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 979,
+          "end": 1208
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1604,
+          "end": 1916
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 979,
+          "end": 1208
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Elastic stress and delayed recovery require time-resolved observations L9 \u00b7 25:10 L11 \u00b7 40:04",
+      "anchor": "relaxation",
+      "video_id": "i-1ZJizdpnE",
+      "start": 1510,
+      "end": 1644,
+      "lecture_material": "Cessation and rate-dependent stress decay.",
+      "research_extension": "Delayed versus permanent deformation, exact scalar solvent-Maxwell model and amplitude-normalized relaxation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 1510,
+          "end": 1644
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 2404,
+          "end": 2797
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 1510,
+          "end": 1644
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Frequency response supplies an independent axis of evidence L9 \u00b7 20:08 L11 \u00b7 31:56",
+      "anchor": "oscillation",
+      "video_id": "i-1ZJizdpnE",
+      "start": 1208,
+      "end": 1290,
+      "lecture_material": "Whole-blood viscoelasticity and shear dependence.",
+      "research_extension": "Primary Thurston oscillatory context and original storage/loss modulus derivation.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "i-1ZJizdpnE",
+          "start": 1208,
+          "end": 1290
+        },
+        {
+          "video_id": "C6o_WgMUQyE",
+          "start": 1916,
+          "end": 1991
+        },
+        {
+          "video_id": "HJ0GgBPtZos",
+          "start": 1208,
+          "end": 1290
+        }
+      ],
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "A steady curve does not distinguish instantaneous thinning from structural memory",
+      "anchor": "structure-memory",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original aggregation-state ODE, invariant interval and exact transient comparison to an observationally identical steady instantaneous law; thixotropy without residual elastic shear stress.",
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Changing the deformation mode can expose a hidden mechanism",
+      "anchor": "plasma-extension",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary Brust2013 abstract and original experiment-design/inference discussion; no apparatus or numerical pressure reproduction.",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Execute geometry, torque and history checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Sources and limits of inspection",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, calculations, derivations, code and complete solutions; timestamps identify related course topics rather than attributing these constructions to the lecturer.",
+      "chapter": "chapter-05-blood-cells-rheology.html"
+    },
+    {
+      "section": "Continuum validity is a separation of scales, not a magic diameter L10 \u00b7 00:56 L12 \u00b7 00:51",
+      "anchor": "continuum",
+      "video_id": "6WgMx8hOOtE",
+      "start": 56,
+      "end": 129,
+      "lecture_material": "Continuum homogenization and cell-size/domain comparison.",
+      "research_extension": "Representative averaging scales and distinction from gas Knudsen criterion; no universal800micron threshold.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 56,
+          "end": 129
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 51,
+          "end": 282
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Specify the yielded and unyielded branches of a scalar law L10 \u00b7 02:09 L12 \u00b7 04:52",
+      "anchor": "scalar",
+      "video_id": "6WgMx8hOOtE",
+      "start": 129,
+      "end": 178,
+      "lecture_material": "Casson scalar yield/shear model.",
+      "research_extension": "Dimensionally correct square-root branches, original exact plug/pipe integral and independent quadrature.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 129,
+          "end": 178
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 292,
+          "end": 358
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Extend a shear curve through an objective rate invariant L10 \u00b7 02:58 L12 \u00b7 05:58",
+      "anchor": "objective-viscosity",
+      "video_id": "6WgMx8hOOtE",
+      "start": 178,
+      "end": 269,
+      "lecture_material": "Cross and generalized Newtonian shear-thinning models.",
+      "research_extension": "Explicit D/A1 convention, invariant rate, dissipation and monotone-stress derivative.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 178,
+          "end": 269
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 358,
+          "end": 470
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "A spring\u2013dashpot derivation does not uniquely determine a three-dimensional law L10 \u00b7 07:46 L12 \u00b7 10:28",
+      "anchor": "maxwell",
+      "video_id": "6WgMx8hOOtE",
+      "start": 466,
+      "end": 912,
+      "lecture_material": "Series/parallel spring\u2013dashpot derivation and objective tensor extension.",
+      "research_extension": "Correct time units, phenomenological versus molecular meaning, nonunique objective extensions and solvent/polymer elimination conditions.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 466,
+          "end": 912
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 628,
+          "end": 1218
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Models with the same shear viscosity can predict very different other stresses",
+      "anchor": "normal-stress",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original complete steady-simple-shear tensor solution and extensional singularity comparison; parameters not blood-calibrated.",
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Positive driving stress can coexist with an instant of reverse deformation L10 \u00b7 18:12 L12 \u00b7 23:32",
+      "anchor": "recoil",
+      "video_id": "6WgMx8hOOtE",
+      "start": 1092,
+      "end": 1203,
+      "lecture_material": "Pulsatile simulation with locally reversed flow.",
+      "research_extension": "Original stress-controlled Maxwell counterexample, energy identity and bounded Newtonian maximum-principle control; not full source simulation.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 1092,
+          "end": 1203
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 1412,
+          "end": 1579
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Evolving natural configurations organize energy and relaxation L10 \u00b7 20:03 L12 \u00b7 28:46",
+      "anchor": "natural",
+      "video_id": "6WgMx8hOOtE",
+      "start": 1203,
+      "end": 1808,
+      "lecture_material": "Multiple natural configurations and2004/2013 blood models.",
+      "research_extension": "Original SPD conformation energy/dissipation proof; bounded primary historical comparison and GENERIC connection.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 1203,
+          "end": 1808
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 1726,
+          "end": 3126
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "A mixture has constituent balances and more than one useful mean velocity L10 \u00b7 30:08 L12 \u00b7 52:06",
+      "anchor": "mixture",
+      "video_id": "6WgMx8hOOtE",
+      "start": 1808,
+      "end": 2034,
+      "lecture_material": "Interacting plasma/RBC continua and platelet redistribution.",
+      "research_extension": "Intrinsic/partial densities, volume/mass velocity distinction, drag power and drift momentum; platelet enrichment limits.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "6WgMx8hOOtE",
+          "start": 1808,
+          "end": 2034
+        },
+        {
+          "video_id": "rh595rXepQ8",
+          "start": 3126,
+          "end": 3427
+        }
+      ],
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Enrichment is a transport prediction, not a complete clotting model",
+      "anchor": "platelets",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Primary2017 constituent/transport and crevice experimental text/caption inspected; surrogate particles/ghosts and qualitative scope retained; original distinct flux/conservative example.",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Execute limiting cases and conservative transport",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
+      "chapter": "chapter-06-blood-continuum-mixtures.html"
+    },
+    {
+      "section": "A branch network must conserve flow at the right level L13 \u00b7 03:41 L14 \u00b7 01:15",
+      "anchor": "network",
+      "video_id": "EljNMQ_e-70",
+      "start": 221,
+      "end": 492,
+      "lecture_material": "Arterial/capillary/venous hierarchy, exchange and mechanical analogies.",
+      "research_extension": "Original parallel-bed area/flow/residence and supply-constrained conductance examples.",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "source_spans": [
+        {
+          "video_id": "EljNMQ_e-70",
+          "start": 221,
+          "end": 492
+        },
+        {
+          "video_id": "_aYXAcft_BM",
+          "start": 75,
+          "end": 538
+        }
+      ],
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Pressure, its gradient and its oscillation are different observables L13 \u00b7 08:12 L14 \u00b7 08:58",
+      "anchor": "pressure",
+      "video_id": "EljNMQ_e-70",
+      "start": 492,
+      "end": 757,
+      "lecture_material": "Pressure distribution, pulsatility and flow regulation.",
+      "research_extension": "Pressure versus gradient and transmural load; finite reservoir attenuation, no exact universal microvascular steadiness.",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "source_spans": [
+        {
+          "video_id": "EljNMQ_e-70",
+          "start": 492,
+          "end": 757
+        },
+        {
+          "video_id": "_aYXAcft_BM",
+          "start": 538,
+          "end": 984
+        }
+      ],
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "The wall is a regional, layered and active material L13 \u00b7 13:42 L14 \u00b7 17:28",
+      "anchor": "layers",
+      "video_id": "EljNMQ_e-70",
+      "start": 822,
+      "end": 1363,
+      "lecture_material": "Intima/media/adventitia and regional wall composition.",
+      "research_extension": "Active/local regulation, valves versus compliance, small-vessel histology and separate solid/fluid model scales.",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "source_spans": [
+        {
+          "video_id": "EljNMQ_e-70",
+          "start": 822,
+          "end": 1363
+        },
+        {
+          "video_id": "_aYXAcft_BM",
+          "start": 1048,
+          "end": 1839
+        }
+      ],
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Wall shear and hoop stress live in different materials",
+      "anchor": "loads",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original membrane force balance, fluid-shear comparison and held-fixed-variable scaling.",
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "A thick wall requires a stress distribution, not one representative value",
+      "anchor": "thick",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original radial equilibrium integral, exact thickness-mean versus local Lame control; primary residual-reference context.",
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Solve an incompressible finite-inflation boundary-value problem L13 \u00b7 25:42 L14 \u00b7 32:36",
+      "anchor": "inflation",
+      "video_id": "EljNMQ_e-70",
+      "start": 1542,
+      "end": 1630,
+      "lecture_material": "Parameter calculation through inflation/extension/torsion boundary problems.",
+      "research_extension": "Original complete incompressible neo-Hookean tube map, radial integral, analytic fixed-axial solution and limiting cases.",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "source_spans": [
+        {
+          "video_id": "EljNMQ_e-70",
+          "start": 1542,
+          "end": 1630
+        },
+        {
+          "video_id": "_aYXAcft_BM",
+          "start": 1956,
+          "end": 2105
+        }
+      ],
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "The directional arguments create anisotropy, not the exponential alone L13 \u00b7 27:10 L14 \u00b7 35:05",
+      "anchor": "anisotropy",
+      "video_id": "EljNMQ_e-70",
+      "start": 1630,
+      "end": 1815,
+      "lecture_material": "Passive nonlinear energy forms and isotropic/anisotropic distinction.",
+      "research_extension": "Original two-family tension-only energy and checked nominal derivative; exponent alone is not anisotropy.",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "source_spans": [
+        {
+          "video_id": "EljNMQ_e-70",
+          "start": 1630,
+          "end": 1815
+        },
+        {
+          "video_id": "_aYXAcft_BM",
+          "start": 2105,
+          "end": 2192
+        }
+      ],
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Pressure waves connect tangent wall compliance to flow",
+      "anchor": "waves",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original linear coupled continuity/momentum derivation and tangent-compliance wave speed;2021primary reduced-flow architecture context.",
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Calibration, prediction and adaptation are separate tasks L13 \u00b7 22:43 L14 \u00b7 30:39",
+      "anchor": "identification",
+      "video_id": "EljNMQ_e-70",
+      "start": 1363,
+      "end": 1630,
+      "lecture_material": "Delineate/establish/identify/calculate/evaluate modeling sequence.",
+      "research_extension": "Inverse/reference ambiguity and held-out loading validation; bounded constrained-mixture adaptation connection.",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "source_spans": [
+        {
+          "video_id": "EljNMQ_e-70",
+          "start": 1363,
+          "end": 1630
+        },
+        {
+          "video_id": "_aYXAcft_BM",
+          "start": 1839,
+          "end": 2105
+        }
+      ],
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Execute network, force-balance and finite-inflation checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original mathematical exposition, solved examples, code and complete exercises; links locate related lecture topics.",
+      "chapter": "chapter-07-vascular-wall-mechanics.html"
+    },
+    {
+      "section": "Identify the question before increasing model complexity Discussion \u00b7 14:27 Discussion \u00b7 39:48",
+      "anchor": "scope",
+      "video_id": "MeaVvfB56Cc",
+      "start": 867,
+      "end": 1451,
+      "lecture_material": "Course recap and brief mathematical-modeling question.",
+      "research_extension": "Original input-output problem specification and distinctions between spatial and compartment models.",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "source_spans": [
+        {
+          "video_id": "MeaVvfB56Cc",
+          "start": 867,
+          "end": 1451
+        },
+        {
+          "video_id": "MeaVvfB56Cc",
+          "start": 2388,
+          "end": 2425
+        }
+      ],
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Keep gravitational head and perfusion pressure distinct Discussion \u00b7 27:06",
+      "anchor": "gravity",
+      "video_id": "MeaVvfB56Cc",
+      "start": 1626,
+      "end": 1736,
+      "lecture_material": "Brief posture question; qualitative coordination answer. Acute-hemorrhage question explicitly declined.",
+      "research_extension": "Original hydrostatic cancellation versus local loading analysis; no clinical response prediction.",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "source_spans": [
+        {
+          "video_id": "MeaVvfB56Cc",
+          "start": 1626,
+          "end": 1736
+        }
+      ],
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Reduce two compliant stores without losing volume conservation",
+      "anchor": "stores",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Define what a pressure compensator actually changes",
+      "anchor": "feedback",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Derive residual error and transient stability",
+      "anchor": "response",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Test a changed assumption instead of transferring a stability verdict",
+      "anchor": "delay",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Check the mechanical energy ledger as well as the pressure trace",
+      "anchor": "energy",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Determine which parameters the chosen measurement can identify",
+      "anchor": "identify",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Unchanged global pressure does not establish unchanged organ perfusion",
+      "anchor": "regional",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "Original exact parallel-network counterexample; Fu2006, Xu2017 and Laurin2017 primary abstracts support multiple observables and timing, not calibration.",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Execute conservation, stability and identifiability checks",
+      "anchor": "code",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    },
+    {
+      "section": "Sources and limits of inspection",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original coupled-circuit, control, conservation and inference derivations/calculations; not a lecture derivation or fitted physiological model.",
+      "chapter": "chapter-08-course-discussion-synthesis.html"
+    }
+  ]
+}

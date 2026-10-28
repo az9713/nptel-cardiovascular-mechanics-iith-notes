@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="d527f2e3c00660560888f2bd589dce33a3758ef576704bf7f2665f7a0e139a9b">
+<title>Numerical laboratory · Introduction to Cardiovascular Mechanics</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/vessel-lab.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Introduction to Cardiovascular Mechanics · NPTEL IIT Hyderabad</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout no-toc"><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>Numerical laboratory: a vessel supplies a tissue bed</h1>
+<p class="lead">A radius measurement becomes a prediction only after we specify what drives the flow and what the tissue consumes. Change those assumptions and the same narrowing gives a different mechanical answer.</p>
+<p>This laboratory implements the original steady tube–oxygen model developed in <a href="chapter-01-structure-function-modeling.html">chapter 1</a>. Its inputs are illustrative. It does not model a particular patient's anatomy, collateral circulation, autoregulation or treatment response.</p>
+<h2 id="model">Model, units and reference state</h2>
+<p>A rigid circular tube has radius $a$, length $L=0.10\,\mathrm m$ and Newtonian viscosity $\mu=0.004\,\mathrm{Pa\,s}$. Its reference radius is $a_0=1\,\mathrm{mm}$ and its reference pressure drop is $\Delta p_0=1000\,\mathrm{Pa}$. Fully developed, steady, laminar flow gives</p>
+\[Q=\frac{\pi a^4\Delta p}{8\mu L},\qquad \tau_w=\frac{\Delta p a}{2L}=\frac{4\mu Q}{\pi a^3}.\]
+<p>The reference whole-blood oxygen contents are $C_a=9$ and $C_{v,0}=6\,\mathrm{mmol/L}$. A well-mixed tissue consumes oxygen at $M_0=Q_0(C_a-C_{v,0})$. At steady state and equal inlet/outlet volume flow, conservation requires $C_v=C_a-M/Q$. A negative calculated $C_v$ signals failure of the prescribed steady supply–demand state. It is not a physical negative concentration.</p>
+<section id="vessel-lab" aria-label="Interactive tube and oxygen model">
+<div class="lab-controls"><p><label for="radius-ratio">Radius ratio $a/a_0$: <output id="radius-value" for="radius-ratio">1.00</output></label><input id="radius-ratio" type="range" min="0.4" max="1.2" value="1" step="0.01"></p>
+<p><label for="demand-ratio">Consumption ratio $M/M_0$: <output id="demand-value" for="demand-ratio">1.00</output></label><input id="demand-ratio" type="range" min="0" max="2" value="1" step="0.05"></p>
+<p><label for="driving-condition">Driving condition</label> <select id="driving-condition"><option value="pressure">Hold pressure drop fixed</option><option value="flow">Hold volume flow fixed</option></select></p><button id="reset-vessel" type="button">Reset reference state</button></div>
+<div id="vessel-results" aria-live="polite" aria-atomic="true"></div>
+<svg id="flow-curve" viewBox="0 0 640 320" role="img" aria-labelledby="curve-title curve-description"><title id="curve-title">Fixed-pressure flow varies with the fourth power of radius</title><desc id="curve-description">The reference curve plots flow ratio against radius ratio. The highlighted point follows the selected driving condition.</desc><g fill="none" stroke="currentColor"><path d="M65 25V265H610"/><path d="M65 145H610" stroke-dasharray="4 5" opacity="0.35"/></g><path id="radius-curve" fill="none" stroke="#72d7ce" stroke-width="3"/><circle id="current-flow-point" r="6" fill="#f4b56a"/><g fill="currentColor" font-size="16"><text x="270" y="307">radius ratio a/a₀</text><text x="8" y="20">Q/Q₀</text><text x="43" y="270">0</text><text x="43" y="150">1</text><text x="43" y="30">2</text><text x="60" y="287">0</text><text x="505" y="287">1</text><text x="595" y="287">1.2</text></g></svg>
+</section>
+<h2 id="interpretation">Read the result as a conditional prediction</h2>
+<p>Under fixed pressure, $Q/Q_0=\alpha^4$ and $\tau_w/\tau_{w,0}=\alpha$, where $\alpha=a/a_0$. At half the radius, the model supplies one sixteenth of the original flow and half the original wall shear stress. Under fixed flow, $\Delta p/\Delta p_0=\alpha^{-4}$ and $\tau_w/\tau_{w,0}=\alpha^{-3}$: the required pressure rises sixteenfold and the wall shear rises eightfold. These are two different boundary-value problems.</p>
+<p>At fixed demand, the largest possible oxygen extraction is one. Hence a necessary condition for a nonnegative venous oxygen content is $Q C_a\ge M$. The indicator reports only that algebraic capacity check. Real tissue function also depends on diffusion distance, transit time, heterogeneous capillary recruitment, binding kinetics and cellular energetics; a positive outlet content does not establish adequate oxygenation.</p>
+<h2 id="reproduce">Reproduce the reference result in Python</h2>
+<p>The independently executable listing below uses SI units for mechanics and converts to litres per minute before the oxygen balance. Changing units in only one part of the calculation creates a thousandfold or millionfold error.</p>
+<pre data-run="lab-reference"><code>from math import pi
+radius, length, viscosity, dp = 0.001, 0.10, 0.004, 1000.0
+q_si = pi * radius**4 * dp / (8 * viscosity * length)
+q = q_si * 60000  # m^3/s to L/min
+ca, cv = 9.0, 6.0  # mmol/L of whole blood
+consumption = q * (ca - cv)
+wall_shear = dp * radius / (2 * length)
+print(f"Flow: {q:.6f} L/min")
+print(f"Wall shear: {wall_shear:.3f} Pa")
+print(f"Consumption: {consumption:.6f} mmol/min")
+print(f"Minimum fixed-pressure radius ratio: {((ca-cv)/ca)**0.25:.6f}")
+</code></pre>
+<pre data-output="lab-reference">Flow: 0.058905 L/min
+Wall shear: 5.000 Pa
+Consumption: 0.176715 mmol/min
+Minimum fixed-pressure radius ratio: 0.759836</pre>
+<p>The last number follows from $\alpha^4\ge(C_a-C_{v,0})/C_a=1/3$. It belongs to this artificial tube, fixed demand and fixed pressure. It is not a clinical stenosis threshold.</p>
+<h2 id="challenge">A question to test the model</h2>
+<p>Can a parallel bypass restore the original flow when the unchanged downstream resistance still dominates the circuit?</p><details><summary>Worked answer</summary><p>Write upstream resistance $R_s$, bypass resistance $R_g$ and downstream resistance $R_m$. The bypass changes the upstream part to $R_{\parallel}=R_sR_g/(R_s+R_g)$, giving $Q=\Delta p/(R_{\parallel}+R_m)$. Even as $R_g\to0$, the limiting flow is $\Delta p/R_m$. A bypass cannot remove the downstream term. For $R_s=4$, $R_m=1$, $R_g=4$ in common resistance units, the total resistance falls from 5 to 3, and flow increases by $5/3$. If $R_m$ were 100 instead, the factor would be $104/102$, only about 1.020. The useful question is which element limits the complete circuit.</p></details>
+<!-- BOOK-CONTENT-END --></article></main></div><footer class="site-footer">Independent study edition. Prof. Anand Mohan’s NPTEL recordings provide the topic spine. Original exposition, source limitations and verification evidence are separately recorded.</footer></body></html>

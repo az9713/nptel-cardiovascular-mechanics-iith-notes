@@ -1,0 +1,330 @@
+{
+  "chapter": 2,
+  "title": "Continuum kinematics and constitutive laws",
+  "status": "scientifically accepted after two independent review rounds",
+  "authored_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+  "recordings": [
+    {
+      "video_id": "ANXLnQJRc9A",
+      "playlist_position": 4,
+      "lecture_label": "Lecture 2",
+      "duration_seconds": 2235,
+      "decoded_audio_duration_seconds": 2234.8335,
+      "complete_decoded_audio": true,
+      "media_sha256": "2e39785cdce4c2f5e51755a72e672f17a17d32be7f7adde8e4da5119cc87fb82",
+      "transcript_first_start": 0,
+      "transcript_last_end": 2234.48,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 25,
+      "visual_boundary": "Selected equation-bearing frames only in lesson2; no full audiovisual review"
+    },
+    {
+      "video_id": "HEPC08A4m3U",
+      "playlist_position": 5,
+      "lecture_label": "Lecture 4",
+      "duration_seconds": 2456,
+      "decoded_audio_duration_seconds": 2455.3535,
+      "complete_decoded_audio": true,
+      "media_sha256": "bb867a1723fbd0153fcc1f2e6a46047fa8aba7e26e5111953feaee93047acc20",
+      "transcript_first_start": 0,
+      "transcript_last_end": 2447.44,
+      "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
+      "source_read_complete": true,
+      "chunk_count": 28,
+      "visual_boundary": "Selected equation-bearing frames only in lesson2; no full audiovisual review"
+    }
+  ],
+  "sections": [
+    {
+      "section": "Mass is a measure; density needs an assumption L2 \u00b7 01:10 L4 \u00b7 00:27",
+      "anchor": "body-density",
+      "video_id": "ANXLnQJRc9A",
+      "start": 70,
+      "end": 251,
+      "lecture_material": "Body, mass and volume measures, density and material mass conservation.",
+      "research_extension": "Radon\u2013Nikodym absolute continuity and a.e. density conditions; original point-mass counterexample and local Jacobian derivation.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 70,
+          "end": 251
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 27,
+          "end": 538
+        }
+      ]
+    },
+    {
+      "section": "Follow a particle or inspect a fixed position L2 \u00b7 04:22 L4 \u00b7 10:39",
+      "anchor": "material-derivative",
+      "video_id": "ANXLnQJRc9A",
+      "start": 262,
+      "end": 555,
+      "lecture_material": "Motion, material/spatial representations and chain-rule acceleration.",
+      "research_extension": "Original regular isochoric exponential motion and steady-but-accelerating numerical check; algebraic domain restrictions.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 262,
+          "end": 555
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 639,
+          "end": 1034
+        }
+      ]
+    },
+    {
+      "section": "The deformation gradient maps local material lines L2 \u00b7 09:15 L4 \u00b7 17:27",
+      "anchor": "deformation-gradient",
+      "video_id": "ANXLnQJRc9A",
+      "start": 555,
+      "end": 974,
+      "lecture_material": "Local line mapping and Cartesian deformation-gradient components.",
+      "research_extension": "Original simple-shear and diagonal-stretch constructions; local versus global invertibility distinction.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 555,
+          "end": 974
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1047,
+          "end": 1412
+        }
+      ]
+    },
+    {
+      "section": "Separate stretch from rotation before measuring strain L2 \u00b7 16:14 L4 \u00b7 23:32",
+      "anchor": "finite-strain",
+      "video_id": "ANXLnQJRc9A",
+      "start": 974,
+      "end": 1148,
+      "lecture_material": "Cauchy\u2013Green tensors, polar decomposition, Green and Almansi strain.",
+      "research_extension": "Metric derivation, principal-stretch calculation and rigid-rotation counterexample to small-gradient strain.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 974,
+          "end": 1148
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1412,
+          "end": 1441
+        }
+      ]
+    },
+    {
+      "section": "A fluid responds to stretching rate, not accumulated stretch alone L2 \u00b7 19:08 L4 \u00b7 24:01",
+      "anchor": "stretching-rate",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1148,
+      "end": 1422,
+      "lecture_material": "Velocity-gradient relation and physical stretching-rate interpretation.",
+      "research_extension": "Line-length rate proof, pullback of Green strain rate and explicit scalar-rate factors.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1148,
+          "end": 1422
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1441,
+          "end": 1802
+        }
+      ]
+    },
+    {
+      "section": "Changing observer must not create a material response L2 \u00b7 23:42 L4 \u00b7 30:02",
+      "anchor": "objectivity",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1422,
+      "end": 1722,
+      "lecture_material": "Frame-indifference motivation and D versus L.",
+      "research_extension": "Correct general observer transformations, inertial-frame distinction, isotropy distinction and rigid-rotation falsification.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1422,
+          "end": 1722
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1802,
+          "end": 1921
+        }
+      ]
+    },
+    {
+      "section": "Turn an energy into a stress, with the area convention stated L2 \u00b7 28:51",
+      "anchor": "solid-law",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1731,
+      "end": 1776,
+      "lecture_material": "Neo-Hookean and Mooney\u2013Rivlin stress examples.",
+      "research_extension": "Explicit energy/area conventions, traction-free uniaxial solution and passive directional myocardium context.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1731,
+          "end": 1776
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1921,
+          "end": 1960
+        }
+      ]
+    },
+    {
+      "section": "Viscosity, rate dependence and memory are separate choices L2 \u00b7 29:36 L4 \u00b7 32:01",
+      "anchor": "fluid-law",
+      "video_id": "ANXLnQJRc9A",
+      "start": 1776,
+      "end": 1989,
+      "lecture_material": "Newtonian, generalized Newtonian, power-law and memory-model examples; corrected upper-convected derivative.",
+      "research_extension": "Dissipation/rate-limit checks, observer-cancellation proof, Maxwell relaxation and solvent\u2013polymer Oldroyd-B parameter relation.",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
+      "source_spans": [
+        {
+          "video_id": "ANXLnQJRc9A",
+          "start": 1776,
+          "end": 1989
+        },
+        {
+          "video_id": "HEPC08A4m3U",
+          "start": 1921,
+          "end": 2314
+        }
+      ]
+    },
+    {
+      "section": "Execute metric, observer and stress-area checks",
+      "anchor": "computed-check",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Problems and fully worked solutions",
+      "anchor": "problems",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "What the kinematics does not determine",
+      "anchor": "limits",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    },
+    {
+      "section": "Sources and inspection scope",
+      "anchor": "sources",
+      "video_id": null,
+      "start": null,
+      "end": null,
+      "lecture_material": "",
+      "research_extension": "",
+      "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer."
+    }
+  ],
+  "references": [
+    {
+      "url": "https://www.youtube.com/watch?v=ANXLnQJRc9A",
+      "title": "Official lesson2, Basics of Continuum Mechanics",
+      "supports": "Full local ASR reading and selected equation frames; source spine for body/motion/strain/rate/models."
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=HEPC08A4m3U",
+      "title": "Official lesson4, Review of Continuum Mechanics",
+      "supports": "Full local ASR reading; density measure, worked mapping, stretching-rate interpretation, power law and upper-convected correction."
+    },
+    {
+      "url": "https://math.mit.edu/~sheffield/175/Lecture25.pdf",
+      "title": "Scott Sheffield, MIT18.175 lecture25, slides12\u201314",
+      "supports": "Directly inspected absolute-continuity/Radon\u2013Nikodym statement; not a full proof."
+    },
+    {
+      "url": "https://solidmechanics.org/Text/Chapter2_7/Chapter2_7.php",
+      "title": "A.F.Bower, Applied Mechanics of Solids, section2.7",
+      "supports": "Author-hosted observer transformation definitions and relevant tensor rules inspected."
+    },
+    {
+      "url": "https://solidmechanics.org/Text/Chapter3_1/Chapter3_1.php",
+      "title": "A.F.Bower, Applied Mechanics of Solids, section3.1",
+      "supports": "Constitutive frame-indifference and derivative restrictions; relevant passages inspected."
+    },
+    {
+      "url": "https://biomechanics.stanford.edu/me338_09/me338_h04.pdf",
+      "title": "Holzapfel and Ogden, Constitutive modelling of passive myocardium (2009)",
+      "supports": "Abstract, morphology and constitutive/experimental sections3\u20135 inspected; directional passive-tissue context only."
+    }
+  ],
+  "review_rounds": [
+    {
+      "round": 1,
+      "reviewer": "Independent graph-theory course agent",
+      "reviewed_body_sha256": "5b8680c59a7e48ad0bcd8b6c3b177ee01f64fc5ab88e45beb1686b95e3c83ffd",
+      "verdict": "Core scientific content acceptable; one grouped minor TeX-spacing repair required",
+      "required_repairs": [
+        {
+          "id": "m1",
+          "status": "repaired",
+          "description": "Restored the leading TeX backslash in six qquad spacing commands across four display equations."
+        }
+      ],
+      "revised_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+      "accepted": false
+    },
+    {
+      "round": 2,
+      "reviewer": "Lead coordinator, independent of chapter author and R1 reviewer",
+      "reviewed_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+      "verdict": "ACCEPT; zero remaining blocking, major or minor findings",
+      "required_repairs": [],
+      "accepted": true,
+      "blocking_findings": 0,
+      "major_findings": 0,
+      "minor_findings": 0
+    }
+  ],
+  "acceptance": {
+    "status": "accepted",
+    "accepted_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+  },
+  "limits": [
+    "Fallible machine ASR and selected frames only; no comprehensive audiovisual audit",
+    "Smooth classical continuum and explicitly constrained illustrative constitutive models",
+    "No tissue calibration, individual diagnosis or treatment selection"
+  ],
+  "article_words_including_math_code": 4090,
+  "counting_method": "Whitespace tokens of exact authored article text including math/code; reader chrome excluded",
+  "worked_solutions": 8,
+  "executable_listings": 1
+}

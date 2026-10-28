@@ -1,0 +1,25 @@
+{
+  "status": "Content, scientific reviews and local release checks complete; publication pending",
+  "complete": false,
+  "content_complete": true,
+  "scientific_acceptance": true,
+  "course": "Introduction to Cardiovascular Mechanics",
+  "instructor": "Prof. Anand Mohan",
+  "institute": "IIT Hyderabad",
+  "coordinating_institute": "IIT Madras",
+  "chapters": 8,
+  "words_including_math_code": 31594,
+  "worked_solutions": 68,
+  "executable_listings": 9,
+  "playlist_items": 17,
+  "substantive_recordings_fully_decoded_and_read": 16,
+  "local_release_checks_verified": true,
+  "publication_verified": false,
+  "repository_url": "https://github.com/az9713/nptel-cardiovascular-mechanics-iith-notes",
+  "book_url": "https://az9713.github.io/nptel-cardiovascular-mechanics-iith-notes/",
+  "limits": [
+    "Fallible local machine ASR, selected visual frames only; no comprehensive audiovisual audit",
+    "Original teaching coefficients are not patient-calibrated",
+    "Bounded primary-source inspection per sidecar, not a comprehensive literature or proof audit"
+  ]
+}

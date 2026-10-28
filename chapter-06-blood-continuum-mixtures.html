@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5">
+<title>Continuum and mixture models of blood · Introduction to Cardiovascular Mechanics</title><link rel="stylesheet" href="assets/book.css">
+<script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
+<script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/vessel-lab.js"></script></head>
+<body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Introduction to Cardiovascular Mechanics · NPTEL IIT Hyderabad</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>6. Continuum and mixture models of blood</h1>
+<p class="lede">A constitutive law is a controlled reduction: it keeps some experiments distinguishable and makes others observationally identical. A shear-dependent viscosity can represent thinning but cannot, by itself, identify elastic recoil, red-cell migration or platelet accumulation. The correct level of description follows from the observable we want to predict.</p>
+<p>Lessons 10 and 12 supply the sequence from scalar shear laws through objective viscoelastic equations to evolving natural configurations and interacting continua. Both full local machine transcripts were read. The calculations below fix notation, expose limiting cases and add original solvable examples. They do not reproduce the cited blood calibrations or a device simulation.</p>
+
+<h2 id="continuum">Continuum validity is a separation of scales, not a magic diameter <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=56s">L10 · 00:56</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=51s">L12 · 00:51</a></h2>
+<p>The lecture compares an approximately $8\;\mu\mathrm m$ cell diameter with a vessel diameter and obtains $8/800=0.01$. This is a useful geometric scale ratio. It is not the molecular-gas Knudsen number: a red-cell diameter is not automatically a mean free path. Nor does the calculation establish a universal sharp boundary at $800\;\mu\mathrm m$ below which every continuum approach fails and above which every continuum law is accurate.</p>
+<p>Let $d_c$ be a characteristic cell size, $\ell_{\rm av}$ an averaging length and $L_g$ the length over which macroscopic fields vary appreciably. A local effective description needs an interval such as $d_c\ll\ell_{\rm av}\ll L_g$, with enough constituents in the representative volume to obtain a reproducible average. The relevant $L_g$ may be a narrow gap, wall layer or sudden contraction rather than the largest vessel diameter. A large tube can contain a region where a homogeneous local law is inadequate.</p>
+<p>There are also several continuum levels. A single homogeneous continuum predicts one velocity and total stress. A mixture continuum can predict constituent velocities and concentrations averaged over cells. A cell-resolved method represents individual boundaries or particles. A mixture description remains a continuum even though it retains a particulate constituent. Increasing detail adds constitutive information and computational cost; it does not automatically improve accuracy without appropriate data and numerical checks.</p>
+<p>The <a href="https://pages.ipb.pt/~ruimec/index_ficheiros/FCTmbs/ref_6.pdf">Pries, Neuhaus and Gaehtgens tube-flow measurements</a> discussed earlier supply an empirical warning: apparent flow resistance can depend on tube diameter and hematocrit. A material viscosity calibrated in a large homogeneous shear sample need not absorb all small-tube redistribution effects. In cell-scale passages, explicit geometry and constituent transport can become essential.</p>
+
+<h2 id="scalar">Specify the yielded and unyielded branches of a scalar law <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=129s">L10 · 02:09</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=292s">L12 · 04:52</a></h2>
+<p>For a symmetric Casson-type simple-shear model, let $\tau_y\ge0$ be a yield-stress parameter and $\eta_c&gt;0$ a viscosity parameter. Write the magnitude relation on the yielded branch as</p>
+\[\sqrt{|\tau|}=\sqrt{\tau_y}+\sqrt{\eta_c|\dot\gamma|},\qquad |\tau|&gt;\tau_y,\]
+<p>with matching signs of stress and shear rate. On the unyielded branch, $\dot\gamma=0$ and $|\tau|\le\tau_y$. The square root belongs on the stress as well as on the rate term; dropping it creates a dimensionally inconsistent equation. The yielded rate is</p>
+\[|\dot\gamma|=\frac{(\sqrt{|\tau|}-\sqrt{\tau_y})^2}{\eta_c}.\]
+<p>A fitted yield parameter is a model statement under a preparation and observation protocol. It is not proof of a universal static threshold for every blood sample. Aggregation, long observation times, wall slip and low-torque resolution can complicate its inference. Regularizing the branch can help a numerical solver while changing its low-rate predictions; the regularization must be reported.</p>
+<p>Consider an original steady, fully developed, axisymmetric, pressure-driven pipe calculation. Let $G=-dp/dz&gt;0$, radius $R$, no slip, negligible body force and the scalar Casson relation above. Axial momentum fixes $|\tau_{rz}|=Gr/2$ independently of the viscosity law. The wall stress is $\tau_w=GR/2$, and the plug radius is $r_0=2\tau_y/G$. If $\tau_w\le\tau_y$, the ideal model admits no flow under these conditions. If $a=r_0/R=\tau_y/\tau_w&lt;1$, the plug translates while its local shear rate is zero.</p>
+<p>To derive total flow, write $u(r)=\int_r^R|\dot\gamma(s)|ds$ and interchange the integrals:</p>
+\[Q=2\pi\int_0^Ru(r)r\,dr=\pi\int_{r_0}^R|\dot\gamma(s)|s^2\,ds.\]
+<p>Substituting the yielded rate and integrating powers of $s$ yields</p>
+\[\frac{Q}{Q_N}=1-\frac{16}{7}\sqrt a+\frac43a-\frac1{21}a^4,\qquad Q_N=\frac{\pi GR^4}{8\eta_c}.\]
+<p>The ratio tends to one when $\tau_y\to0$, and to zero as $a\to1$. At $a=1/4$, it is $0.190290179$. These limits and an independent quadrature are more informative checks than a visually smooth velocity profile. The plug is not a solid clot: it is an unyielded region of this stipulated flow model.</p>
+
+<h2 id="objective-viscosity">Extend a shear curve through an objective rate invariant <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=178s">L10 · 02:58</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=358s">L12 · 05:58</a></h2>
+<p>Fix $\mathbf L=\nabla\mathbf v$, $\mathbf D=(\mathbf L+\mathbf L^T)/2$ and $\dot\gamma_{\rm eff}=\sqrt{2\mathbf D:\mathbf D}$. For simple shear $v_x=\dot\gamma y$, $D_{xy}=D_{yx}=\dot\gamma/2$, so $\dot\gamma_{\rm eff}=|\dot\gamma|$. This check resolves a recurrent factor-of-two ambiguity in the source's $A_1$ notation: if $A_1=\mathbf L+\mathbf L^T$, then $A_1=2\mathbf D$.</p>
+<p>A generalized Newtonian incompressible law is</p>
+\[\boldsymbol\sigma=-p\mathbf I+2\eta(\dot\gamma_{\rm eff})\mathbf D.\]
+<p>Under a superposed rigid observer rotation, $\mathbf D^*=\mathbf Q\mathbf D\mathbf Q^T$, so its double contraction and the viscosity are invariant. Pressure imposes incompressibility and is fixed with boundary conditions; it is not obtained from the viscosity curve. Mechanical dissipation is $2\eta\mathbf D:\mathbf D\ge0$ for positive viscosity. Objectivity and nonnegative instantaneous dissipation are necessary consistency checks, but do not establish that the model captures memory or all deformation modes.</p>
+<p>A Cross-type teaching law with finite viscosity plateaus is</p>
+\[\eta(g)=\eta_\infty+\frac{\eta_0-\eta_\infty}{1+(\lambda_c g)^m},\quad \eta_0\ge\eta_\infty&gt;0,\quad \lambda_c&gt;0.\]
+<p>Here $g$ is a nonnegative rate, $\lambda_c$ is in seconds and $m$ is dimensionless. The parameter $\lambda_c$ locates a shear-rate transition; it is not identified as a stress-relaxation time merely because it has units seconds. For $0&lt;m\le1$, viscosity decreases and stress increases monotonically. Put $z=(\lambda_c g)^m$ to check</p>
+\[\frac{d[g\eta(g)]}{dg}=\eta_\infty+(\eta_0-\eta_\infty)\frac{1+(1-m)z}{(1+z)^2}&gt;0.\]
+<p>Positive viscosity alone would not ensure this derivative is positive for arbitrary parameter choices. The limiting values also do not determine every intermediate-rate feature. The code uses $\eta_0=0.0736$, $\eta_\infty=0.0035\;\mathrm{Pa\,s}$, $\lambda_c=1\;\mathrm s$, $m=0.8$, giving $\eta(100)=0.005217686\;\mathrm{Pa\,s}$. These are declared illustrative parameters rather than a newly validated donor fit.</p>
+
+<h2 id="maxwell">A spring–dashpot derivation does not uniquely determine a three-dimensional law <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=466s">L10 · 07:46</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=628s">L12 · 10:28</a></h2>
+<p>For a scalar Maxwell element, the spring and dashpot have the same stress, and their small shear strains add. With spring modulus $G_p$ and dashpot viscosity $\eta_p$,</p>
+\[\dot\gamma=\frac{\dot\tau_p}{G_p}+\frac{\tau_p}{\eta_p},\qquad \tau_p+\lambda_1\dot\tau_p=\eta_p\dot\gamma,\qquad \lambda_1=\eta_p/G_p.\]
+<p>Thus $\eta_p/G_p$ is a time, not its reciprocal. The ideal mechanical arrangement is a phenomenological representation; an RBC plus a plasma region is not literally a molecule made of one physical spring and dashpot. In parallel, the strains agree and stresses add, giving a Kelvin–Voigt scalar solid rather than a Maxwell fluid. Which arrangements flow indefinitely and which recover a finite strain must be checked from their equations.</p>
+<p>For a three-dimensional extra-stress tensor, the ordinary material derivative does not transform objectively under time-dependent observer rotations. An upper-convected derivative is</p>
+\[\overset{\triangledown}{\boldsymbol\tau_p}=\frac{D\boldsymbol\tau_p}{Dt}-\mathbf L\boldsymbol\tau_p-\boldsymbol\tau_p\mathbf L^T.\]
+<p>One objective extension is $\boldsymbol\tau_p+\lambda_1\overset{\triangledown}{\boldsymbol\tau_p}=2\eta_p\mathbf D$. This is the upper-convected Maxwell branch. Other objective extensions can agree in linearized scalar shear while differing at finite deformation. Frame indifference constrains the transformation law; it does not uniquely select every nonlinear constitutive term.</p>
+<p>Add Newtonian solvent stress $2\eta_s\mathbf D$. With constant parameters, define total extra stress $\mathbf S=2\eta_s\mathbf D+\boldsymbol\tau_p$, total zero-rate viscosity $\eta=\eta_s+\eta_p$ and $\lambda_2=\eta_s\lambda_1/\eta$. Elimination gives</p>
+\[\mathbf S+\lambda_1\overset{\triangledown}{\mathbf S}=2\eta\left(\mathbf D+\lambda_2\overset{\triangledown}{\mathbf D}\right).\]
+<p>This Oldroyd-B representation has $0\le\lambda_2\le\lambda_1$ when both component viscosities are nonnegative. Choosing unrelated negative component contributions can destroy the intended mechanical interpretation. If viscosity or relaxation parameters vary with state, their derivatives matter during elimination. A generalized model cannot be produced consistently by replacing constant symbols in an already eliminated equation without checking those terms.</p>
+
+<h2 id="normal-stress">Models with the same shear viscosity can predict very different other stresses</h2>
+<p>For steady homogeneous simple shear, the upper-convected Maxwell branch solves an algebraic tensor equation. With $L_{xy}=\dot\gamma$ and all other $L_{ij}=0$, its nonzero components are</p>
+\[\tau_{p,xy}=\eta_p\dot\gamma,\qquad \tau_{p,xx}=2\eta_p\lambda_1\dot\gamma^2,\qquad \tau_{p,yy}=\tau_{p,zz}=0.\]
+<p>The total shear viscosity is constant, $S_{xy}/\dot\gamma=\eta_s+\eta_p$, despite a first normal-stress difference $N_1=S_{xx}-S_{yy}=2\eta_p\lambda_1\dot\gamma^2$. Hence constant-parameter Oldroyd-B does not shear-thin. A generalized Newtonian material with that same constant viscosity has zero $N_1$ in this simple shear. Shear torque alone would not distinguish them.</p>
+<p>The illustrative parameters $\eta_s=0.0035$, $\eta_p=0.0065\;\mathrm{Pa\,s}$ and $\lambda_1=0.2\;\mathrm s$ give total shear stress 1 Pa and $N_1=26$ Pa at $100\;\mathrm{s^{-1}}$. This deliberately large model contrast is not a measured normal stress of blood. The source's statement about small normal stresses in a particular experiment cannot be converted into a universal theorem for every viscoelastic model.</p>
+<p>There is another transfer test. In steady uniaxial extension, $\mathbf L=\mathrm{diag}(\dot\epsilon,-\dot\epsilon/2,-\dot\epsilon/2)$. The same branch predicts $\tau_{p,xx}=2\eta_p\dot\epsilon/(1-2\lambda_1\dot\epsilon)$ and $\tau_{p,yy}=-\eta_p\dot\epsilon/(1+\lambda_1\dot\epsilon)$. The first expression has no finite positive steady value at $2\lambda_1\dot\epsilon=1$. A law calibrated in shear can therefore have an unacceptable extensional limit. Neither a small shear residual nor objective notation protects against this defect.</p>
+
+<h2 id="recoil">Positive driving stress can coexist with an instant of reverse deformation <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=1092s">L10 · 18:12</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=1412s">L12 · 23:32</a></h2>
+<p>The lecture highlights a calculated flow reversal under a pressure gradient proportional to $1+\cos\omega t$. A simpler original scalar example explains how elastic storage can permit reverse motion without negative instantaneous driving stress. Prescribe Maxwell stress $\tau_p=\tau_0(1+\cos\omega t)\ge0$. Its shear rate is</p>
+\[\dot\gamma=\frac{\tau_0}{\eta_p}\left[1+\cos\omega t-(\lambda_1\omega)\sin\omega t\right].\]
+<p>The bracket has minimum $1-\sqrt{1+(\lambda_1\omega)^2}$, negative whenever $\lambda_1\omega\ne0$. At $\lambda_1\omega=1$, the minimum is $-0.414213562$. This is a stress-controlled element, not a reproduction of the source's full pulsatile pipe computation. Boundary conditions, inertia, solvent stress and spatial profiles still matter for that computation.</p>
+<p>The power balance clarifies the mechanism:</p>
+\[\tau_p\dot\gamma=\frac{d}{dt}\left(\frac{\tau_p^2}{2G_p}\right)+\frac{\tau_p^2}{\eta_p}.\]
+<p>During reverse motion the stored elastic energy can decrease rapidly enough to supply both negative external power and positive dissipation. No negative viscosity is required. Across different physical systems, reversal may also reflect compliant boundaries, a reverse initial state or multidimensional flow; observing it does not uniquely identify one constitutive model.</p>
+<p>A useful control is a Newtonian rigid straight-pipe calculation, starting with nonnegative axial velocity and driven everywhere by $G(t)\ge0$. Its unidirectional equation is $\rho\partial_tu=G(t)+\mu r^{-1}\partial_r(r\partial_ru)$, with zero wall velocity. The parabolic maximum principle prevents a first negative interior minimum: diffusion and forcing there cannot drive the value down through zero. Thus inertia alone is not an explanation for reversal under these particular assumptions. The scope of the comparison matters as much as the signal.</p>
+
+<h2 id="natural">Evolving natural configurations organize energy and relaxation <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=1203s">L10 · 20:03</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=1726s">L12 · 28:46</a></h2>
+<p>An elastic reference describes deformation relative to a selected material state. For a material that rearranges internally, an evolving natural configuration supplies an intermediate relaxed state. Locally one may write $\mathbf F=\mathbf F_e\mathbf F_n$: $\mathbf F_n$ changes the natural structure, while $\mathbf F_e$ measures the elastic deformation from it. Such factors require their own evolution, constraints and possible compatibility qualifications. A local relaxed state need not assemble into one globally stress-free shape.</p>
+<p>This framework does not make an unloaded residually stressed solid stress-free, or prove that every viscoelastic material has an observable instantaneous recoil. It is a modeling architecture whose assumptions must be stated. The <a href="https://www.cs.cmu.edu/~sangria/publications/MAKRR2004.pdf">Anand–Rajagopal 2004 primary paper</a> develops a blood model through stored energy and dissipation, and compares steady and oscillatory flow. Its low-rate treatment uses a switch. The <a href="https://www.sciencedirect.com/science/article/abs/pii/S0020722513001006">2013 Anand–Kwack–Masud abstract</a> specifically identifies smooth low-rate dissipation/property variation as an improvement. These are historical model-specific results, not proof that any chosen energy/dissipation pair automatically fits blood.</p>
+<p>An original conformation example makes the consistency check explicit. Let $\mathbf A$ be symmetric positive definite and define energy per current volume</p>
+\[W=\frac{G_p}{2}[\mathrm{tr}\mathbf A-\ln\det\mathbf A-3],\quad \mathbf S=G_p(\mathbf A-\mathbf I)+2\eta_s\mathbf D,\quad \overset{\triangledown}{\mathbf A}=-\frac{\mathbf A-\mathbf I}{\lambda_1}.\]
+<p>This standard-form illustrative internal-variable model is not asserted to be the source's 2004/2013 equations or an exactly isochoric elastic factorization. Each eigenvalue $a_i&gt;0$ obeys $a_i-\ln a_i-1\ge0$, so $W\ge0$. For incompressible motion, differentiating $W$ with $\partial W/\partial\mathbf A=G_p(\mathbf I-\mathbf A^{-1})/2$ gives</p>
+\[\mathbf S:\mathbf D-\dot W=2\eta_s\mathbf D:\mathbf D+\frac{G_p}{2\lambda_1}\mathrm{tr}(\mathbf A+\mathbf A^{-1}-2\mathbf I)\ge0.\]
+<p>The last inequality follows from $a_i+a_i^{-1}-2=(\sqrt{a_i}-1/\sqrt{a_i})^2$. At rest, $\mathbf A(t)=\mathbf I+[\mathbf A(0)-\mathbf I]e^{-t/\lambda_1}$ remains positive definite because it is a convex combination of two positive-definite tensors. Energy decreases. This is stronger evidence of internal consistency than simply labeling an equation thermodynamic.</p>
+<p>A contemporary connection is the <a href="https://arxiv.org/abs/2010.06903">Pelech and colleagues natural-configuration/GENERIC study</a>. Its primary abstract relates an evolving natural state to a formulation separating reversible Hamiltonian motion and irreversible gradient dynamics. We use that connection to motivate checking storage, dissipation and admissible states separately, without claiming to reproduce its derivations or identify a unique universal constitutive theory.</p>
+
+<h2 id="mixture">A mixture has constituent balances and more than one useful mean velocity <a class="timestamp" href="https://www.youtube.com/watch?v=6WgMx8hOOtE&amp;t=1808s">L10 · 30:08</a> <a class="timestamp" href="https://www.youtube.com/watch?v=rh595rXepQ8&amp;t=3126s">L12 · 52:06</a></h2>
+<p>Let red-cell volume fraction be $\phi$, intrinsic cell and plasma densities be constant $\rho_c^*,\rho_p^*$, and velocities be $\mathbf v_c,\mathbf v_p$. The partial densities per mixture volume are $\rho_c=\phi\rho_c^*$ and $\rho_p=(1-\phi)\rho_p^*$. Without exchange of constituent mass,</p>
+\[\partial_t\phi+\nabla\cdot(\phi\mathbf v_c)=0,\qquad \partial_t(1-\phi)+\nabla\cdot[(1-\phi)\mathbf v_p]=0.\]
+<p>Adding gives $\nabla\cdot\mathbf u=0$ for volume-mean velocity $\mathbf u=\phi\mathbf v_c+(1-\phi)\mathbf v_p$. It does not require both constituent divergences to vanish separately. The mass-mean velocity is $\mathbf v=(\rho_c\mathbf v_c+\rho_p\mathbf v_p)/(\rho_c+\rho_p)$ and generally differs from $\mathbf u$. With $\phi=0.4$, $\rho_c^*=1100$, $\rho_p^*=1000\;\mathrm{kg/m^3}$ and aligned speeds $0.02$ and $0.01\;\mathrm{m/s}$, $u=0.014$ while $v=0.014230769\;\mathrm{m/s}$.</p>
+<p>Constituent momentum balances can be written $\rho_iD_i\mathbf v_i/Dt=\nabla\cdot\mathbf T_i+\rho_i\mathbf b_i+\mathbf f_i$, with $\mathbf f_c+\mathbf f_p=0$. The derivative follows its own constituent velocity. Partial stresses are defined per mixture volume; inserting two full pressures without volume weighting or a consistent interaction closure can double count forces. Total angular-momentum balance constrains the total stress, and any separate partial-stress symmetry assumption should be stated.</p>
+<p>For a simple drag closure, take $\mathbf f_c=-\beta(\mathbf v_c-\mathbf v_p)$ and $\mathbf f_p=-\mathbf f_c$, $\beta\ge0$. The forces cancel in total linear momentum, but their combined mechanical power is $-\beta|\mathbf v_c-\mathbf v_p|^2\le0$. Thus internal interaction can dissipate energy while conserving momentum. Here $\beta$ has units Pa s/m$^2$. With $\beta=10^6$ and speed difference $0.01\;\mathrm{m/s}$, the loss is $100\;\mathrm{W/m^3}$.</p>
+<p>Summing momentum also retains a drift flux. If $\mathbf w_i=\mathbf v_i-\mathbf v$, then $\sum_i\rho_i\mathbf w_i=0$ and the effective total stress in the mass-mean equation is $\sum_i\mathbf T_i-\sum_i\rho_i\mathbf w_i\otimes\mathbf w_i$. The second term arises from relative momentum transport, not a new molecular stress. Assuming common velocities removes it; doing so is a reduction that must be compatible with the migration observable.</p>
+
+<h2 id="platelets">Enrichment is a transport prediction, not a complete clotting model</h2>
+<p>The <a href="https://www.math.cmu.edu/cna/Publications/publications2017/papers/17-CNA-009.pdf">Wu–Aubry–Massoudi–Antaki 2017 paper</a> treats plasma and red cells with interacting continua and adds platelet transport. In its crevice comparison, the experimental fluorescent objects are approximately $3\;\mu\mathrm m$ platelet-sized particles in a red-cell-ghost suspension. The reported agreement is qualitative transport agreement. Concentration enrichment should not be renamed verified platelet adhesion, activation, fibrin production or clinical thrombosis. Red cells moving towards the core and platelets towards the margin are also different directions of redistribution.</p>
+<p>To isolate the mechanism, construct a separate original one-dimensional cross-stream model for dilute tracer concentration $c(y,t)$ and a prescribed red-cell profile $\phi(y)$. Use physical flux</p>
+\[j=-D_c[\partial_yc+\chi c\partial_y\phi],\qquad \partial_tc=-\partial_yj,\qquad j=0\text{ at both walls}.\]
+<p>Here $D_c&gt;0$ has units length squared per time and $\chi$ is dimensionless. The second contribution drives tracers down the red-cell concentration gradient. It is not a claim to reproduce the cited paper's specific flux or fitted constants. With no-flux equilibrium, $\partial_y\log c=-\chi\partial_y\phi$, hence $c_{\rm eq}=C e^{-\chi\phi}$. The normalization constant is set by the conserved total tracer amount.</p>
+<p>If centre and wall fractions differ by $0.4$ and $\chi=4$, the equilibrium wall/centre ratio is $e^{1.6}=4.953032$. Larger concentration near a wall can occur even though no particle is absorbed there. This cleanly separates redistribution from deposition. A clotting model would additionally need boundary attachment/detachment, activation, biochemical reactions and their coupling to flow.</p>
+<p>The code implements a conservative finite-volume check on a dimensionless channel. Put $q_i=c_i e^{\chi\phi_i}$ and face flux $j_{i+1/2}=-D_c e^{-\chi\phi_{i+1/2}}(q_{i+1}-q_i)/\Delta y$. Adjacent cells share the same face flux with opposite signs, so total amount telescopes exactly under zero boundary flux. The explicit step is chosen small enough that every update is a nonnegative weighted combination of neighboring concentrations. It preserves positivity and approaches the stated discrete equilibrium. Mass conservation, positivity and equilibrium are separate checks; any one alone would be insufficient.</p>
+
+<h2 id="code">Execute limiting cases and conservative transport</h2>
+<p>The NumPy listing checks plateau monotonicity, independent quadrature of the Casson flow integral, the full steady tensor equation, energy decay and a conservative transport calculation. The cross-stream toy has prescribed fields and dimensionless parameters; it is not a validated vessel or crevice solver.</p>
+<pre data-run="code/ch06_models.py"><code class="language-python">"""Original blood-model limiting cases; not a patient or device simulation."""
+import numpy as np
+from math import pi, sqrt, exp
+
+def cross(g, eta0=.0736, etainf=.0035, lam=1., m=.8):
+    return etainf+(eta0-etainf)/(1+(lam*np.abs(g))**m)
+
+def casson_ratio(a):
+    return 0. if a&gt;=1 else 1-16*sqrt(a)/7+4*a/3-a**4/21
+
+grid=np.geomspace(1e-6,1e6,1001)
+assert np.all(np.diff(cross(grid))&lt;0)
+assert np.all(np.diff(cross(grid)*grid)&gt;0)
+assert cross(0.)==.0736
+print(f'Cross viscosity at gamma=100: {cross(100):.9f} Pa s')
+a=.25
+# Independent numerical integration of the yielded annulus.
+x=np.linspace(a,1.,100001)
+ratio_quad=4*np.trapezoid((np.sqrt(x)-sqrt(a))**2*x*x,x)
+assert abs(ratio_quad-casson_ratio(a))&lt;1e-10
+print(f'Casson plug radius/R=.25: Q/Q_Newtonian={casson_ratio(a):.9f}')
+
+eta_s,eta_p,lam,gamma=.0035,.0065,.2,100.
+L=np.zeros((3,3));L[0,1]=gamma;D=(L+L.T)/2
+S=np.array([[2*eta_p*lam*gamma**2,eta_p*gamma,0],
+            [eta_p*gamma,0,0],[0,0,0]])
+assert np.allclose(S-lam*(L@S+S@L.T),2*eta_p*D)
+print(f'Oldroyd-B steady shear: total xy={(eta_s+eta_p)*gamma:.6f} Pa; N1={S[0,0]-S[1,1]:.6f} Pa')
+theta=np.linspace(0,2*pi,100001)
+rate=1+np.cos(theta)-np.sin(theta)
+assert abs(rate.min()-(1-sqrt(2)))&lt;1e-8
+print(f'Nonnegative stress forcing, scalar Maxwell: minimum normalized rate={rate.min():.9f}')
+
+A=np.diag([4.,.5,1.]);G,relax=2.,.2
+W=lambda B:G/2*(np.trace(B)-np.linalg.slogdet(B)[1]-3)
+diss=G/(2*relax)*np.trace(A+np.linalg.inv(A)-2*np.eye(3))
+eps=1e-6;Ap=np.eye(3)+(A-np.eye(3))*exp(-eps/relax)
+assert abs((W(Ap)-W(A))/eps+diss)&lt;.001
+assert np.linalg.eigvalsh(Ap).min()&gt;0 and W(A)&gt;=0 and diss&gt;=0
+print(f'Conformation rest: stored energy={W(A):.6f} J/m^3; initial dissipation={diss:.6f} W/m^3')
+phi,rhoc,rhop,vc,vp=.4,1100.,1000.,.02,.01
+u=phi*vc+(1-phi)*vp
+rho=phi*rhoc+(1-phi)*rhop
+v=(phi*rhoc*vc+(1-phi)*rhop*vp)/rho
+beta=1e6
+print(f'Volume/mass velocities: {u:.9f}/{v:.9f} m/s; drag loss={beta*(vc-vp)**2:.6f} W/m^3')
+
+# Dimensionless conservative transport demonstration on 80 equal cells.
+N=80;dx=1/N;y=(np.arange(N)+.5)*dx
+phi=.45*(1-(2*y-1)**8);chi=4.;Dcoef=.02
+fac=np.exp(chi*phi);mob=Dcoef*np.exp(-chi*(phi[:-1]+phi[1:])/2)
+c=np.ones(N);dt=.2*dx*dx/(Dcoef*fac.max())
+for _ in range(160000):
+    flux=np.zeros(N+1)
+    flux[1:-1]=-mob*np.diff(c*fac)/dx
+    c-=dt*np.diff(flux)/dx
+assert abs(c.sum()*dx-1)&lt;1e-12 and c.min()&gt;0
+ceq=1/fac;ceq/=ceq.sum()*dx
+error=np.max(np.abs(c-ceq))
+assert error&lt;.001
+ratio=c[0]/c[N//2]
+print(f'No-flux transport: total={c.sum()*dx:.9f}; max equilibrium error={error:.9f}; wall/center={ratio:.6f}')
+print('All constitutive, conformation, drag and conservative transport checks passed.')
+</code></pre>
+<pre data-output="code/ch06_models.py">Cross viscosity at gamma=100: 0.005217686 Pa s
+Casson plug radius/R=.25: Q/Q_Newtonian=0.190290179
+Oldroyd-B steady shear: total xy=1.000000 Pa; N1=26.000000 Pa
+Nonnegative stress forcing, scalar Maxwell: minimum normalized rate=-0.414213562
+Conformation rest: stored energy=1.806853 J/m^3; initial dissipation=13.750000 W/m^3
+Volume/mass velocities: 0.014000000/0.014230769 m/s; drag loss=100.000000 W/m^3
+No-flux transport: total=1.000000000; max equilibrium error=0.000000000; wall/center=5.092053
+All constitutive, conformation, drag and conservative transport checks passed.</pre>
+
+<h2 id="problems">Problems and fully worked solutions</h2>
+<p><strong>1. Interpret a scale ratio.</strong> Calculate $d_c/L$ for an $8\;\mu\mathrm m$ cell in a 1 mm vessel and in a $20\;\mu\mathrm m$ gap. Does the first value prove a local homogeneous law is accurate everywhere?</p>
+<details><summary>Solution</summary><p>The ratios are $8/1000=0.008$ and $8/20=0.4$. The first suggests a better geometric separation across the vessel than across the gap, but local gradients and averaging volumes still matter. It is not a gas mean-free-path measurement or a theorem about all boundary layers. A narrow feature in a large vessel can impose the smaller relevant scale.</p></details>
+<p><strong>2. Find the plug.</strong> For $R=1$ mm, $G=1000\;\mathrm{Pa/m}$ and stipulated $\tau_y=0.125$ Pa, find wall stress, plug radius and the Casson flow relative to its zero-yield Newtonian comparison.</p>
+<details><summary>Solution</summary><p>The wall stress is $GR/2=0.5$ Pa. The plug radius is $2\tau_y/G=0.00025$ m, or 0.25 mm, so $a=1/4$. The exact ratio is $1-16(1/2)/7+1/3-(1/4)^4/21=0.190290179$. The plug area fraction is $a^2=1/16$, which is not the same as either the flow ratio or an immobile volume fraction: the plug translates.</p></details>
+<p><strong>3. Fix the shear-rate convention.</strong> For $v_x=6y$ in SI units, write $\mathbf D$, $A_1=2\mathbf D$ and $\sqrt{2\mathbf D:\mathbf D}$. If the Newtonian law is written $\eta A_1$, what is $\sigma_{xy}$ at $\eta=0.004\;\mathrm{Pa\,s}$?</p>
+<details><summary>Solution</summary><p>The off-diagonal entries of $\mathbf D$ are 3 s$^{-1}$ and those of $A_1$ are 6 s$^{-1}$. The double contraction is $18\;\mathrm{s^{-2}}$, giving effective rate $\sqrt{36}=6\;\mathrm{s^{-1}}$. The shear stress is $0.004(6)=0.024$ Pa. Using $A_1=\mathbf D$ without changing the coefficient would halve the predicted stress.</p></details>
+<p><strong>4. Check relaxation and retardation.</strong> Given $\lambda_1=0.2$ s, $\eta_s=0.0035$ and $\eta_p=0.0065\;\mathrm{Pa\,s}$, find $G_p$ and $\lambda_2$. Could $\lambda_2=0.4$ s have the same nonnegative solvent/polymer interpretation?</p>
+<details><summary>Solution</summary><p>$G_p=\eta_p/\lambda_1=0.0325$ Pa and $\lambda_2=(0.0035/0.0100)(0.2)=0.07$ s. A value 0.4 s exceeds $\lambda_1$; it would require $\eta_s/\eta=2$ and a negative remaining branch viscosity for positive total viscosity. It therefore fails the intended two-nonnegative-viscosity interpretation. Merely calling both coefficients time constants does not establish admissibility.</p></details>
+<p><strong>5. Detect a missing mechanism.</strong> Derive $N_1$ for steady simple shear from the upper-convected equation. What does agreement of a constant shear viscosity with experiment establish about it?</p>
+<details><summary>Solution</summary><p>The yy equation gives $\tau_{p,yy}=0$, the xy equation gives $\tau_{p,xy}=\eta_p\dot\gamma$, and the xx equation becomes $\tau_{p,xx}-2\lambda_1\dot\gamma\tau_{p,xy}=0$. Thus $N_1=2\eta_p\lambda_1\dot\gamma^2$. The shear viscosity measures only $\eta_s+\eta_p$ in this flow and cannot fix the viscosity split or relaxation time. A normal-stress or time-dependent experiment adds independent information.</p></details>
+<p><strong>6. Resolve reverse motion without negative viscosity.</strong> With $\lambda_1\omega=1$, find the minimum normalized rate under nonnegative Maxwell stress $\tau_0(1+\cos\omega t)$. Explain its energy source.</p>
+<details><summary>Solution</summary><p>Since $\cos\theta-\sin\theta=\sqrt2\cos(\theta+\pi/4)$, the minimum rate divided by $\tau_0/\eta_p$ is $1-\sqrt2=-0.414213562$. During a declining stress, the spring recovers; stored energy $\tau_p^2/(2G_p)$ decreases. The balance $\tau_p\dot\gamma=\dot W+\tau_p^2/\eta_p$ permits negative applied power while the dissipative term remains nonnegative. This scalar result does not determine a full pipe's mean flow.</p></details>
+<p><strong>7. Verify conformation dissipation.</strong> For eigenvalues $(4,1/2,1)$, $G_p=2$ Pa and $\lambda_1=0.2$ s, compute stored energy and the rest-state dissipation.</p>
+<details><summary>Solution</summary><p>The trace is 5.5 and determinant is 2, so $W=(2/2)(5.5-\ln2-3)=1.806853\;\mathrm{J/m^3}$. The sum of $a_i+a_i^{-1}-2$ is $(4+1/4-2)+(1/2+2-2)+0=2.75$. Multiplying by $G_p/(2\lambda_1)=5\;\mathrm{Pa/s}$ gives $13.75\;\mathrm{W/m^3}$. The stored-energy derivative at rest is its negative; positive initial energy is not itself the dissipated power.</p></details>
+<p><strong>8. Distinguish volume and mass velocities.</strong> Reproduce the mixture mean velocities from the worked constituent example, and compute the cell mass fraction.</p>
+<details><summary>Solution</summary><p>The partial densities are 440 and 600 kg/m$^3$, totaling 1040. The cell mass fraction is $440/1040=11/26=0.423076923$, different from volume fraction 0.4. The volume mean is $0.4(0.02)+0.6(0.01)=0.014$ m/s. The mass mean is $(440(0.02)+600(0.01))/1040=0.014230769$ m/s. Equal intrinsic densities or equal constituent velocities would remove this distinction.</p></details>
+<p><strong>9. Explain enrichment without absorption.</strong> In the cross-stream model, take $\phi_{\rm centre}=0.45$, $\phi_{\rm wall}=0.05$ and $\chi=4$. Find the equilibrium concentration ratio and prove total platelet number does not change under no-flux walls.</p>
+<details><summary>Solution</summary><p>Integrating $\partial_y\log c=-\chi\partial_y\phi$ gives $c_{\rm wall}/c_{\rm centre}=\exp[4(0.45-0.05)]=4.953032$. Conservation follows from $d\int c\,dy/dt=-j|_{\rm right}+j|_{\rm left}=0$. Thus increased wall concentration is balanced by depleted concentration elsewhere. With no adsorption or reaction term, the model produces redistribution rather than deposition or biochemical clot growth.</p></details>
+
+<h2 id="sources">Sources and inspection scope</h2>
+<ul><li><a href="https://www.youtube.com/watch?v=6WgMx8hOOtE">Official lesson 10</a> and <a href="https://www.youtube.com/watch?v=rh595rXepQ8">official lesson 12</a>: both complete local machine ASRs read; no comprehensive audiovisual or numerical graph audit. Source spelling/factor conventions were repaired through explicitly defined mathematics.</li>
+<li><a href="https://pages.ipb.pt/~ruimec/index_ficheiros/FCTmbs/ref_6.pdf">Pries et al. (1992)</a>: primary abstract and experimental scope previously inspected; no re-fit of their tube-flow data.</li>
+<li><a href="https://www.cs.cmu.edu/~sangria/publications/MAKRR2004.pdf">Anand and Rajagopal (2004)</a>: abstract, introductory modeling scope and natural-configuration/low-rate discussion inspected; no reproduction of fitted parameters or full simulations.</li>
+<li><a href="https://www.sciencedirect.com/science/article/abs/pii/S0020722513001006">Anand, Kwack and Masud (2013)</a>: primary abstract inspected for smooth low-rate improvement; full article not reviewed.</li>
+<li><a href="https://www.math.cmu.edu/cna/Publications/publications2017/papers/17-CNA-009.pdf">Wu et al. (2017)</a>: primary abstract, constituent-balance/transport portions and crevice-comparison text/figure caption inspected. The particle/ghost comparison and qualitative scope are preserved; no OpenFOAM or device reproduction.</li>
+<li><a href="https://arxiv.org/abs/2010.06903">Pelech et al. (2020/2021)</a>: primary abstract inspected for the connection to GENERIC; no independent proof audit of that framework.</li></ul>
+<!-- BOOK-CONTENT-END --></article><nav class="page-turn" aria-label="Chapter navigation"><a rel="prev" href="chapter-05-blood-cells-rheology.html">Previous chapter</a><a href="index.html">Chapter index</a><a rel="next" href="chapter-07-vascular-wall-mechanics.html">Next chapter</a></nav></main></div><footer class="site-footer">Independent study edition. Prof. Anand Mohan’s NPTEL recordings provide the topic spine. Original exposition, source limitations and verification evidence are separately recorded.</footer></body></html>

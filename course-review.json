@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "scientific_acceptance": true,
+  "chapter_count": 8,
+  "independent_scientific_rounds_per_chapter": 2,
+  "unresolved_required_findings": 0,
+  "worked_solutions": 68,
+  "runnable_chapter_listings": 8,
+  "additional_lab_listing": 1,
+  "full_substantive_source_readings": 16,
+  "playlist_identities_retained": 17,
+  "chapters": [
+    {
+      "chapter": 1,
+      "file": "chapter-01-structure-function-modeling.html",
+      "authored_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+      "accepted": true
+    },
+    {
+      "chapter": 2,
+      "file": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "authored_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+      "accepted": true
+    },
+    {
+      "chapter": 3,
+      "file": "chapter-03-heart-cyclic-pump.html",
+      "authored_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+      "accepted": true
+    },
+    {
+      "chapter": 4,
+      "file": "chapter-04-myocardial-deformation-active-stress.html",
+      "authored_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+      "accepted": true
+    },
+    {
+      "chapter": 5,
+      "file": "chapter-05-blood-cells-rheology.html",
+      "authored_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+      "accepted": true
+    },
+    {
+      "chapter": 6,
+      "file": "chapter-06-blood-continuum-mixtures.html",
+      "authored_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+      "accepted": true
+    },
+    {
+      "chapter": 7,
+      "file": "chapter-07-vascular-wall-mechanics.html",
+      "authored_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
+      "accepted": true
+    },
+    {
+      "chapter": 8,
+      "file": "chapter-08-course-discussion-synthesis.html",
+      "authored_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+      "accepted": true
+    }
+  ],
+  "review_boundaries": [
+    "Independent R1 source-fidelity reading is separately attributed from R2 mathematical/body/code/primary checks",
+    "Repairs are recorded in chapter metadata; final Hill source amendment has two focused exact-diff closures",
+    "No comprehensive audiovisual/board audit",
+    "No patient calibration, clinical inference or reproduction of all cited experiments",
+    "Package/browser/source-free/publication checks are separate from scientific review"
+  ]
+}

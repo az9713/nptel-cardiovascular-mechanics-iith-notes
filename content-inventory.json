@@ -1,0 +1,100 @@
+{
+  "pages": [
+    {
+      "path": "chapter-01-structure-function-modeling.html",
+      "body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+      "words": 5286,
+      "sections": 10,
+      "exercises": 7,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+      "words": 5219,
+      "sections": 12,
+      "exercises": 8,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-03-heart-cyclic-pump.html",
+      "body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+      "words": 4494,
+      "sections": 12,
+      "exercises": 8,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-04-myocardial-deformation-active-stress.html",
+      "body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+      "words": 4963,
+      "sections": 12,
+      "exercises": 9,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-05-blood-cells-rheology.html",
+      "body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+      "words": 4927,
+      "sections": 12,
+      "exercises": 9,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-06-blood-continuum-mixtures.html",
+      "body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+      "words": 4910,
+      "sections": 12,
+      "exercises": 9,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-07-vascular-wall-mechanics.html",
+      "body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
+      "words": 4530,
+      "sections": 12,
+      "exercises": 9,
+      "runnable_listings": 1
+    },
+    {
+      "path": "chapter-08-course-discussion-synthesis.html",
+      "body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+      "words": 4037,
+      "sections": 12,
+      "exercises": 9,
+      "runnable_listings": 1
+    },
+    {
+      "path": "index.html",
+      "body_sha256": "d1fa1c4e7682f36f02291efcb354956ae00714fe271a180857e96a94f5116e18",
+      "words": 205,
+      "sections": 8,
+      "exercises": 0,
+      "runnable_listings": 0
+    },
+    {
+      "path": "numerical-lab.html",
+      "body_sha256": "d527f2e3c00660560888f2bd589dce33a3758ef576704bf7f2665f7a0e139a9b",
+      "words": 711,
+      "sections": 4,
+      "exercises": 1,
+      "runnable_listings": 1
+    },
+    {
+      "path": "references.html",
+      "body_sha256": "7baf3e2ddeba9abe1b1bf55600ba38eb97992d6ef11e2adf9d036d5e7c7be6d0",
+      "words": 1058,
+      "sections": 0,
+      "exercises": 0,
+      "runnable_listings": 0
+    },
+    {
+      "path": "source-map.html",
+      "body_sha256": "18e9cda85d6c253b72229c4b54a949c32f5dc28969d15f588febe1e041a8a10b",
+      "words": 8135,
+      "sections": 2,
+      "exercises": 0,
+      "runnable_listings": 0
+    }
+  ]
+}

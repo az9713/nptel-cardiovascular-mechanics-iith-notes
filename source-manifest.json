@@ -1,0 +1,287 @@
+{
+  "course": "Introduction to Cardiovascular Mechanics",
+  "provider": "NPTEL \u00b7 IIT Hyderabad",
+  "instructor": "Prof. Anand Mohan",
+  "coordinating_institute": "IIT Madras",
+  "course_url": "https://nptel.ac.in/courses/102106819",
+  "playlist_url": "https://www.youtube.com/playlist?list=PLyqSpQzTE6M9d5JDUp2K3UbxKaC9PAF_M",
+  "inventory_date": "2026-10-28",
+  "chapters": [
+    {
+      "order": 1,
+      "title": "Structure, function and cardiovascular modeling",
+      "lessons": [
+        1,
+        3
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 2,
+      "title": "Continuum kinematics and constitutive laws",
+      "lessons": [
+        2,
+        4
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 3,
+      "title": "The heart as a cyclic pump",
+      "lessons": [
+        5,
+        7
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 4,
+      "title": "Myocardial deformation, anisotropy and active stress",
+      "lessons": [
+        6,
+        8
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 5,
+      "title": "Blood cells, plasma and whole-blood rheology",
+      "lessons": [
+        9,
+        11
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 6,
+      "title": "Continuum and mixture models of blood",
+      "lessons": [
+        10,
+        12
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 7,
+      "title": "Vascular structure and wall mechanics",
+      "lessons": [
+        13,
+        14
+      ],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    },
+    {
+      "order": 8,
+      "title": "Coupling the circulation: conservation, feedback and inference",
+      "lessons": [],
+      "chapter_status": "scientifically accepted after two independent review rounds"
+    }
+  ],
+  "lectures": [
+    {
+      "id": "P8Mi0nvkidI",
+      "playlist_position": 1,
+      "title": "5. Heart: Part 1",
+      "url": "https://www.youtube.com/watch?v=P8Mi0nvkidI",
+      "duration": 2013,
+      "lecture_number": 5,
+      "label": "Lecture 5",
+      "chapter_order": 3,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter03; distinct recording identity retained"
+    },
+    {
+      "id": "UvcbjRxSjEs",
+      "playlist_position": 2,
+      "title": "7. Review of Heart (Part 1)",
+      "url": "https://www.youtube.com/watch?v=UvcbjRxSjEs",
+      "duration": 2404,
+      "lecture_number": 7,
+      "label": "Lecture 7",
+      "chapter_order": 3,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter03; distinct recording identity retained"
+    },
+    {
+      "id": "3vz6e0wgxFY",
+      "playlist_position": 3,
+      "title": "1. Course Overview",
+      "url": "https://www.youtube.com/watch?v=3vz6e0wgxFY",
+      "duration": 2897,
+      "lecture_number": 1,
+      "label": "Lecture 1",
+      "chapter_order": 1,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter01; distinct recording identity retained"
+    },
+    {
+      "id": "ANXLnQJRc9A",
+      "playlist_position": 4,
+      "title": "2. Basics of Continuum Mechanics",
+      "url": "https://www.youtube.com/watch?v=ANXLnQJRc9A",
+      "duration": 2235,
+      "lecture_number": 2,
+      "label": "Lecture 2",
+      "chapter_order": 2,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter02; distinct recording identity retained"
+    },
+    {
+      "id": "HEPC08A4m3U",
+      "playlist_position": 5,
+      "title": "4. Review of Continuum Mechanics",
+      "url": "https://www.youtube.com/watch?v=HEPC08A4m3U",
+      "duration": 2456,
+      "lecture_number": 4,
+      "label": "Lecture 4",
+      "chapter_order": 2,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter02; distinct recording identity retained"
+    },
+    {
+      "id": "5PMOTIzETZA",
+      "playlist_position": 6,
+      "title": "3. Review of Course Overview",
+      "url": "https://www.youtube.com/watch?v=5PMOTIzETZA",
+      "duration": 2622,
+      "lecture_number": 3,
+      "label": "Lecture 3",
+      "chapter_order": 1,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter01; distinct recording identity retained"
+    },
+    {
+      "id": "EljNMQ_e-70",
+      "playlist_position": 7,
+      "title": "13. Vasculature",
+      "url": "https://www.youtube.com/watch?v=EljNMQ_e-70",
+      "duration": 1968,
+      "lecture_number": 13,
+      "label": "Lecture 13",
+      "chapter_order": 7,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter07; distinct recording identity retained"
+    },
+    {
+      "id": "_aYXAcft_BM",
+      "playlist_position": 8,
+      "title": "14. Review of Vasculature",
+      "url": "https://www.youtube.com/watch?v=_aYXAcft_BM",
+      "duration": 2467,
+      "lecture_number": 14,
+      "label": "Lecture 14",
+      "chapter_order": 7,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter07; distinct recording identity retained"
+    },
+    {
+      "id": "i-1ZJizdpnE",
+      "playlist_position": 9,
+      "title": "9. Blood: Part 1",
+      "url": "https://www.youtube.com/watch?v=i-1ZJizdpnE",
+      "duration": 1810,
+      "lecture_number": 9,
+      "label": "Lecture 9",
+      "chapter_order": 5,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter05; distinct recording identity retained"
+    },
+    {
+      "id": "rh595rXepQ8",
+      "playlist_position": 10,
+      "title": "12. Review of Blood (Part 2)",
+      "url": "https://www.youtube.com/watch?v=rh595rXepQ8",
+      "duration": 3561,
+      "lecture_number": 12,
+      "label": "Lecture 12",
+      "chapter_order": 6,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter06; distinct recording identity retained"
+    },
+    {
+      "id": "6WgMx8hOOtE",
+      "playlist_position": 11,
+      "title": "10. Blood: Part 2",
+      "url": "https://www.youtube.com/watch?v=6WgMx8hOOtE",
+      "duration": 2165,
+      "lecture_number": 10,
+      "label": "Lecture 10",
+      "chapter_order": 6,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter06; distinct recording identity retained"
+    },
+    {
+      "id": "HJ0GgBPtZos",
+      "playlist_position": 12,
+      "title": "9. Blood: Part 1",
+      "url": "https://www.youtube.com/watch?v=HJ0GgBPtZos",
+      "duration": 1810,
+      "lecture_number": null,
+      "label": "Alternate Blood 1 upload",
+      "chapter_order": 5,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter05; distinct recording identity retained"
+    },
+    {
+      "id": "C6o_WgMUQyE",
+      "playlist_position": 13,
+      "title": "11. Review of Blood (Part 1)",
+      "url": "https://www.youtube.com/watch?v=C6o_WgMUQyE",
+      "duration": 2904,
+      "lecture_number": 11,
+      "label": "Lecture 11",
+      "chapter_order": 5,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter05; distinct recording identity retained"
+    },
+    {
+      "id": "entWodZ5lrM",
+      "playlist_position": 14,
+      "title": "6. Heart: Part 2",
+      "url": "https://www.youtube.com/watch?v=entWodZ5lrM",
+      "duration": 1961,
+      "lecture_number": 6,
+      "label": "Lecture 6",
+      "chapter_order": 4,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter04; distinct recording identity retained"
+    },
+    {
+      "id": "gQtXtfIhgEM",
+      "playlist_position": 15,
+      "title": "8.Review of Heart (Part 2)",
+      "url": "https://www.youtube.com/watch?v=gQtXtfIhgEM",
+      "duration": 2198,
+      "lecture_number": 8,
+      "label": "Lecture 8",
+      "chapter_order": 4,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter04; distinct recording identity retained"
+    },
+    {
+      "id": "MeaVvfB56Cc",
+      "playlist_position": 16,
+      "title": "Introduction to Cardiovascular Mechanics",
+      "url": "https://www.youtube.com/watch?v=MeaVvfB56Cc",
+      "duration": 2611,
+      "lecture_number": null,
+      "label": "Course discussion",
+      "chapter_order": 8,
+      "source_status": "Full local machine transcript read; source scope reconciled and chapter scientifically accepted",
+      "inclusion": "covered by scientifically accepted chapter08; distinct recording identity retained"
+    },
+    {
+      "id": "n98XwA-ZmWk",
+      "playlist_position": 17,
+      "title": "Introduction to Cardiovascular Mechanics",
+      "url": "https://www.youtube.com/watch?v=n98XwA-ZmWk",
+      "duration": 153,
+      "lecture_number": null,
+      "label": "Course trailer",
+      "chapter_order": null,
+      "source_status": "inventory verified; transcript reading pending",
+      "inclusion": "trailer; course overview retained in manifest"
+    }
+  ],
+  "source_boundary": "Official outline verifies attribution and intended topics. Full local ASR reading, source inspection, scientific acceptance and technical validation are recorded separately. Acceptance remains chapter-specific; not all planned chapters are complete."
+}
