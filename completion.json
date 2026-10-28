@@ -1,6 +1,6 @@
 {
-  "status": "Content, scientific reviews and local release checks complete; publication pending",
-  "complete": false,
+  "status": "Complete: reviewed, locally verified and published",
+  "complete": true,
   "content_complete": true,
   "scientific_acceptance": true,
   "course": "Introduction to Cardiovascular Mechanics",
@@ -14,12 +14,26 @@
   "playlist_items": 17,
   "substantive_recordings_fully_decoded_and_read": 16,
   "local_release_checks_verified": true,
-  "publication_verified": false,
+  "publication_verified": true,
   "repository_url": "https://github.com/az9713/nptel-cardiovascular-mechanics-iith-notes",
   "book_url": "https://az9713.github.io/nptel-cardiovascular-mechanics-iith-notes/",
   "limits": [
     "Fallible local machine ASR, selected visual frames only; no comprehensive audiovisual audit",
     "Original teaching coefficients are not patient-calibrated",
     "Bounded primary-source inspection per sidecar, not a comprehensive literature or proof audit"
-  ]
+  ],
+  "first_publication_check_utc": "2026-10-28T23:11:42.666127+00:00",
+  "verification": {
+    "substantive_sources_read": 16,
+    "playlist_items_retained": 17,
+    "independent_scientific_rounds_per_chapter": 2,
+    "chapter_code_and_lab_listings_passed": 9,
+    "exact_chapter_downloads": 8,
+    "offline_page_width_checks": 24,
+    "source_free_byte_identical_html": 12,
+    "first_live_payload_files_verified": 70,
+    "first_live_reader_page_width_checks": 20,
+    "github_preview_verified": true,
+    "final_completion_bytes": "Rechecked by the subsequent full served-payload probe; consult publication-validation.json"
+  }
 }

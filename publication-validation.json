@@ -1,5 +1,750 @@
 {
-  "passed": false,
-  "status": "Pre-release placeholder; live publication not yet probed",
-  "scope": "A future probe hashes all other public files including completion.json, and separately requires this served report to exist. This report excludes its own inherently circular content hash."
+  "passed": true,
+  "checked_at_utc": "2026-10-28T23:11:42.666127+00:00",
+  "base_url": "https://az9713.github.io/nptel-cardiovascular-mechanics-iith-notes/",
+  "repository_url": "https://github.com/az9713/nptel-cardiovascular-mechanics-iith-notes",
+  "payload_commit": "e8c6ebb830b77322f8527513a41331a50ab19cb8",
+  "served_file_count": 70,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "75cd96b0f06576ab8e0b9cf1f9a775f9b2e5aba0c85d8731f8a85c1f1d46be4b",
+      "served_sha256": "75cd96b0f06576ab8e0b9cf1f9a775f9b2e5aba0c85d8731f8a85c1f1d46be4b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "71fc235f67d79cd6d1d2d208483b351705b3d410cb761e24d4ca2d39646be601",
+      "served_sha256": "71fc235f67d79cd6d1d2d208483b351705b3d410cb761e24d4ca2d39646be601",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": ".nojekyll",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "served_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/book.css",
+      "sha256": "27f8db49be286878c62627d0898fa60aef0f082eae9430816d6cc4ed157a094a",
+      "served_sha256": "27f8db49be286878c62627d0898fa60aef0f082eae9430816d6cc4ed157a094a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/book.js",
+      "sha256": "14c97eae2eca561f935fabb06a2db76d1eee354798db3d97c850a8051998a557",
+      "served_sha256": "14c97eae2eca561f935fabb06a2db76d1eee354798db3d97c850a8051998a557",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/identifiability.svg",
+      "sha256": "630685eeabc581df6e0965671c91c3fe235b04e61d3c20eb8f74a4408ce8a676",
+      "served_sha256": "630685eeabc581df6e0965671c91c3fe235b04e61d3c20eb8f74a4408ce8a676",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/input/tex/extensions/boldsymbol.js",
+      "sha256": "d6771fee0772db2657796c8d0e20e1878bb3237f6d3ed1e828e1834a4ff743ca",
+      "served_sha256": "d6771fee0772db2657796c8d0e20e1878bb3237f6d3ed1e828e1834a4ff743ca",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/input/tex/extensions/cancel.js",
+      "sha256": "0d263ecf2671d1cc13135b8b4afcdca4d40151a9aea51b69402e68adde4cf8c9",
+      "served_sha256": "0d263ecf2671d1cc13135b8b4afcdca4d40151a9aea51b69402e68adde4cf8c9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/input/tex/extensions/mathtools.js",
+      "sha256": "04272d69a0b64783cd5b66820d6f8220ee510409d0b12c38626404be9ed9689c",
+      "served_sha256": "04272d69a0b64783cd5b66820d6f8220ee510409d0b12c38626404be9ed9689c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/mathjax-LICENSE",
+      "sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "served_sha256": "3ddf9be5c28fe27dad143a5dc76eea25222ad1dd68934a047064e56ed2fa40c5",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/mathjax-tex-svg.js",
+      "sha256": "d4295dc33744836935c1399feece5159577b34c5c8ffb9f1c6324cd82e03a882",
+      "served_sha256": "d4295dc33744836935c1399feece5159577b34c5c8ffb9f1c6324cd82e03a882",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/pressure-volume.svg",
+      "sha256": "be0467f4f9e0217e6a09066cc51e1ff3956bb2bf0457337a8c6cf1553ae633d4",
+      "served_sha256": "be0467f4f9e0217e6a09066cc51e1ff3956bb2bf0457337a8c6cf1553ae633d4",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/radius-flow.svg",
+      "sha256": "a9e815d74e538ac1b1c9ff51c3973e5396c931ca40d3596464ca23d4ab88cfa9",
+      "served_sha256": "a9e815d74e538ac1b1c9ff51c3973e5396c931ca40d3596464ca23d4ab88cfa9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/rotation-strain.svg",
+      "sha256": "5fef4f257a2f0cea3d473d301a51c7b2e132ed5cc5651236e827e775f685abca",
+      "served_sha256": "5fef4f257a2f0cea3d473d301a51c7b2e132ed5cc5651236e827e775f685abca",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/site-preview.png",
+      "sha256": "f00c35b887497ec50fc86706c56e925a20f5361c5e3a20eb464e857e97b617b0",
+      "served_sha256": "f00c35b887497ec50fc86706c56e925a20f5361c5e3a20eb464e857e97b617b0",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/vessel-lab.js",
+      "sha256": "cc7e219861a5349c9634544fbc8b1832f714927280e07e32749ec990e6b9cc07",
+      "served_sha256": "cc7e219861a5349c9634544fbc8b1832f714927280e07e32749ec990e6b9cc07",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "assets/wall-stress.svg",
+      "sha256": "91af10b677643163e890493e55e390bc1494215e78807ab419ba3903c12d730e",
+      "served_sha256": "91af10b677643163e890493e55e390bc1494215e78807ab419ba3903c12d730e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-01-structure-function-modeling.html",
+      "sha256": "b9301439bc0d9919ff026597d0ffe35876e2c5d94edd8f91f2bdc4c847bd314a",
+      "served_sha256": "b9301439bc0d9919ff026597d0ffe35876e2c5d94edd8f91f2bdc4c847bd314a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-01-structure-function-modeling.meta.json",
+      "sha256": "52ca108675deb83bcb70bed528cda0c074d1c203b0a6655fe5c921729b6aa6af",
+      "served_sha256": "52ca108675deb83bcb70bed528cda0c074d1c203b0a6655fe5c921729b6aa6af",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "sha256": "5f4edcfe8c8d63490aa2d3c7413f1bcf5f9dce2416225f558003055467c1bc53",
+      "served_sha256": "5f4edcfe8c8d63490aa2d3c7413f1bcf5f9dce2416225f558003055467c1bc53",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-02-continuum-kinematics-constitutive-laws.meta.json",
+      "sha256": "f6fe78a3ca17fa6f7d463fa5b404b1ee68d5a68ebc04de3bdaf9ea33cba8bd45",
+      "served_sha256": "f6fe78a3ca17fa6f7d463fa5b404b1ee68d5a68ebc04de3bdaf9ea33cba8bd45",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-03-heart-cyclic-pump.html",
+      "sha256": "9538f5e9771de4434fd71cc6fac34bd4e3f9e13163ef5eb03a649d5c81575159",
+      "served_sha256": "9538f5e9771de4434fd71cc6fac34bd4e3f9e13163ef5eb03a649d5c81575159",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-03-heart-cyclic-pump.meta.json",
+      "sha256": "f6082f08c3f6cad707757fdf861fefa1348a644ef8981008c263da12aa46766e",
+      "served_sha256": "f6082f08c3f6cad707757fdf861fefa1348a644ef8981008c263da12aa46766e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-04-myocardial-deformation-active-stress.html",
+      "sha256": "60c5303b5c687263ead6b5f2175e6221ba98759c936b76dab52eeb065a32d8cd",
+      "served_sha256": "60c5303b5c687263ead6b5f2175e6221ba98759c936b76dab52eeb065a32d8cd",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-04-myocardial-deformation-active-stress.meta.json",
+      "sha256": "ca688c5d1ee1b01bda955e820230406213779e7cc27fcba9009f931bf4969c01",
+      "served_sha256": "ca688c5d1ee1b01bda955e820230406213779e7cc27fcba9009f931bf4969c01",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-05-blood-cells-rheology.html",
+      "sha256": "0d5122fb0cc72438b518fcbadbc3285fb09de5fdffb5b4a1531c95434f2b4f38",
+      "served_sha256": "0d5122fb0cc72438b518fcbadbc3285fb09de5fdffb5b4a1531c95434f2b4f38",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-05-blood-cells-rheology.meta.json",
+      "sha256": "c86fdbaee8b89c6463d28f8003c6a20cf5caad54f97ed322479991a201392b3d",
+      "served_sha256": "c86fdbaee8b89c6463d28f8003c6a20cf5caad54f97ed322479991a201392b3d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-06-blood-continuum-mixtures.html",
+      "sha256": "a70074cafb0ccd3fcb01411b476cc89196e166513596731ced610f25c7bea180",
+      "served_sha256": "a70074cafb0ccd3fcb01411b476cc89196e166513596731ced610f25c7bea180",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-06-blood-continuum-mixtures.meta.json",
+      "sha256": "b32a404f98b2e1ae11d45856f81bae0fb39c5408885cff822b7ae10098ff1453",
+      "served_sha256": "b32a404f98b2e1ae11d45856f81bae0fb39c5408885cff822b7ae10098ff1453",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-07-vascular-wall-mechanics.html",
+      "sha256": "6e66f215b7ce967852125266180bf0d56df92caf93c9fdc767688441ba780d81",
+      "served_sha256": "6e66f215b7ce967852125266180bf0d56df92caf93c9fdc767688441ba780d81",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-07-vascular-wall-mechanics.meta.json",
+      "sha256": "aa485beea0059396b78fd2bef286e88bc4c6a229d0a59ca168429d1f46259056",
+      "served_sha256": "aa485beea0059396b78fd2bef286e88bc4c6a229d0a59ca168429d1f46259056",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-08-course-discussion-synthesis.html",
+      "sha256": "4556bad9a94ae13e57884305434cd9e391e0181afd8c14667815fd87343294ad",
+      "served_sha256": "4556bad9a94ae13e57884305434cd9e391e0181afd8c14667815fd87343294ad",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-08-course-discussion-synthesis.meta.json",
+      "sha256": "86d408dd7b73764684285b89d58dcd0f2d5e383c6ccccbae35a66c25cd236f5b",
+      "served_sha256": "86d408dd7b73764684285b89d58dcd0f2d5e383c6ccccbae35a66c25cd236f5b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "chapter-code-validation.json",
+      "sha256": "b9ab3293c05cc5fe5df1bc7cafb4a1ab5bc1ad83706f474f26b28c8f3376fdc6",
+      "served_sha256": "b9ab3293c05cc5fe5df1bc7cafb4a1ab5bc1ad83706f474f26b28c8f3376fdc6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch01_bed.py",
+      "sha256": "c5e2bc925c1e40d2a8c6170c7403cfc61bde2b67d96ccb84d2c5b597557517d0",
+      "served_sha256": "c5e2bc925c1e40d2a8c6170c7403cfc61bde2b67d96ccb84d2c5b597557517d0",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch02_kinematics.py",
+      "sha256": "8f2e0c42968ba0a6f44e7f038b7c08d7e9a7a04c8aa24820bbb9f84a226fca7a",
+      "served_sha256": "8f2e0c42968ba0a6f44e7f038b7c08d7e9a7a04c8aa24820bbb9f84a226fca7a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch03_pump.py",
+      "sha256": "3d2587e4ace822898a0c9e34421a9a3bbc13967b655e307de93b94d72e12ff8a",
+      "served_sha256": "3d2587e4ace822898a0c9e34421a9a3bbc13967b655e307de93b94d72e12ff8a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch04_tissue.py",
+      "sha256": "f38309cda88f8685008a9722b02a62ca1653455cc08e6736a36fa0a468ceac2c",
+      "served_sha256": "f38309cda88f8685008a9722b02a62ca1653455cc08e6736a36fa0a468ceac2c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch05_rheology.py",
+      "sha256": "e9d9727e6caef40efb5e0fb1c78d876c05af74058287d8cb98c9e69853b4c76c",
+      "served_sha256": "e9d9727e6caef40efb5e0fb1c78d876c05af74058287d8cb98c9e69853b4c76c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch06_models.py",
+      "sha256": "cdd712633ca5c8071e15d6596f771285768a0cd988d9aaccc53a5b30fbe7ef0a",
+      "served_sha256": "cdd712633ca5c8071e15d6596f771285768a0cd988d9aaccc53a5b30fbe7ef0a",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch07_vessels.py",
+      "sha256": "441eefd75bb1d7cc3067406f4e14cea84d16c8c1eadad12f59a5d8c8a3133a9e",
+      "served_sha256": "441eefd75bb1d7cc3067406f4e14cea84d16c8c1eadad12f59a5d8c8a3133a9e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "code/ch08_synthesis.py",
+      "sha256": "4b1adee3b5325e82c334f3e263e18d9bb6a43bee97ce5a7c834e0d773861ad91",
+      "served_sha256": "4b1adee3b5325e82c334f3e263e18d9bb6a43bee97ce5a7c834e0d773861ad91",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "completion.json",
+      "sha256": "1be6c6a2e9f5531ad17598c621b98f433b6f8f66716512882fe641486749d09c",
+      "served_sha256": "1be6c6a2e9f5531ad17598c621b98f433b6f8f66716512882fe641486749d09c",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "content-inventory.json",
+      "sha256": "d360dc881fcbfd8057c67fe06a264981df8dd8ddfd896b917b90913ff78ba91e",
+      "served_sha256": "d360dc881fcbfd8057c67fe06a264981df8dd8ddfd896b917b90913ff78ba91e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "course-review.json",
+      "sha256": "5b8045966b6e1cdf8b519fb088ea8ee8ad25d6254a745832bf2cd21a23145d7d",
+      "served_sha256": "5b8045966b6e1cdf8b519fb088ea8ee8ad25d6254a745832bf2cd21a23145d7d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "editorial-review-summary.json",
+      "sha256": "6a06d9fcbba1f6f1697f48cf07b14ced1eaa3b3292545ea04fe1ba9e54cb78e8",
+      "served_sha256": "6a06d9fcbba1f6f1697f48cf07b14ced1eaa3b3292545ea04fe1ba9e54cb78e8",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "index.html",
+      "sha256": "e24c1adab2b35a1b2df9182de832374f93e7d4d2459ca8e671c27ca946e67305",
+      "served_sha256": "e24c1adab2b35a1b2df9182de832374f93e7d4d2459ca8e671c27ca946e67305",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "numerical-lab.html",
+      "sha256": "1694856e975518d4da6300b0231f2b18a028fd36ac0bdd624ceaa1cc55c7c47e",
+      "served_sha256": "1694856e975518d4da6300b0231f2b18a028fd36ac0bdd624ceaa1cc55c7c47e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "numerical_lab.py",
+      "sha256": "5165fcf8d9a81665c35d3746313a374b6281ce3a580c0c10538e5e7dcbd509ac",
+      "served_sha256": "5165fcf8d9a81665c35d3746313a374b6281ce3a580c0c10538e5e7dcbd509ac",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "package-validation.json",
+      "sha256": "9d85e13c9010650d9b190fe3b5c0e717bb9a4afa0a131482dfd3ae4313803576",
+      "served_sha256": "9d85e13c9010650d9b190fe3b5c0e717bb9a4afa0a131482dfd3ae4313803576",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "public-package-validation.json",
+      "sha256": "c4571c9803af52f16641343f6e51249e5dd1a3e206341e56216c12b39c2389ff",
+      "served_sha256": "c4571c9803af52f16641343f6e51249e5dd1a3e206341e56216c12b39c2389ff",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "reader-validation.json",
+      "sha256": "dcceb45f318d1b99066a2d6ac6995ff3de0c855f5f5c75a6b4859d412e2dc4c8",
+      "served_sha256": "dcceb45f318d1b99066a2d6ac6995ff3de0c855f5f5c75a6b4859d412e2dc4c8",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "README.md",
+      "sha256": "cc7e78dbf60861b1d30b5574ae56c0f1e3251078c7a35c8497fd380bfff6b91e",
+      "served_sha256": "cc7e78dbf60861b1d30b5574ae56c0f1e3251078c7a35c8497fd380bfff6b91e",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "references.html",
+      "sha256": "a0aeb38245c92e5184d39752931dd2b8c7ad5946b9198649429b377ba75c70ed",
+      "served_sha256": "a0aeb38245c92e5184d39752931dd2b8c7ad5946b9198649429b377ba75c70ed",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "ce1901bb8f9cf0216053603a265f9fd1d5ba239a4d5bd25702d9c9f4adc49c0b",
+      "served_sha256": "ce1901bb8f9cf0216053603a265f9fd1d5ba239a4d5bd25702d9c9f4adc49c0b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "source-free-validation.json",
+      "sha256": "0ed8c42bbdebb6bf856cb0048ed9024c68d2e0994ce46cdf9046c6c20976558d",
+      "served_sha256": "0ed8c42bbdebb6bf856cb0048ed9024c68d2e0994ce46cdf9046c6c20976558d",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "ab15d5e1cf5c528a3dca403fcc68b4885bcdd040423d0c492be037c1c357948f",
+      "served_sha256": "ab15d5e1cf5c528a3dca403fcc68b4885bcdd040423d0c492be037c1c357948f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "source-map.html",
+      "sha256": "d05aec51a57bf3d640e899b7c82c42c07f99b4da0950bac0f1fdd92320403e6b",
+      "served_sha256": "d05aec51a57bf3d640e899b7c82c42c07f99b4da0950bac0f1fdd92320403e6b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "source-map.json",
+      "sha256": "a6af24160ba9b16857c368770523dde4e6963dee72a99bf9529aeea4b930fead",
+      "served_sha256": "a6af24160ba9b16857c368770523dde4e6963dee72a99bf9529aeea4b930fead",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "source-validation-summary.json",
+      "sha256": "8ba11934da1b4f38e4f1c28a581dd0e8c2f7718224c8b6d07425b7c1e9ab23a6",
+      "served_sha256": "8ba11934da1b4f38e4f1c28a581dd0e8c2f7718224c8b6d07425b7c1e9ab23a6",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/audit_public.py",
+      "sha256": "7c0606b3cbb1628535c38a437d147ffa0c53f6ec310df6b820b889a25a032663",
+      "served_sha256": "7c0606b3cbb1628535c38a437d147ffa0c53f6ec310df6b820b889a25a032663",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/build_book.py",
+      "sha256": "56226781bf4ace89dc510bb18b478eeb91905d9524e52eadb95a934e8652a66b",
+      "served_sha256": "56226781bf4ace89dc510bb18b478eeb91905d9524e52eadb95a934e8652a66b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/check_chapter_code.py",
+      "sha256": "23f8bd96a31ab9a49f79aab79678a93c88f7ac0775e4ab6b0c83b769b9d022ee",
+      "served_sha256": "23f8bd96a31ab9a49f79aab79678a93c88f7ac0775e4ab6b0c83b769b9d022ee",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/export_code.py",
+      "sha256": "0440baae0dc65e8acf5c81b7d707d8e5d7b8b2cc4c57554252bf9f685fa747f9",
+      "served_sha256": "0440baae0dc65e8acf5c81b7d707d8e5d7b8b2cc4c57554252bf9f685fa747f9",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/make_figures.py",
+      "sha256": "d60e1fc8f73fbe383ece39aed9d831066afccfd28a8df52b0d256ba4e76a86ad",
+      "served_sha256": "d60e1fc8f73fbe383ece39aed9d831066afccfd28a8df52b0d256ba4e76a86ad",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/update_metadata.py",
+      "sha256": "5b3c1143653861470ccefb6ec129c42bf5a629b6147dd6719c57cd585c04667f",
+      "served_sha256": "5b3c1143653861470ccefb6ec129c42bf5a629b6147dd6719c57cd585c04667f",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/validate_books.py",
+      "sha256": "18e06be5d66d114fffcc92d066dca3353c7d925a0d10d52b4c2be30dcd9432ac",
+      "served_sha256": "18e06be5d66d114fffcc92d066dca3353c7d925a0d10d52b4c2be30dcd9432ac",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/verify_publication.py",
+      "sha256": "9493d1c4658bfca05a20be7baaade7b2a5882c9dea6b64b8b477ae4be03a3a5b",
+      "served_sha256": "9493d1c4658bfca05a20be7baaade7b2a5882c9dea6b64b8b477ae4be03a3a5b",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "tools/verify_source_free.py",
+      "sha256": "858d6478790b5e1250f665db90c9234ac9293d3f5cc0754bda5d535ebdc75936",
+      "served_sha256": "858d6478790b5e1250f665db90c9234ac9293d3f5cc0754bda5d535ebdc75936",
+      "passed": true,
+      "error": null
+    },
+    {
+      "path": "WORKFLOW.md",
+      "sha256": "155bf14809552c038a67f95431ac14d8b4ff9948f63fd7c8059ee7ae0facaabc",
+      "served_sha256": "155bf14809552c038a67f95431ac14d8b4ff9948f63fd7c8059ee7ae0facaabc",
+      "passed": true,
+      "error": null
+    }
+  ],
+  "excluded_from_served_hashes": {
+    "publication-validation.json": "This report cannot contain a verifiable hash of itself."
+  },
+  "live_reader": [
+    {
+      "page": "index.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 0,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-01-structure-function-modeling.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 165,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 261,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-03-heart-cyclic-pump.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 99,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-04-myocardial-deformation-active-stress.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 170,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-05-blood-cells-rheology.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 199,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-06-blood-continuum-mixtures.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 217,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-07-vascular-wall-mechanics.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 164,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-08-course-discussion-synthesis.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 181,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "numerical-lab.html",
+      "width": 1440,
+      "passed": true,
+      "math_count": 33,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "index.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 0,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-01-structure-function-modeling.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 165,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 261,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-03-heart-cyclic-pump.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 99,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-04-myocardial-deformation-active-stress.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 170,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-05-blood-cells-rheology.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 199,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-06-blood-continuum-mixtures.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 217,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-07-vascular-wall-mechanics.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 164,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "chapter-08-course-discussion-synthesis.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 181,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    },
+    {
+      "page": "numerical-lab.html",
+      "width": 390,
+      "passed": true,
+      "math_count": 33,
+      "math_errors": 0,
+      "horizontal_overflow": false,
+      "theme": true,
+      "text_size": true,
+      "solutions": true,
+      "page_specific_controls": true
+    }
+  ],
+  "github_readme_preview_links_to_book": true,
+  "preview_error": null,
+  "served_publication_report_present": true,
+  "served_publication_report_error": null,
+  "scope": "Exact public payload bytes, representative desktop/mobile browser controls, and rendered GitHub README image/link. No new audiovisual or mathematical review."
 }
