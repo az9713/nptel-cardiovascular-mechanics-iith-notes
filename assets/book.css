@@ -20,3 +20,8 @@ mjx-container[display=true]{min-width:0!important;max-width:100%}
 
 /* Long review labels wrap without widening the chapter index. */
 .status{white-space:normal;display:inline-block;max-width:100%}
+
+/* Number figures in document order so prose references remain inspectable. */
+article{counter-reset:figure}
+article figure{counter-increment:figure}
+article figcaption::before{content:"Fig. " counter(figure) ". ";font-weight:700}

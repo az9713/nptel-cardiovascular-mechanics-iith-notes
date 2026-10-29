@@ -1,8 +1,8 @@
 {
   "chapter": 6,
   "title": "Continuum and mixture models of blood",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "c751c54f6feec02ed906ad9d7ed4b61fb47863cb5020d540e7acc243b27520d0",
   "recordings": [
     {
       "video_id": "6WgMx8hOOtE",
@@ -12,7 +12,7 @@
       "decoded_audio_duration_seconds": 2164.4735,
       "complete_decoded_audio": true,
       "media_sha256": "80d4986e4e94a5a4e252e68519f18eeda8eeede9c9fd7bb8675a4f86fce46ef7",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 2164.44,
       "transcript_provenance": "Local faster-whisper small.en machine ASR; 90-second cores with 2-second context; not publisher captions",
       "source_read_complete": true,
@@ -27,7 +27,7 @@
       "decoded_audio_duration_seconds": 3560.1735,
       "complete_decoded_audio": true,
       "media_sha256": "1c8814db64f47e946513f0f939aca421f87566832ec55a5dda193201a9df2f42",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 3552.56,
       "transcript_provenance": "Local faster-whisper small.en machine ASR; 90-second cores with 2-second context; not publisher captions",
       "source_read_complete": true,
@@ -37,7 +37,7 @@
   ],
   "sections": [
     {
-      "section": "Continuum validity is a separation of scales, not a magic diameter L10 \u00b7 00:56 L12 \u00b7 00:51",
+      "section": "Continuum validity is a separation of scales, not a magic diameter L10 · 00:56 L12 · 00:51",
       "anchor": "continuum",
       "video_id": "6WgMx8hOOtE",
       "start": 56,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "section": "Specify the yielded and unyielded branches of a scalar law L10 \u00b7 02:09 L12 \u00b7 04:52",
+      "section": "Specify the yielded and unyielded branches of a scalar law L10 · 02:09 L12 · 04:52",
       "anchor": "scalar",
       "video_id": "6WgMx8hOOtE",
       "start": 129,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "Extend a shear curve through an objective rate invariant L10 \u00b7 02:58 L12 \u00b7 05:58",
+      "section": "Extend a shear curve through an objective rate invariant L10 · 02:58 L12 · 05:58",
       "anchor": "objective-viscosity",
       "video_id": "6WgMx8hOOtE",
       "start": 178,
@@ -103,12 +103,12 @@
       ]
     },
     {
-      "section": "A spring\u2013dashpot derivation does not uniquely determine a three-dimensional law L10 \u00b7 07:46 L12 \u00b7 10:28",
+      "section": "A spring–dashpot derivation does not uniquely determine a three-dimensional law L10 · 07:46 L12 · 10:28",
       "anchor": "maxwell",
       "video_id": "6WgMx8hOOtE",
       "start": 466,
       "end": 912,
-      "lecture_material": "Series/parallel spring\u2013dashpot derivation and objective tensor extension.",
+      "lecture_material": "Series/parallel spring–dashpot derivation and objective tensor extension.",
       "research_extension": "Correct time units, phenomenological versus molecular meaning, nonunique objective extensions and solvent/polymer elimination conditions.",
       "teaching_construction": "Original exposition, solved constructions, code and complete solutions; timestamp links locate related topics rather than attributing new derivations to the lecturer.",
       "source_spans": [
@@ -135,7 +135,7 @@
       "teaching_construction": "Original complete steady-simple-shear tensor solution and extensional singularity comparison; parameters not blood-calibrated."
     },
     {
-      "section": "Positive driving stress can coexist with an instant of reverse deformation L10 \u00b7 18:12 L12 \u00b7 23:32",
+      "section": "Positive driving stress can coexist with an instant of reverse deformation L10 · 18:12 L12 · 23:32",
       "anchor": "recoil",
       "video_id": "6WgMx8hOOtE",
       "start": 1092,
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "section": "Evolving natural configurations organize energy and relaxation L10 \u00b7 20:03 L12 \u00b7 28:46",
+      "section": "Evolving natural configurations organize energy and relaxation L10 · 20:03 L12 · 28:46",
       "anchor": "natural",
       "video_id": "6WgMx8hOOtE",
       "start": 1203,
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "section": "A mixture has constituent balances and more than one useful mean velocity L10 \u00b7 30:08 L12 \u00b7 52:06",
+      "section": "A mixture has constituent balances and more than one useful mean velocity L10 · 30:08 L12 · 52:06",
       "anchor": "mixture",
       "video_id": "6WgMx8hOOtE",
       "start": 1808,
@@ -303,9 +303,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "4c292ae4c740d01ff3596b38c090cd75bfb1d24106f18272fd8c41807ffd56c5"
   },
   "limits": [
     "Fallible local ASR and no comprehensive audiovisual audit",

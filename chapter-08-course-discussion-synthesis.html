@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="ca9a10ca2ce2ffd3d706383798a55adb2c7d204c48df9c6608f4847c5bcdaeb6">
 <title>Coupling the circulation: conservation, feedback and inference · Introduction to Cardiovascular Mechanics</title><link rel="stylesheet" href="assets/book.css">
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
 <script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/vessel-lab.js"></script></head>
 <body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Introduction to Cardiovascular Mechanics · NPTEL IIT Hyderabad</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
-<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
-<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>8. Coupling the circulation: conservation, feedback and inference</h1>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2 id="toc-heading">On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1 id="chapter-title">8. Coupling the circulation: conservation, feedback and inference</h1>
 <p class="lede">An arterial pressure can remain almost unchanged while the work done to maintain it increases, or while one organ receives less flow. A model of the circulation therefore needs more than a pressure formula. It needs a statement of what is conserved, what the controller can change, which quantities are observed, and which alternative mechanisms remain compatible with those observations.</p>
-<p>The additional <a href="https://www.youtube.com/watch?v=MeaVvfB56Cc&amp;t=867s">course discussion</a> revisits the topic sequence, briefly answers a posture question and explains where mathematical mechanics enters. Its full local machine transcript was read, including setup and long idle intervals. It is not a separate 43-minute technical derivation. The coupled models, stability analysis, calculations and exercises below are original teaching extensions of those prompts. The lecturer explicitly declines the acute-hemorrhage question; this chapter supplies no substitute emergency protocol or patient-specific prediction.</p>
+<p class="source-note">The additional <a href="https://www.youtube.com/watch?v=MeaVvfB56Cc&amp;t=867s">course discussion</a> revisits the topic sequence, briefly answers a posture question and explains where mathematical mechanics enters. Its full local machine transcript was read, including setup and long idle intervals. It is not a separate 43-minute technical derivation. The coupled models, stability analysis, calculations and exercises below are original teaching extensions of those prompts. The lecturer explicitly declines the acute-hemorrhage question; this chapter supplies no substitute emergency protocol or patient-specific prediction.</p>
 
 <h2 id="scope">Identify the question before increasing model complexity <a class="timestamp" href="https://www.youtube.com/watch?v=MeaVvfB56Cc&amp;t=867s">Discussion · 14:27</a> <a class="timestamp" href="https://www.youtube.com/watch?v=MeaVvfB56Cc&amp;t=2388s">Discussion · 39:48</a></h2>
 <p>The discussion recapitulates a useful progression: anatomy and function, continuum definitions, the pump, blood rheology and vascular walls. Its final mathematical question concerns flow in complex geometry, moving arteries and the beating heart. These are different problems. A spatial velocity field requires geometric information that a compartment pressure cannot provide. Conversely, a detailed fluid mesh does not by itself specify how total volume is distributed or how a regulatory response changes the boundary conditions.</p>
@@ -16,7 +16,7 @@
 <p>The discussion's continuum cutoff should also retain the qualifications of chapters 6 and 7: there is no universal vessel-diameter switch that simultaneously invalidates every continuum blood description and every solid-wall model. The relevant ratio concerns the structure being homogenized and the observable being predicted. Asking for individual-cell passage is different from asking for an averaged pressure-flow relation.</p>
 
 <h2 id="gravity">Keep gravitational head and perfusion pressure distinct <a class="timestamp" href="https://www.youtube.com/watch?v=MeaVvfB56Cc&amp;t=1626s">Discussion · 27:06</a></h2>
-<p>The posture answer invokes coordination with the nervous system; it does not supply a quantitative orthostatic model. Before introducing feedback, separate a mechanical change in local pressure from a change in resistance or active pumping. For a stationary column of constant density, with upward coordinate $z$,</p>
+<p>The posture answer invokes coordination with the nervous system; it does not supply a quantitative orthostatic model. Before introducing feedback, separate a mechanical change in local pressure from a change in resistance or active pumping. For a stationary column, let $p$ be pressure in Pa, $z$ upward height in metres, $\rho\gt0$ constant density in $\mathrm{kg/m^3}$, and $g=9.81\;\mathrm{m/s^2}$ the stipulated gravitational acceleration magnitude. Force balance gives</p>
 \[\frac{dp}{dz}=-\rho g,\qquad p(z_2)-p(z_1)=-\rho g(z_2-z_1).\]
 <p>For the stipulated $\rho=1060\;\mathrm{kg/m^3}$ and height difference $0.30\;\mathrm m$, the magnitude is $3119.58\;\mathrm{Pa}=23.398771\;\mathrm{mmHg}$. This is a hydrostatic scale, not a prediction that organ perfusion must decrease by that number. If the arterial and venous columns have the same density and both pressures are evaluated at the same upper height, both acquire the same hydrostatic subtraction. Their difference is unchanged in that ideal comparison.</p>
 <p>This cancellation does not make posture irrelevant. Transmural pressure compares local luminal pressure with the surrounding tissue pressure. Compliant vessels can change area and stored volume; venous segments may approach collapse, and the reference level of a pressure measurement matters. A constant-density closed-loop gravitational integral $\oint\rho g\,dz=0$ removes a net gravitational head around the full loop, but does not remove local gravitational loading or its effect on storage. A lumped model with no height coordinate must represent such redistribution through an explicit additional state or a declared disturbance. It cannot acquire a posture mechanism simply by calling one coefficient “gravity.”</p>
@@ -41,11 +41,11 @@
 <p>For constant $d=d_0$, stationarity gives $u_*=-Kx_*$ and $x_*/R=u_*-d_0$. Therefore</p>
 \[x_*=-\frac{Rd_0}{1+KR},\qquad u_*=\frac{KRd_0}{1+KR}.\]
 <p>The dimensionless loop gain is $KR$. Finite proportional gain reduces the residual error but does not eliminate it. Infinite gain is a singular idealization; a controller with integral action would be a different dynamical model. Without feedback, a step from $x(0)=0$ gives $x(t)=-Rd_0[1-e^{-t/(RC_e)}]$.</p>
-<p>Linear perturbations around the controlled equilibrium have characteristic polynomial</p>
+<p>To test transient stability, seek perturbations proportional to $e^{st}$, where $s$ is a possibly complex growth rate in $\mathrm{s^{-1}}$. Substitution into the two homogeneous linear equations gives a matrix with rows $(C_es+1/R,-1)$ and $(K,\tau s+1)$. A nonzero mode requires its determinant to vanish, giving the characteristic polynomial</p>
 \[C_e\tau s^2+\left(C_e+\frac{\tau}{R}\right)s+\left(\frac1R+K\right)=0.\]
 <p>All coefficients are positive. The sum of the two roots is negative and their product is positive; real roots are both negative, while a complex pair has negative real part. This establishes asymptotic stability for this two-state model at every finite $K\ge0$. It does not establish monotonic recovery. Increasing gain can make the roots complex.</p>
 <p>Use $C_e=1\;\mathrm{mL/mmHg}$, $R=1\;\mathrm{mmHg\,s/mL}$, $\tau=2\;\mathrm s$, $K=2\;\mathrm{mL/(s\,mmHg)}$ and $d_0=10\;\mathrm{mL/s}$. Then $x_*=-10/3\;\mathrm{mmHg}$ and $u_*=20/3\;\mathrm{mL/s}$. The polynomial is $2s^2+3s+3$, with roots $-0.75\pm0.968246i\;\mathrm{s^{-1}}$. There is damped oscillation about the new equilibrium. At the instant the deficit begins, $x=u=0$, so $\dot x(0^+)=-d_0/C_e=-10\;\mathrm{mmHg/s}$ regardless of gain. A finite-rate controller cannot retrospectively erase the initial derivative.</p>
-<p>With zero initial deviations, the Laplace-domain relation is</p>
+<p>With zero initial deviations, let $X(s)$ and $D(s)$ be the Laplace transforms of $x(t)$ and $d(t)$. The transform converts time differentiation to multiplication by $s$. Eliminating the transformed controller input from $(C_es+1/R)X=U-D$ and $(\tau s+1)U=-KX$, where $U$ transforms $u$, gives</p>
 \[\frac{X(s)}{D(s)}=-\frac{\tau s+1}{C_e\tau s^2+(C_e+\tau/R)s+(1/R+K)}.\]
 <p>The zero-frequency value recovers the steady residual response. At high frequency the leading ratio is $-1/(C_es)$: rapid disturbances are initially buffered by storage rather than cancelled by the controller. Frequency and steady measurements interrogate different parts of the mechanism.</p>
 
@@ -80,7 +80,7 @@
 <p>Timing also needs its own evidence. <a href="https://pubmed.ncbi.nlm.nih.gov/28663324/">Laurin and colleagues (2017)</a> used microneurography during graded lower-body negative pressure in 11 healthy normotensive men and analyzed stimulus/response timing. A fitted time constant of our pressure trace cannot be identified automatically with any one neural delay in that experiment. Population, protocol and measurement branch must remain attached to a physiological parameter claim.</p>
 
 <h2 id="code">Execute conservation, stability and identifiability checks</h2>
-<p>The following program uses the declared artificial parameters. Its independent RK4 step refinement checks integration consistency, while the algebraic identities and exact counterexamples check different claims. The delayed-model test substitutes the imaginary root directly into its characteristic equation; it does not run a clinical simulator.</p>
+<p>The program requires NumPy and uses the declared positive compliances, resistance and response time with nonnegative feedback gain. It prints equilibrium, transient, redistribution, gravity, delay and power checks to standard output, with no file or network operations. A failed identity or numerical tolerance raises an assertion error. Independent RK4 step refinement checks integration consistency; the exact algebraic counterexamples test identifiability. The delayed-model test substitutes the imaginary root directly into its characteristic equation rather than simulating a physiological response.</p>
 <pre data-run="code/ch08_synthesis.py"><code>import math
 import numpy as np
 
@@ -94,48 +94,82 @@ assert np.allclose(steady, [-R*deficit/(1+K*R), K*R*deficit/(1+K*R)])
 eigen = np.linalg.eigvals(A)
 assert np.all(eigen.real &lt; 0)
 
+
 def integrate(h):
     y = np.zeros(2)
     minimum = 0.0
     for _ in range(round(20/h)):
-        f = lambda z: A@z+b
-        k1=f(y); k2=f(y+h*k1/2); k3=f(y+h*k2/2); k4=f(y+h*k3)
+        def f(z):
+            return A@z+b
+        k1 = f(y)
+        k2 = f(y+h*k1/2)
+        k3 = f(y+h*k2/2)
+        k4 = f(y+h*k3)
         y += h*(k1+2*k2+2*k3+k4)/6
         minimum = min(minimum, y[0])
     return y, minimum
+
+
 end, minimum = integrate(.002)
 end_half, _ = integrate(.001)
 assert np.max(np.abs(end-end_half)) &lt; 1e-9
 assert np.max(np.abs(end-steady)) &lt; 1e-5
 # Incremental storage identity at independently chosen states.
-for x,u,d in [(2.,3.,10.),(-4.,6.,10.),(.7,-2.,0.)]:
-    xdot=(-x/R+u-d)/C
+for x, u, d in [(2., 3., 10.), (-4., 6., 10.), (.7, -2., 0.)]:
+    xdot = (-x/R+u-d)/C
     assert math.isclose(C*x*xdot, -x*x/R+x*u-x*d, abs_tol=1e-12)
 # Both compliance pairs have the same reduced pressure-difference dynamics.
-for ca,cv in [(1.2,6.),(1.5,3.)]:
+for ca, cv in [(1.2, 6.), (1.5, 3.)]:
     assert math.isclose(ca*cv/(ca+cv), C)
-beta=Cv/(Ca+Cv)
+beta = Cv/(Ca+Cv)
 assert math.isclose(C/beta, Ca) and math.isclose(C/(1-beta), Cv)
 # Unchanged total resistance can hide redistribution between parallel beds.
-q0=np.array([90/2, 90/2]); q1=np.array([90/3, 90/1.5])
-assert math.isclose(q0.sum(),q1.sum())
-assert math.isclose(q1[0]/q0[0],2/3)
-head=1060*9.81*.30/133.322387415
-omega=math.sqrt(K*K-1/(R*R))/C
-critical_delay=math.acos(-1/(K*R))/omega
-s=1j*omega
+q0 = np.array([90/2, 90/2])
+q1 = np.array([90/3, 90/1.5])
+assert math.isclose(q0.sum(), q1.sum())
+assert math.isclose(q1[0]/q0[0], 2/3)
+head = 1060*9.81*.30/133.322387415
+omega = math.sqrt(K*K-1/(R*R))/C
+critical_delay = math.acos(-1/(K*R))/omega
+s = 1j*omega
 assert abs(C*s+1/R+K*np.exp(-s*critical_delay)) &lt; 1e-12
-crossing=K*s*np.exp(-s*critical_delay)/(C-K*critical_delay*np.exp(-s*critical_delay))
+crossing = K*s*np.exp(-s*critical_delay) / \
+    (C-K*critical_delay*np.exp(-s*critical_delay))
 assert crossing.real &gt; 0
-power=90*90*133.322387415e-6
+power = 90*90*133.322387415e-6
 print(f'Reduced compliance: {C:.6f} mL/mmHg')
-print(f'Steady pressure/control deviations: {steady[0]:.6f} mmHg, {steady[1]:.6f} mL/s')
-print(f'Poles: real {eigen[0].real:.6f}; imaginary magnitude {abs(eigen[0].imag):.6f} 1/s')
-print(f'20-s pressure/control: {end[0]:.6f}, {end[1]:.6f}; RK4 refinement passed')
-print(f'Parallel-bed flows: {q0[0]:.1f}/{q0[1]:.1f} to {q1[0]:.1f}/{q1[1]:.1f} mL/s')
+print(
+    (
+        f'Steady pressure/control deviations: {steady[0]:.6f} '
+        f'mmHg, {steady[1]:.6f} mL/s'
+    ))
+print(
+    (
+        f'Poles: real {eigen[0].real:.6f}; imaginary '
+        f'magnitude {abs(eigen[0].imag):.6f} 1/s'
+    ))
+print(
+    (
+        f'20-s pressure/control: {end[0]:.6f}, {end[1]:.6f}; '
+        f'RK4 refinement passed'
+    ))
+print(
+    (
+        f'Parallel-bed flows: {q0[0]:.1f}/{q0[1]:.1f} '
+        f'to {q1[0]:.1f}/{q1[1]:.1f} mL/s'
+    ))
 print(f'30-cm hydrostatic pressure magnitude: {head:.6f} mmHg')
-print(f'Delayed-model imaginary-root frequency/delay: {omega:.6f} 1/s, {critical_delay:.6f} s')
-print(f'Baseline hydraulic power: {power:.6f} W; conservation and identifiability checks passed')
+print(
+    (
+        f'Delayed-model imaginary-root frequency/delay: '
+        f'{omega:.6f} 1/s, {critical_delay:.6f} s'
+    ))
+print(
+    (
+        f'Baseline hydraulic power: {power:.6f} W; '
+        f'conservation and identifiability checks '
+        f'passed'
+    ))
 </code></pre>
 <pre data-output="code/ch08_synthesis.py">Reduced compliance: 1.000000 mL/mmHg
 Steady pressure/control deviations: -3.333333 mmHg, 6.666667 mL/s
@@ -147,15 +181,24 @@ Delayed-model imaginary-root frequency/delay: 1.732051 1/s, 1.209200 s
 Baseline hydraulic power: 1.079911 W; conservation and identifiability checks passed</pre>
 
 <h2 id="problems">Problems and fully worked solutions</h2>
-<details><summary>1. A pressure transducer is moved 30 cm upward. What does the hydrostatic calculation establish?</summary><p>For the stipulated density, the column pressure decreases by $\rho gh=1060(9.81)(0.30)=3119.58\;\mathrm{Pa}$, or $23.398771\;\mathrm{mmHg}$. If an otherwise identical venous column is evaluated at the same new height, its pressure decreases by the same amount, leaving their difference unchanged. This establishes a reference-height correction under the static-column assumptions. It does not establish unchanged transmural pressure, unchanged vessel area or preserved perfusion in a compliant, actively controlled body.</p></details>
-<details><summary>2. An ideal transfer moves 10 mL from the arterial store to the venous store. Find the pressure-difference jump.</summary><p>With $C_a=1.2$ and $C_v=6\;\mathrm{mL/mmHg}$, the arterial change is $-10/1.2=-8.333333\;\mathrm{mmHg}$ and the venous change is $+10/6=1.666667\;\mathrm{mmHg}$. Subtracting gives $\delta p=-10\;\mathrm{mmHg}=-10/C_e$. Total volume is conserved. This deliberately imposed instantaneous transfer is an initial-condition example; it is not a claim that standing transfers that volume directly between these two anatomical pools.</p></details>
-<details><summary>3. Find the uncontrolled response to a 10 mL/s deficit and identify its initial slope.</summary><p>With $R=C_e=1$ in the specified units, $\dot x+x=-10$, $x(0)=0$. Multiplication by $e^t$ and integration give $x=-10(1-e^{-t})\;\mathrm{mmHg}$. The time constant is 1 s, the limit is $-10\;\mathrm{mmHg}$ and $\dot x(0^+)=-10\;\mathrm{mmHg/s}$. With a continuous lagged controller initially at $u=0$, the initial slope remains the same, although the later trajectory changes.</p></details>
-<details><summary>4. Does the specified compensator restore the original pressure exactly? Is its transient stable?</summary><p>At stationarity $u=-2x$ and $0=-x+u-10$, hence $x=-10/3$, $u=20/3$. There is a nonzero residual pressure deviation. The characteristic equation is $2s^2+3s+3=0$, giving $s=(-3\pm i\sqrt{15})/4$. Both real parts are $-3/4\;\mathrm{s^{-1}}$, so disturbances about the new equilibrium decay, with an oscillatory factor. Stability does not imply monotonicity or zero steady error.</p></details>
-<details><summary>5. Recheck the pure-delay crossing and its direction.</summary><p>For $C_e=R=1$, $K=2$, the imaginary-root conditions give $\cos(\omega T)=-1/2$ and $\omega=2\sin(\omega T)$. The first positive phase is $2\pi/3$, so $\omega=\sqrt3$ and $T_c=2\pi/(3\sqrt3)=1.209200\;\mathrm s$. Substitution into $s+1+2e^{-sT}=0$ gives zero. The real derivative at the crossing is $\omega^2/[(1+T_c)^2+(T_c\omega)^2]&gt;0$. Thus a small increase through this crossing moves that root pair into the right half-plane. This is a result for the changed delayed equation, not a correction to the stable two-state lagged equation.</p></details>
-<details><summary>6. Can the incremental energy remain constant while its three power terms are nonzero?</summary><p>Take $x=-4\;\mathrm{mmHg}$, $u=6\;\mathrm{mL/s}$ and $d=10\;\mathrm{mL/s}$ with $R=C_e=1$. Then $\dot x=4+6-10=0$ and $\dot{\mathcal E}=0$. Nevertheless the terms in the ledger are $-x^2/R=-16$, $xu=-24$ and $-xd=+40$, in $\mathrm{mmHg\,mL/s}$; they sum to zero. Their signs describe incremental exchanges, not negative metabolic expenditure. The full baseline hydraulic ledger must use $pQ_p$ and the actual store pressures.</p></details>
-<details><summary>7. Which new measurement distinguishes the two compliance pairs with identical reduced dynamics?</summary><p>Both pairs $(1.2,6)$ and $(1.5,3)$ have $C_e=1$. For the first, $\beta=C_v/(C_a+C_v)=5/6$; for the second, $\beta=2/3$. Simultaneously measuring nonzero $\delta P_a$ and $\delta p$ in a closed-volume perturbation determines this ratio. With $C_e$ already identified, $C_a=C_e/\beta$ and $C_v=C_e/(1-\beta)$ recover the pair. More samples of $\delta p$ alone cannot supply this missing coordinate.</p></details>
-<details><summary>8. Construct a fall in regional flow that is invisible to total resistance.</summary><p>At pressure difference 90, the initial parallel pair $(2,2)$ has $R_{\mathrm{tot}}=1$ and flows $(45,45)$. The pair $(3,1.5)$ also satisfies $1/R_{\mathrm{tot}}=1/3+2/3=1$ but has flows $(30,60)$. The first regional flow falls by $(45-30)/45=1/3$, while total flow and pressure are unchanged. Global pressure maintenance therefore does not logically imply preservation of every regional delivery rate.</p></details>
-<details><summary>9. Why can a time constant remain unidentifiable even in an ideal noiseless transient?</summary><p>Set $K=0$ and initialize $u(0)=0$. The controller equation becomes $\tau\dot u=-u$, so $u$ stays zero for every positive $\tau$. The transfer function factors as $-(\tau s+1)/[(C_es+1/R)(\tau s+1)]$ and reduces to $-1/(C_es+1/R)$. The pressure trace is independent of $\tau$. Infinite sampling accuracy cannot identify a parameter that disappears from the observed dynamics. One would need a different experiment, such as a known nonzero controller-state initialization and observation, or a different model with an excited observable coupling.</p></details>
+<p class="problem"><strong>1. A pressure transducer is moved 30 cm upward. What does the hydrostatic calculation establish?</strong></p>
+<details><summary>Worked solution</summary><p>For the stipulated density, the column pressure decreases by $\rho gh=1060(9.81)(0.30)=3119.58\;\mathrm{Pa}$, or $23.398771\;\mathrm{mmHg}$. If an otherwise identical venous column is evaluated at the same new height, its pressure decreases by the same amount, leaving their difference unchanged. This establishes a reference-height correction under the static-column assumptions. It does not establish unchanged transmural pressure, unchanged vessel area or preserved perfusion in a compliant, actively controlled body.</p></details>
+<p class="problem"><strong>2. An ideal transfer moves 10 mL from the arterial store to the venous store. Find the pressure-difference jump.</strong></p>
+<details><summary>Worked solution</summary><p>With $C_a=1.2$ and $C_v=6\;\mathrm{mL/mmHg}$, the arterial change is $-10/1.2=-8.333333\;\mathrm{mmHg}$ and the venous change is $+10/6=1.666667\;\mathrm{mmHg}$. Subtracting gives $\delta p=-10\;\mathrm{mmHg}=-10/C_e$. Total volume is conserved. This deliberately imposed instantaneous transfer is an initial-condition example; it is not a claim that standing transfers that volume directly between these two anatomical pools.</p></details>
+<p class="problem"><strong>3. Find the uncontrolled response to a 10 mL/s deficit and identify its initial slope.</strong></p>
+<details><summary>Worked solution</summary><p>With $R=C_e=1$ in the specified units, $\dot x+x=-10$, $x(0)=0$. Multiplication by $e^t$ and integration give $x=-10(1-e^{-t})\;\mathrm{mmHg}$. The time constant is 1 s, the limit is $-10\;\mathrm{mmHg}$ and $\dot x(0^+)=-10\;\mathrm{mmHg/s}$. With a continuous lagged controller initially at $u=0$, the initial slope remains the same, although the later trajectory changes.</p></details>
+<p class="problem"><strong>4. Does the specified compensator restore the original pressure exactly? Is its transient stable?</strong></p>
+<details><summary>Worked solution</summary><p>At stationarity $u=-2x$ and $0=-x+u-10$, hence $x=-10/3$, $u=20/3$. There is a nonzero residual pressure deviation. The characteristic equation is $2s^2+3s+3=0$, giving $s=(-3\pm i\sqrt{15})/4$. Both real parts are $-3/4\;\mathrm{s^{-1}}$, so disturbances about the new equilibrium decay, with an oscillatory factor. Stability does not imply monotonicity or zero steady error.</p></details>
+<p class="problem"><strong>5. Recheck the pure-delay crossing and its direction.</strong></p>
+<details><summary>Worked solution</summary><p>For $C_e=R=1$, $K=2$, the imaginary-root conditions give $\cos(\omega T)=-1/2$ and $\omega=2\sin(\omega T)$. The first positive phase is $2\pi/3$, so $\omega=\sqrt3$ and $T_c=2\pi/(3\sqrt3)=1.209200\;\mathrm s$. Substitution into $s+1+2e^{-sT}=0$ gives zero. The real derivative at the crossing is $\omega^2/[(1+T_c)^2+(T_c\omega)^2]&gt;0$. Thus a small increase through this crossing moves that root pair into the right half-plane. This is a result for the changed delayed equation, not a correction to the stable two-state lagged equation.</p></details>
+<p class="problem"><strong>6. Can the incremental energy remain constant while its three power terms are nonzero?</strong></p>
+<details><summary>Worked solution</summary><p>Take $x=-4\;\mathrm{mmHg}$, $u=6\;\mathrm{mL/s}$ and $d=10\;\mathrm{mL/s}$ with $R=C_e=1$. Then $\dot x=4+6-10=0$ and $\dot{\mathcal E}=0$. Nevertheless the terms in the ledger are $-x^2/R=-16$, $xu=-24$ and $-xd=+40$, in $\mathrm{mmHg\,mL/s}$; they sum to zero. Their signs describe incremental exchanges, not negative metabolic expenditure. The full baseline hydraulic ledger must use $pQ_p$ and the actual store pressures.</p></details>
+<p class="problem"><strong>7. Which new measurement distinguishes the two compliance pairs with identical reduced dynamics?</strong></p>
+<details><summary>Worked solution</summary><p>Both pairs $(1.2,6)$ and $(1.5,3)$ have $C_e=1$. For the first, $\beta=C_v/(C_a+C_v)=5/6$; for the second, $\beta=2/3$. Simultaneously measuring nonzero $\delta P_a$ and $\delta p$ in a closed-volume perturbation determines this ratio. With $C_e$ already identified, $C_a=C_e/\beta$ and $C_v=C_e/(1-\beta)$ recover the pair. More samples of $\delta p$ alone cannot supply this missing coordinate.</p></details>
+<p class="problem"><strong>8. Construct a fall in regional flow that is invisible to total resistance.</strong></p>
+<details><summary>Worked solution</summary><p>At pressure difference 90, the initial parallel pair $(2,2)$ has $R_{\mathrm{tot}}=1$ and flows $(45,45)$. The pair $(3,1.5)$ also satisfies $1/R_{\mathrm{tot}}=1/3+2/3=1$ but has flows $(30,60)$. The first regional flow falls by $(45-30)/45=1/3$, while total flow and pressure are unchanged. Global pressure maintenance therefore does not logically imply preservation of every regional delivery rate.</p></details>
+<p class="problem"><strong>9. Why can a time constant remain unidentifiable even in an ideal noiseless transient?</strong></p>
+<details><summary>Worked solution</summary><p>Set $K=0$ and initialize $u(0)=0$. The controller equation becomes $\tau\dot u=-u$, so $u$ stays zero for every positive $\tau$. The transfer function factors as $-(\tau s+1)/[(C_es+1/R)(\tau s+1)]$ and reduces to $-1/(C_es+1/R)$. The pressure trace is independent of $\tau$. Infinite sampling accuracy cannot identify a parameter that disappears from the observed dynamics. One would need a different experiment, such as a known nonzero controller-state initialization and observation, or a different model with an excited observable coupling.</p></details>
 
 <h2 id="sources">Sources and limits of inspection</h2>
 <p>The full local machine transcript of <a href="https://www.youtube.com/watch?v=MeaVvfB56Cc">the additional course discussion</a> was read. Related substantive spans are the overview at about 867–1451 s, the posture question/answer at 1626–1736 s, and the mathematical-modeling answer at 2388–2425 s. Long setup and idle stretches are retained in acquisition coverage but do not become invented lecture content. Recognition artifacts in quiet intervals are not interpreted as technical statements. The other chapters supply the detailed definitions and material-law development.</p>

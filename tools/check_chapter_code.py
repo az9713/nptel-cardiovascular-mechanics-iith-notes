@@ -9,9 +9,23 @@ import tempfile
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+import pycodestyle
 from export_code import MAPPING
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class StyleReport(pycodestyle.BaseReport):
+    def __init__(self, options):
+        super().__init__(options)
+        self.issues = []
+
+    def error(self, line_number, offset, text, check):
+        code = super().error(line_number, offset, text, check)
+        if code:
+            self.issues.append({'line': line_number, 'column': offset + 1,
+                                'message': text})
+        return code
 
 
 def main():
@@ -23,6 +37,10 @@ def main():
         for listing in soup.select('pre[data-run]'):
             identity = listing['data-run']
             code = listing.get_text()
+            options = pycodestyle.StyleGuide(quiet=True).options
+            style = StyleReport(options)
+            pycodestyle.Checker(lines=code.splitlines(True), options=options,
+                                report=style).check_all()
             exported_path = None
             exported_matches = True
             if chapter.name.startswith("chapter-"):
@@ -38,14 +56,18 @@ def main():
                 result = subprocess.run([sys.executable, '-I', '-c', code],
                                         cwd=directory, capture_output=True,
                                         text=True, timeout=90)
-            passed = exported_matches and result.returncode == 0 and result.stdout.strip() == expected.get_text().strip()
+            passed = (exported_matches and not style.issues and
+                      result.returncode == 0 and
+                      result.stdout.strip() == expected.get_text().strip())
             records.append({'chapter': chapter.name, 'listing': identity,
                             'code_sha256': hashlib.sha256(code.encode()).hexdigest(),
                             'returncode': result.returncode, 'passed': passed,
                             'exported_path': exported_path, 'exported_bytes_match': exported_matches,
+                            'pycodestyle_issues': style.issues,
                             'stdout': result.stdout, 'stderr': result.stderr})
             print(chapter.name, identity, 'PASS' if passed else 'FAIL')
-    report = {'scope': 'Actual isolated execution of authored listings; numerical checks are not a proof audit.',
+    report = {'scope': 'Full installed pycodestyle engine and actual isolated execution of authored listings; numerical checks are not a proof audit.',
+              'pycodestyle_version': pycodestyle.__version__,
               'passed': bool(records) and all(r['passed'] for r in records),
               'listing_count': len(records), 'results': records}
     (ROOT / 'chapter-code-validation.json').write_text(json.dumps(report, indent=2)+'\n', encoding='utf-8')

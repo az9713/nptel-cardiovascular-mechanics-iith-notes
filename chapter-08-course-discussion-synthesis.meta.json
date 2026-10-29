@@ -1,8 +1,8 @@
 {
   "chapter": 8,
   "title": "Coupling the circulation: conservation, feedback and inference",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "ca9a10ca2ce2ffd3d706383798a55adb2c7d204c48df9c6608f4847c5bcdaeb6",
   "recordings": [
     {
       "video_id": "MeaVvfB56Cc",
@@ -12,7 +12,7 @@
       "decoded_audio_duration_seconds": 2610.0158125,
       "complete_decoded_audio": true,
       "media_sha256": "23614b136d92fc58ad35f2f5739cc0287927642137a82a6b6f905c21bb31b955",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 2609.28,
       "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second core chunks with2-second context; not publisher captions",
       "source_read_complete": true,
@@ -22,7 +22,7 @@
   ],
   "sections": [
     {
-      "section": "Identify the question before increasing model complexity Discussion \u00b7 14:27 Discussion \u00b7 39:48",
+      "section": "Identify the question before increasing model complexity Discussion · 14:27 Discussion · 39:48",
       "anchor": "scope",
       "video_id": "MeaVvfB56Cc",
       "start": 867,
@@ -44,7 +44,7 @@
       ]
     },
     {
-      "section": "Keep gravitational head and perfusion pressure distinct Discussion \u00b7 27:06",
+      "section": "Keep gravitational head and perfusion pressure distinct Discussion · 27:06",
       "anchor": "gravity",
       "video_id": "MeaVvfB56Cc",
       "start": 1626,
@@ -208,9 +208,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "0bd7dac287dba8321beb1ecaad77a83c079d4255537c83d0cf2c74c0d29b277e"
   },
   "limits": [
     "Long setup/idle intervals retained as acquisition coverage, not invented technical content",

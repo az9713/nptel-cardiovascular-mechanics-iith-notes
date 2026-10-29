@@ -1,8 +1,8 @@
 {
   "chapter": 1,
   "title": "Structure, function and cardiovascular modeling",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "aba72028485690eeb6fee3ae54a132d20f070c083e9eddd0ae3e2463990eb701",
   "recordings": [
     {
       "video_id": "3vz6e0wgxFY",
@@ -37,12 +37,12 @@
   ],
   "sections": [
     {
-      "section": "Why anatomy alone leaves an engineering question L1 \u00b7 01:15",
+      "section": "Why anatomy alone leaves an engineering question L1 · 01:15",
       "anchor": "motivation",
       "video_id": "3vz6e0wgxFY",
       "start": 75,
       "end": 624,
-      "lecture_material": "Mechanical motivation, historical population burden, interventional problem classes, and structure\u2013function questions.",
+      "lecture_material": "Mechanical motivation, historical population burden, interventional problem classes, and structure–function questions.",
       "research_extension": "Historical cohort definitions and FDA device-scope definitions.",
       "teaching_construction": "Independent exposition, formal models, derivations, numerical cases, code and exercises; timestamp does not attribute these constructions to the recording",
       "source_spans": [
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "section": "Mechanical fields meet living cells L1 \u00b7 10:24 L3 \u00b7 07:34",
+      "section": "Mechanical fields meet living cells L1 · 10:24 L3 · 07:34",
       "anchor": "cell-mechanics",
       "video_id": "3vz6e0wgxFY",
       "start": 624,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "What a continuum field averages L1 \u00b7 17:34 L3 \u00b7 16:45",
+      "section": "What a continuum field averages L1 · 17:34 L3 · 16:45",
       "anchor": "continuum",
       "video_id": "3vz6e0wgxFY",
       "start": 1054,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "section": "Organization, circulation and regulated function L1 \u00b7 20:36 L3 \u00b7 22:59",
+      "section": "Organization, circulation and regulated function L1 · 20:36 L3 · 22:59",
       "anchor": "structure-function",
       "video_id": "3vz6e0wgxFY",
       "start": 1236,
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "section": "A vessel model must connect flow to delivery L1 \u00b7 32:42",
+      "section": "A vessel model must connect flow to delivery L1 · 32:42",
       "anchor": "transport-model",
       "video_id": "3vz6e0wgxFY",
       "start": 1962,
@@ -142,7 +142,7 @@
       ]
     },
     {
-      "section": "From an image to a functional quantity L1 \u00b7 43:49 L3 \u00b7 40:07",
+      "section": "From an image to a functional quantity L1 · 43:49 L3 · 40:07",
       "anchor": "functional-severity",
       "video_id": "3vz6e0wgxFY",
       "start": 2629,
@@ -280,9 +280,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "641c0fc6d2da57e142d8823c37091b47c96aa8b6a3d8473d5667e83cd0ba7a68"
   },
   "limits": [
     "Fallible local ASR, including boundary repetitions and technical/numeric errors",

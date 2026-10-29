@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 START, END = '<!-- BOOK-CONTENT-START -->', '<!-- BOOK-CONTENT-END -->'
+MATH = re.compile(r'\\\((.*?)\\\)|\\\[(.*?)\\\]|\$\$(.*?)\$\$|(?<!\\)\$(.*?)(?<!\\)\$', re.S)
 
 
 def body(document):
@@ -21,6 +22,12 @@ def body(document):
 
 def sha(text):
     return hashlib.sha256(text.encode('utf-8')).hexdigest()
+
+
+def expected_math(document):
+    article = body(document)
+    article = re.sub(r'<pre\b[^>]*>.*?</pre>', '', article, flags=re.S)
+    return list(MATH.finditer(article))
 
 
 def static_checks():
@@ -45,6 +52,13 @@ def static_checks():
         if re.search(r'(?<!\\)\bqquad\b', body(source)):
             errors.append(path.name+': unescaped TeX spacing command')
         checksum = sha(body(source))
+        math_spans = expected_math(source)
+        for span in math_spans:
+            expression = next(x for x in span.groups() if x is not None)
+            if '<' in expression or '>' in expression:
+                errors.append(path.name+': raw HTML comparison inside math')
+        if any(not x.has_attr('id') for x in soup.select('h1,h2,h3')):
+            errors.append(path.name+': heading has no stable anchor')
         tag = soup.select_one('meta[name="book-content-sha256"]')
         if not tag or tag.get('content') != checksum:
             errors.append(path.name+': wrapper body digest mismatch')
@@ -107,6 +121,7 @@ def static_checks():
         inventory.append({'path': path.name, 'body_sha256': checksum,
                           'words': len(re.findall(r'\b[\w-]+\b', text)),
                           'sections': len(soup.select('article h2')),
+                          'source_math_spans': len(math_spans),
                           'exercises': len(soup.select('article details')),
                           'runnable_listings': len(soup.select('pre[data-run]'))})
     report = {'passed': not errors, 'errors': errors, 'html_count': len(files),
@@ -141,7 +156,8 @@ def browser_checks():
                 page.wait_for_function("document.documentElement.dataset.bookReady === 'true'")
                 errors = page.locator('mjx-merror,[data-mml-node="merror"]').count()
                 overflow = page.evaluate('document.documentElement.scrollWidth > innerWidth+2')
-                math = page.locator('mjx-container').count()
+                math = page.locator('#chapter-content mjx-container').count()
+                expected = len(expected_math(path.read_bytes().decode('utf-8')))
                 page.locator('#theme-toggle').click()
                 theme = page.locator('body.light').count() == 1
                 page.locator('#theme-toggle').click()
@@ -169,9 +185,11 @@ def browser_checks():
                     specific = specific and '6.000 mmol/L' in page.locator('#vessel-results').inner_text()
                 required_math = path.name.startswith('chapter-') or path.name == 'numerical-lab.html'
                 passed = (not errors and not overflow and theme and text and solutions and specific
+                          and math == expected
                           and (math > 0 or not required_math))
                 result.append({'page': path.name, 'width': width, 'passed': passed,
                                'math_count': math, 'math_errors': errors,
+                               'expected_math_count': expected,
                                'horizontal_overflow': overflow, 'theme': theme,
                                'text_size': text, 'expand_solutions': solutions,
                                'page_specific_controls': specific})

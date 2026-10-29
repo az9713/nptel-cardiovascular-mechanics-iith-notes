@@ -48,7 +48,7 @@ def page(title, body, chapter=False, previous=None, following=None):
         back = f'<a rel="prev" href="{esc(previous)}">Previous chapter</a>' if previous else '<span>First chapter</span>'
         ahead = f'<a rel="next" href="{esc(following)}">Next chapter</a>' if following else '<span>End of edition</span>'
         turns = f'<nav class="page-turn" aria-label="Chapter navigation">{back}<a href="index.html">Chapter index</a>{ahead}</nav>'
-    sidebar = '<aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside>' if chapter else ''
+    sidebar = '<aside class="toc" id="chapter-toc" aria-label="On this page"><h2 id="toc-heading">On this page</h2></aside>' if chapter else ''
     return f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="{checksum}">
@@ -91,9 +91,9 @@ def build():
             return (0, int(number[1])) if number else (1, recording['playlist_position'])
         recordings_here.sort(key=lesson_key)
         recordings = ' · '.join(f'<a href="{esc(r["url"])}">{esc(r["label"])}</a>' for r in recordings_here)
-        rows.append(f'<li data-lecture><h2>{order:02d}. {headline}</h2><span class="status">{esc(record["chapter_status"])}</span><p class="lecture-meta">{recordings}</p></li>')
+        rows.append(f'<li data-lecture><h2 id="chapter-{order:02d}">{order:02d}. {headline}</h2><span class="status">{esc(record["chapter_status"])}</span><p class="lecture-meta">{recordings}</p></li>')
     overview = ''
-    index_body = f'''<h1>Introduction to Cardiovascular Mechanics</h1><p class="lead">An independent textbook rewrite of Prof. Anand Mohan’s NPTEL course at IIT Hyderabad.</p>
+    index_body = f'''<h1 id="book-title">Introduction to Cardiovascular Mechanics</h1><p class="lead">An independent textbook rewrite of Prof. Anand Mohan’s NPTEL course at IIT Hyderabad.</p>
 <p>{len(manifest['lectures'])} playlist items · 14 numbered lessons and reviews · {len(available)} available chapters. IIT Madras is the NPTEL coordinating institute; the instructor and course are at IIT Hyderabad.</p>
 <p>Read the <a href="WORKFLOW.md">production workflow</a> and <a href="completion.json">completion record</a> for source and review boundaries.</p>
 <div class="search-tools"><label class="search-label" for="lecture-search">Search chapters</label><input id="lecture-search" type="search" placeholder="Search chapters and topics"><p id="search-status" role="status" aria-live="polite">{len(chapters)} chapters shown</p></div><ol class="lecture-list">{''.join(rows)}</ol>{overview}'''
@@ -107,12 +107,12 @@ def build():
                       row.get('research_extension'), row.get('teaching_construction')]
             source_rows.append('<tr>' + ''.join(f'<td>{esc(v or "")}</td>' for v in values) + '</tr>')
     inventory = ''.join(f'<tr><td>{r["playlist_position"]}</td><td><a href="{esc(r["url"])}">{esc(r["title"])}</a></td><td>{esc(r["duration"])}</td><td>{esc(r["chapter_order"])}</td><td>{esc(r["source_status"])}</td></tr>' for r in manifest['lectures'])
-    source_body = '<h1>Recording and section map</h1><p>The original playlist order is retained below. Chapters follow numbered course order so that continuum mechanics precedes cardiac, blood and vascular models. The alternate blood upload and the additional discussion remain individually inventoried. Machine ASR is fallible; timestamps locate related discussion and do not attribute every derivation to the lecturer.</p>'
-    source_body += '<h2>Every playlist item</h2><div class="table-wrap"><table><thead><tr><th>Position</th><th>Recording</th><th>Seconds</th><th>Chapter</th><th>Source status</th></tr></thead><tbody>' + inventory + '</tbody></table></div>'
-    source_body += '<h2>Section provenance</h2><div class="table-wrap"><table><thead><tr><th>Chapter</th><th>Section</th><th>Video</th><th>Span</th><th>Lecture material</th><th>Research extension</th><th>Original construction</th></tr></thead><tbody>' + ''.join(source_rows) + '</tbody></table></div>'
+    source_body = '<h1 id="source-map-title">Recording and section map</h1><p>The original playlist order is retained below. Chapters follow numbered course order so that continuum mechanics precedes cardiac, blood and vascular models. The alternate blood upload and the additional discussion remain individually inventoried. Machine ASR is fallible; timestamps locate related discussion and do not attribute every derivation to the lecturer.</p>'
+    source_body += '<h2 id="playlist-inventory">Every playlist item</h2><div class="table-wrap"><table><thead><tr><th>Position</th><th>Recording</th><th>Seconds</th><th>Chapter</th><th>Source status</th></tr></thead><tbody>' + inventory + '</tbody></table></div>'
+    source_body += '<h2 id="section-provenance">Section provenance</h2><div class="table-wrap"><table><thead><tr><th>Chapter</th><th>Section</th><th>Video</th><th>Span</th><th>Lecture material</th><th>Research extension</th><th>Original construction</th></tr></thead><tbody>' + ''.join(source_rows) + '</tbody></table></div>'
     write(ROOT / 'source-map.html', page('Source map', source_body))
     write(ROOT / 'source-map.json', json.dumps({'sections': sections}, indent=2)+'\n')
-    ref_body = '<h1>Primary references</h1><p>Recording anchors, external sources, and original teaching derivations have separate roles. Exact source-access scope is recorded in the chapter sidecars.</p><ul>'
+    ref_body = '<h1 id="references-title">Primary references</h1><p>Recording anchors, external sources, and original teaching derivations have separate roles. Exact source-access scope is recorded in the chapter sidecars.</p><ul>'
     ref_body += ''.join(f'<li><a href="{esc(u)}">{esc(r["title"])}</a><p>{esc(r["supports"])}</p></li>' for u, r in references.items()) + '</ul>'
     write(ROOT / 'references.html', page('References', ref_body))
     lab = ROOT / 'numerical-lab.html'

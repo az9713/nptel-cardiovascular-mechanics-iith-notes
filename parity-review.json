@@ -1,0 +1,1648 @@
+{
+  "passed": false,
+  "status": "Author quantitative and qualitative comparison complete; independent closure pending",
+  "method": "Same parser and whitespace-count convention for all candidates and both full-read exemplars. Navigation, headings, delimited math, code and solutions are excluded from exposition counts; solution prose is separate. h2 units define sections. Sections containing code or solution disclosures, source sections and explicitly titled endmatter are excluded from central medians by the same rule in every file. Nonvideo links are diagnostic, not proof of source reading. Explicit runnable markers are distinct from Python-recognized source blocks and all code/output blocks. Counts are inspection prompts, not quotas.",
+  "reference_exemplars": [
+    {
+      "label": "stronger formal tensor exemplar",
+      "body_sha256": "6b3abe8a7298a815fe83e250faf397fb7c5351fced48ce6de0fe01628ce39c39",
+      "prose_words_excluding_math_code_solutions": 3272,
+      "major_sections": 14,
+      "central_sections": 10,
+      "median_central_section_prose_words": 274.5,
+      "minimum_central_section_prose_words": 125,
+      "developed_subsections": 0,
+      "displayed_equations": 15,
+      "integrated_nonvideo_links": 4,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 6,
+      "solution_prose_words": [
+        60,
+        56,
+        40,
+        47,
+        64,
+        64
+      ],
+      "figures": 0,
+      "tables": 1,
+      "section_metrics": [
+        {
+          "anchor": "model",
+          "heading": "A prescribed shear and the questions it raises",
+          "role": "central",
+          "prose_words": 179,
+          "display_equations": 1
+        },
+        {
+          "anchor": "alternating",
+          "heading": "Orientation and the alternating symbol L6 0:42",
+          "role": "central",
+          "prose_words": 357,
+          "display_equations": 2
+        },
+        {
+          "anchor": "epsilon-delta",
+          "heading": "Deriving and using the epsilon\u2013delta identity L6 19:48",
+          "role": "central",
+          "prose_words": 314,
+          "display_equations": 2
+        },
+        {
+          "anchor": "vector-identities",
+          "heading": "Area, volume and products of three vectors L7 0:42",
+          "role": "central",
+          "prose_words": 320,
+          "display_equations": 2
+        },
+        {
+          "anchor": "projection",
+          "heading": "Resolving a vector along and across a direction L7 26:50",
+          "role": "central",
+          "prose_words": 125,
+          "display_equations": 1
+        },
+        {
+          "anchor": "dyads",
+          "heading": "Dyads construct maps from directions L8 0:47",
+          "role": "central",
+          "prose_words": 238,
+          "display_equations": 2
+        },
+        {
+          "anchor": "composition",
+          "heading": "Which directions does a product contract? L8 17:40",
+          "role": "central",
+          "prose_words": 221,
+          "display_equations": 1
+        },
+        {
+          "anchor": "contractions",
+          "heading": "Double contractions and higher-order expressions L9 1:34",
+          "role": "central",
+          "prose_words": 311,
+          "display_equations": 0
+        },
+        {
+          "anchor": "symmetry",
+          "heading": "Symmetry, skew symmetry and what a scalar misses L9 28:00",
+          "role": "central",
+          "prose_words": 362,
+          "display_equations": 3
+        },
+        {
+          "anchor": "tutorial",
+          "heading": "Contraction can solve a tensor equation L10 0:40",
+          "role": "central",
+          "prose_words": 192,
+          "display_equations": 1
+        },
+        {
+          "anchor": "implementation",
+          "heading": "Executable checks of orientation, slots and symmetry",
+          "role": "implementation",
+          "prose_words": 122,
+          "display_equations": 0
+        },
+        {
+          "anchor": "limits",
+          "heading": "What the algebra establishes",
+          "role": "endmatter",
+          "prose_words": 127,
+          "display_equations": 0
+        },
+        {
+          "anchor": "exercises",
+          "heading": "Exercises with worked solutions",
+          "role": "exercises",
+          "prose_words": 154,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and further development",
+          "role": "sources",
+          "prose_words": 71,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "leaner function exemplar",
+      "body_sha256": "e1e79cdd65e0d9da5963540f8105f847bb36a67696e5dcc58540ab5b9a803f27",
+      "prose_words_excluding_math_code_solutions": 2106,
+      "major_sections": 9,
+      "central_sections": 6,
+      "median_central_section_prose_words": 257.5,
+      "minimum_central_section_prose_words": 203,
+      "developed_subsections": 6,
+      "displayed_equations": 0,
+      "integrated_nonvideo_links": 4,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 0,
+      "worked_solutions": 6,
+      "solution_prose_words": [
+        60,
+        79,
+        52,
+        52,
+        70,
+        99
+      ],
+      "figures": 0,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "relations",
+          "heading": "3.1 Ordered pairs and relations Lesson 7 \u00b7 01:00",
+          "role": "central",
+          "prose_words": 257,
+          "display_equations": 0
+        },
+        {
+          "anchor": "definition",
+          "heading": "3.2 Existence and uniqueness are separate requirements Lesson 7 \u00b7 07:45",
+          "role": "central",
+          "prose_words": 258,
+          "display_equations": 0
+        },
+        {
+          "anchor": "descriptions",
+          "heading": "3.3 A function need not be a formula Lesson 7 \u00b7 14:29",
+          "role": "central",
+          "prose_words": 366,
+          "display_equations": 0
+        },
+        {
+          "anchor": "types",
+          "heading": "3.4 Injectivity, surjectivity, and the square map Lesson 7 \u00b7 24:30",
+          "role": "central",
+          "prose_words": 203,
+          "display_equations": 0
+        },
+        {
+          "anchor": "composition",
+          "heading": "3.5 Composition preserves the function contract Lesson 7 \u00b7 27:24",
+          "role": "central",
+          "prose_words": 217,
+          "display_equations": 0
+        },
+        {
+          "anchor": "inverse",
+          "heading": "3.6 An inverse must recover every input and reach every output Lesson 7 \u00b7 30:37",
+          "role": "central",
+          "prose_words": 311,
+          "display_equations": 0
+        },
+        {
+          "anchor": "experiment",
+          "heading": "3.7 Validate a finite function before storing it",
+          "role": "implementation",
+          "prose_words": 148,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "3.8 Problems and worked solutions",
+          "role": "exercises",
+          "prose_words": 191,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and boundaries",
+          "role": "sources",
+          "prose_words": 106,
+          "display_equations": 0
+        }
+      ]
+    }
+  ],
+  "chapter_metrics": [
+    {
+      "label": "chapter-01-structure-function-modeling.html",
+      "body_sha256": "aba72028485690eeb6fee3ae54a132d20f070c083e9eddd0ae3e2463990eb701",
+      "prose_words_excluding_math_code_solutions": 3960,
+      "major_sections": 10,
+      "central_sections": 5,
+      "median_central_section_prose_words": 380,
+      "minimum_central_section_prose_words": 259,
+      "developed_subsections": 3,
+      "displayed_equations": 9,
+      "integrated_nonvideo_links": 5,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 7,
+      "solution_prose_words": [
+        62,
+        78,
+        83,
+        72,
+        62,
+        59,
+        81
+      ],
+      "figures": 1,
+      "tables": 2,
+      "section_metrics": [
+        {
+          "anchor": "motivation",
+          "heading": "Why anatomy alone leaves an engineering question L1 \u00b7 01:15",
+          "role": "central",
+          "prose_words": 336,
+          "display_equations": 0
+        },
+        {
+          "anchor": "cell-mechanics",
+          "heading": "Mechanical fields meet living cells L1 \u00b7 10:24 L3 \u00b7 07:34",
+          "role": "central",
+          "prose_words": 380,
+          "display_equations": 0
+        },
+        {
+          "anchor": "continuum",
+          "heading": "What a continuum field averages L1 \u00b7 17:34 L3 \u00b7 16:45",
+          "role": "endmatter",
+          "prose_words": 497,
+          "display_equations": 1
+        },
+        {
+          "anchor": "structure-function",
+          "heading": "Organization, circulation and regulated function L1 \u00b7 20:36 L3 \u00b7 22:59",
+          "role": "central",
+          "prose_words": 698,
+          "display_equations": 0
+        },
+        {
+          "anchor": "transport-model",
+          "heading": "A vessel model must connect flow to delivery L1 \u00b7 32:42",
+          "role": "central",
+          "prose_words": 826,
+          "display_equations": 7
+        },
+        {
+          "anchor": "functional-severity",
+          "heading": "From an image to a functional quantity L1 \u00b7 43:49 L3 \u00b7 40:07",
+          "role": "central",
+          "prose_words": 259,
+          "display_equations": 1
+        },
+        {
+          "anchor": "executable-check",
+          "heading": "An executable check of the complete example",
+          "role": "implementation",
+          "prose_words": 127,
+          "display_equations": 0
+        },
+        {
+          "anchor": "limits",
+          "heading": "What the model establishes and what remains open",
+          "role": "endmatter",
+          "prose_words": 183,
+          "display_equations": 0
+        },
+        {
+          "anchor": "exercises",
+          "heading": "Problems and worked solutions",
+          "role": "exercises",
+          "prose_words": 298,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and inspection scope",
+          "role": "sources",
+          "prose_words": 177,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-02-continuum-kinematics-constitutive-laws.html",
+      "body_sha256": "eade13f2866dab362afd6827f3c5394c4003578d0f01758e750e08d9ecfbb6e6",
+      "prose_words_excluding_math_code_solutions": 2902,
+      "major_sections": 12,
+      "central_sections": 8,
+      "median_central_section_prose_words": 280.5,
+      "minimum_central_section_prose_words": 196,
+      "developed_subsections": 0,
+      "displayed_equations": 18,
+      "integrated_nonvideo_links": 3,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 8,
+      "solution_prose_words": [
+        70,
+        32,
+        52,
+        52,
+        42,
+        38,
+        60,
+        62
+      ],
+      "figures": 1,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "body-density",
+          "heading": "Mass is a measure; density needs an assumption L2 \u00b7 01:10 L4 \u00b7 00:27",
+          "role": "central",
+          "prose_words": 364,
+          "display_equations": 3
+        },
+        {
+          "anchor": "material-derivative",
+          "heading": "Follow a particle or inspect a fixed position L2 \u00b7 04:22 L4 \u00b7 10:39",
+          "role": "central",
+          "prose_words": 201,
+          "display_equations": 4
+        },
+        {
+          "anchor": "deformation-gradient",
+          "heading": "The deformation gradient maps local material lines L2 \u00b7 09:15 L4 \u00b7 17:27",
+          "role": "central",
+          "prose_words": 196,
+          "display_equations": 1
+        },
+        {
+          "anchor": "finite-strain",
+          "heading": "Separate stretch from rotation before measuring strain L2 \u00b7 16:14 L4 \u00b7 23:32",
+          "role": "central",
+          "prose_words": 252,
+          "display_equations": 2
+        },
+        {
+          "anchor": "stretching-rate",
+          "heading": "A fluid responds to stretching rate, not accumulated stretch alone L2 \u00b7 19:08 L4 \u00b7 24:01",
+          "role": "central",
+          "prose_words": 201,
+          "display_equations": 3
+        },
+        {
+          "anchor": "objectivity",
+          "heading": "Changing observer must not create a material response L2 \u00b7 23:42 L4 \u00b7 30:02",
+          "role": "central",
+          "prose_words": 311,
+          "display_equations": 1
+        },
+        {
+          "anchor": "solid-law",
+          "heading": "Turn an energy into a stress, with the area convention stated L2 \u00b7 28:51",
+          "role": "central",
+          "prose_words": 309,
+          "display_equations": 2
+        },
+        {
+          "anchor": "fluid-law",
+          "heading": "Viscosity, rate dependence and memory are separate choices L2 \u00b7 29:36 L4 \u00b7 32:01",
+          "role": "central",
+          "prose_words": 345,
+          "display_equations": 2
+        },
+        {
+          "anchor": "computed-check",
+          "heading": "Execute metric, observer and stress-area checks",
+          "role": "implementation",
+          "prose_words": 54,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 240,
+          "display_equations": 0
+        },
+        {
+          "anchor": "limits",
+          "heading": "What the kinematics does not determine",
+          "role": "endmatter",
+          "prose_words": 132,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and inspection scope",
+          "role": "sources",
+          "prose_words": 125,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-03-heart-cyclic-pump.html",
+      "body_sha256": "495ab345e9f3a403e4feedab9ae0098a90e2f538f6a451e7c8dc53857942239b",
+      "prose_words_excluding_math_code_solutions": 3254,
+      "major_sections": 12,
+      "central_sections": 8,
+      "median_central_section_prose_words": 302.5,
+      "minimum_central_section_prose_words": 266,
+      "developed_subsections": 0,
+      "displayed_equations": 4,
+      "integrated_nonvideo_links": 6,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 8,
+      "solution_prose_words": [
+        71,
+        46,
+        57,
+        57,
+        47,
+        45,
+        56,
+        73
+      ],
+      "figures": 1,
+      "tables": 1,
+      "section_metrics": [
+        {
+          "anchor": "anatomy",
+          "heading": "The anatomy separates receiving, pumping and directing flow L5 \u00b7 00:46 L7 \u00b7 00:35",
+          "role": "central",
+          "prose_words": 334,
+          "display_equations": 0
+        },
+        {
+          "anchor": "two-pumps",
+          "heading": "Two side-by-side pumps belong to one series circulation L5 \u00b7 10:43 L7 \u00b7 13:08",
+          "role": "central",
+          "prose_words": 298,
+          "display_equations": 1
+        },
+        {
+          "anchor": "valves",
+          "heading": "A valve responds to the pressure difference across it L5 \u00b7 13:22 L7 \u00b7 16:46",
+          "role": "central",
+          "prose_words": 339,
+          "display_equations": 1
+        },
+        {
+          "anchor": "cycle",
+          "heading": "Read the cardiac cycle as a sequence of pressure inequalities L5 \u00b7 16:38 L7 \u00b7 22:20",
+          "role": "central",
+          "prose_words": 376,
+          "display_equations": 0
+        },
+        {
+          "anchor": "pressure-storage",
+          "heading": "Arterial pressure is not ventricular diastolic pressure L5 \u00b7 25:21 L7 \u00b7 36:19",
+          "role": "central",
+          "prose_words": 277,
+          "display_equations": 1
+        },
+        {
+          "anchor": "output",
+          "heading": "Stroke volume and ejection fraction describe different quantities L5 \u00b7 27:13 L7 \u00b7 35:53",
+          "role": "central",
+          "prose_words": 272,
+          "display_equations": 0
+        },
+        {
+          "anchor": "work",
+          "heading": "The pressure\u2013volume loop measures boundary work L5 \u00b7 25:10",
+          "role": "central",
+          "prose_words": 266,
+          "display_equations": 0
+        },
+        {
+          "anchor": "loading",
+          "heading": "Loading and contractile response interact L5 \u00b7 28:35 L7 \u00b7 37:25",
+          "role": "central",
+          "prose_words": 307,
+          "display_equations": 1
+        },
+        {
+          "anchor": "code",
+          "heading": "Execute conservation, work and load checks",
+          "role": "implementation",
+          "prose_words": 52,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 278,
+          "display_equations": 0
+        },
+        {
+          "anchor": "limits",
+          "heading": "What a pump model still needs",
+          "role": "endmatter",
+          "prose_words": 118,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and inspection scope",
+          "role": "sources",
+          "prose_words": 152,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-04-myocardial-deformation-active-stress.html",
+      "body_sha256": "ef06ecc7777cfe3cfa97b42c3e873ba10c660d768556e59cbb4fb13cb898cc62",
+      "prose_words_excluding_math_code_solutions": 3218,
+      "major_sections": 12,
+      "central_sections": 8,
+      "median_central_section_prose_words": 279.5,
+      "minimum_central_section_prose_words": 214,
+      "developed_subsections": 0,
+      "displayed_equations": 11,
+      "integrated_nonvideo_links": 6,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 9,
+      "solution_prose_words": [
+        52,
+        63,
+        42,
+        50,
+        61,
+        55,
+        53,
+        75,
+        69
+      ],
+      "figures": 1,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "geometry",
+          "heading": "Geometry supplies a domain, not a constitutive law L6 \u00b7 00:48 L8 \u00b7 01:11",
+          "role": "central",
+          "prose_words": 286,
+          "display_equations": 2
+        },
+        {
+          "anchor": "symmetry",
+          "heading": "Material symmetry is a transformation statement L6 \u00b7 04:59 L8 \u00b7 04:11",
+          "role": "central",
+          "prose_words": 325,
+          "display_equations": 0
+        },
+        {
+          "anchor": "reference-state",
+          "heading": "Unloaded tissue need not be stress-free L6 \u00b7 11:14 L8 \u00b7 14:58",
+          "role": "central",
+          "prose_words": 311,
+          "display_equations": 0
+        },
+        {
+          "anchor": "slab-map",
+          "heading": "Recover the complete in-plane map before imposing incompressibility L6 \u00b7 14:04 L8 \u00b7 17:28",
+          "role": "central",
+          "prose_words": 259,
+          "display_equations": 2
+        },
+        {
+          "anchor": "passive-energy",
+          "heading": "A passive energy stores work; it does not reproduce arbitrary hysteresis L6 \u00b7 15:39 L8 \u00b7 20:55",
+          "role": "central",
+          "prose_words": 265,
+          "display_equations": 2
+        },
+        {
+          "anchor": "identifiability",
+          "heading": "A perfect biaxial fit can leave a shear parameter completely unknown L6 \u00b7 19:53 L8 \u00b7 23:17",
+          "role": "central",
+          "prose_words": 435,
+          "display_equations": 2
+        },
+        {
+          "anchor": "membranes",
+          "heading": "Membrane force per length differs from three-dimensional stress L6 \u00b7 28:08 L8 \u00b7 32:14",
+          "role": "central",
+          "prose_words": 273,
+          "display_equations": 2
+        },
+        {
+          "anchor": "active",
+          "heading": "Active contraction requires a source beyond a passive energy",
+          "role": "central",
+          "prose_words": 214,
+          "display_equations": 1
+        },
+        {
+          "anchor": "code",
+          "heading": "Execute deformation and identification checks",
+          "role": "implementation",
+          "prose_words": 46,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 316,
+          "display_equations": 0
+        },
+        {
+          "anchor": "limits",
+          "heading": "What a fitted tissue law has established",
+          "role": "endmatter",
+          "prose_words": 122,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and inspection scope",
+          "role": "sources",
+          "prose_words": 175,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-05-blood-cells-rheology.html",
+      "body_sha256": "efcf438b8f5c1ebb0a56761c470dc25c060e68c6bf604952b88e9f6be1e359cc",
+      "prose_words_excluding_math_code_solutions": 3133,
+      "major_sections": 12,
+      "central_sections": 9,
+      "median_central_section_prose_words": 260,
+      "minimum_central_section_prose_words": 207,
+      "developed_subsections": 0,
+      "displayed_equations": 14,
+      "integrated_nonvideo_links": 9,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 9,
+      "solution_prose_words": [
+        45,
+        44,
+        33,
+        57,
+        47,
+        70,
+        56,
+        40,
+        102
+      ],
+      "figures": 0,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "composition",
+          "heading": "Define the amount of each constituent before assigning a material law L9 \u00b7 10:48 L11 \u00b7 10:56",
+          "role": "central",
+          "prose_words": 314,
+          "display_equations": 1
+        },
+        {
+          "anchor": "transport",
+          "heading": "Transport specialization still requires cellular energy L9 \u00b7 04:52 L11 \u00b7 05:45",
+          "role": "central",
+          "prose_words": 385,
+          "display_equations": 2
+        },
+        {
+          "anchor": "cell-geometry",
+          "heading": "Deformability means changing shape under constraints L9 \u00b7 06:01 L11 \u00b7 18:34",
+          "role": "central",
+          "prose_words": 260,
+          "display_equations": 2
+        },
+        {
+          "anchor": "rheometry",
+          "heading": "A measured torque is an integral, not a local viscosity L9 \u00b7 13:16 L11 \u00b7 21:53",
+          "role": "central",
+          "prose_words": 267,
+          "display_equations": 4
+        },
+        {
+          "anchor": "steady",
+          "heading": "Shear thinning concerns a steady stress-rate relation L9 \u00b7 16:19 L11 \u00b7 26:44",
+          "role": "central",
+          "prose_words": 247,
+          "display_equations": 0
+        },
+        {
+          "anchor": "relaxation",
+          "heading": "Elastic stress and delayed recovery require time-resolved observations L9 \u00b7 25:10 L11 \u00b7 40:04",
+          "role": "central",
+          "prose_words": 357,
+          "display_equations": 2
+        },
+        {
+          "anchor": "oscillation",
+          "heading": "Frequency response supplies an independent axis of evidence L9 \u00b7 20:08 L11 \u00b7 31:56",
+          "role": "central",
+          "prose_words": 207,
+          "display_equations": 1
+        },
+        {
+          "anchor": "structure-memory",
+          "heading": "A steady curve does not distinguish instantaneous thinning from structural memory",
+          "role": "central",
+          "prose_words": 241,
+          "display_equations": 2
+        },
+        {
+          "anchor": "plasma-extension",
+          "heading": "Changing the deformation mode can expose a hidden mechanism",
+          "role": "central",
+          "prose_words": 212,
+          "display_equations": 0
+        },
+        {
+          "anchor": "code",
+          "heading": "Execute geometry, torque and history checks",
+          "role": "implementation",
+          "prose_words": 63,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 253,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and limits of inspection",
+          "role": "sources",
+          "prose_words": 180,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-06-blood-continuum-mixtures.html",
+      "body_sha256": "c751c54f6feec02ed906ad9d7ed4b61fb47863cb5020d540e7acc243b27520d0",
+      "prose_words_excluding_math_code_solutions": 2739,
+      "major_sections": 12,
+      "central_sections": 9,
+      "median_central_section_prose_words": 246,
+      "minimum_central_section_prose_words": 165,
+      "developed_subsections": 0,
+      "displayed_equations": 17,
+      "integrated_nonvideo_links": 5,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 9,
+      "solution_prose_words": [
+        54,
+        44,
+        38,
+        39,
+        43,
+        42,
+        36,
+        43,
+        34
+      ],
+      "figures": 0,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "continuum",
+          "heading": "Continuum validity is a separation of scales, not a magic diameter L10 \u00b7 00:56 L12 \u00b7 00:51",
+          "role": "central",
+          "prose_words": 254,
+          "display_equations": 0
+        },
+        {
+          "anchor": "scalar",
+          "heading": "Specify the yielded and unyielded branches of a scalar law L10 \u00b7 02:09 L12 \u00b7 04:52",
+          "role": "central",
+          "prose_words": 256,
+          "display_equations": 4
+        },
+        {
+          "anchor": "objective-viscosity",
+          "heading": "Extend a shear curve through an objective rate invariant L10 \u00b7 02:58 L12 \u00b7 05:58",
+          "role": "central",
+          "prose_words": 214,
+          "display_equations": 3
+        },
+        {
+          "anchor": "maxwell",
+          "heading": "A spring\u2013dashpot derivation does not uniquely determine a three-dimensional law L10 \u00b7 07:46 L12 \u00b7 10:28",
+          "role": "central",
+          "prose_words": 228,
+          "display_equations": 3
+        },
+        {
+          "anchor": "normal-stress",
+          "heading": "Models with the same shear viscosity can predict very different other stresses",
+          "role": "central",
+          "prose_words": 165,
+          "display_equations": 1
+        },
+        {
+          "anchor": "recoil",
+          "heading": "Positive driving stress can coexist with an instant of reverse deformation L10 \u00b7 18:12 L12 \u00b7 23:32",
+          "role": "central",
+          "prose_words": 212,
+          "display_equations": 2
+        },
+        {
+          "anchor": "natural",
+          "heading": "Evolving natural configurations organize energy and relaxation L10 \u00b7 20:03 L12 \u00b7 28:46",
+          "role": "central",
+          "prose_words": 338,
+          "display_equations": 2
+        },
+        {
+          "anchor": "mixture",
+          "heading": "A mixture has constituent balances and more than one useful mean velocity L10 \u00b7 30:08 L12 \u00b7 52:06",
+          "role": "central",
+          "prose_words": 246,
+          "display_equations": 1
+        },
+        {
+          "anchor": "platelets",
+          "heading": "Enrichment is a transport prediction, not a complete clotting model",
+          "role": "central",
+          "prose_words": 302,
+          "display_equations": 1
+        },
+        {
+          "anchor": "code",
+          "heading": "Execute limiting cases and conservative transport",
+          "role": "implementation",
+          "prose_words": 73,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 216,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and inspection scope",
+          "role": "sources",
+          "prose_words": 133,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-07-vascular-wall-mechanics.html",
+      "body_sha256": "275382d4a7e9699dccc917af5d6e772942d5b0c38780e4cc507571899604d512",
+      "prose_words_excluding_math_code_solutions": 2953,
+      "major_sections": 12,
+      "central_sections": 9,
+      "median_central_section_prose_words": 258,
+      "minimum_central_section_prose_words": 225,
+      "developed_subsections": 0,
+      "displayed_equations": 12,
+      "integrated_nonvideo_links": 4,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 9,
+      "solution_prose_words": [
+        47,
+        48,
+        53,
+        57,
+        48,
+        37,
+        52,
+        38,
+        74
+      ],
+      "figures": 1,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "network",
+          "heading": "A branch network must conserve flow at the right level L13 \u00b7 03:41 L14 \u00b7 01:15",
+          "role": "central",
+          "prose_words": 302,
+          "display_equations": 0
+        },
+        {
+          "anchor": "pressure",
+          "heading": "Pressure, its gradient and its oscillation are different observables L13 \u00b7 08:12 L14 \u00b7 08:58",
+          "role": "central",
+          "prose_words": 282,
+          "display_equations": 0
+        },
+        {
+          "anchor": "layers",
+          "heading": "The wall is a regional, layered and active material L13 \u00b7 13:42 L14 \u00b7 17:28",
+          "role": "central",
+          "prose_words": 281,
+          "display_equations": 0
+        },
+        {
+          "anchor": "loads",
+          "heading": "Wall shear and hoop stress live in different materials",
+          "role": "central",
+          "prose_words": 258,
+          "display_equations": 1
+        },
+        {
+          "anchor": "thick",
+          "heading": "A thick wall requires a stress distribution, not one representative value",
+          "role": "central",
+          "prose_words": 297,
+          "display_equations": 3
+        },
+        {
+          "anchor": "inflation",
+          "heading": "Solve an incompressible finite-inflation boundary-value problem L13 \u00b7 25:42 L14 \u00b7 32:36",
+          "role": "central",
+          "prose_words": 251,
+          "display_equations": 5
+        },
+        {
+          "anchor": "anisotropy",
+          "heading": "The directional arguments create anisotropy, not the exponential alone L13 \u00b7 27:10 L14 \u00b7 35:05",
+          "role": "central",
+          "prose_words": 225,
+          "display_equations": 1
+        },
+        {
+          "anchor": "waves",
+          "heading": "Pressure waves connect tangent wall compliance to flow",
+          "role": "central",
+          "prose_words": 248,
+          "display_equations": 2
+        },
+        {
+          "anchor": "identification",
+          "heading": "Calibration, prediction and adaptation are separate tasks L13 \u00b7 22:43 L14 \u00b7 30:39",
+          "role": "central",
+          "prose_words": 241,
+          "display_equations": 0
+        },
+        {
+          "anchor": "code",
+          "heading": "Execute network, force-balance and finite-inflation checks",
+          "role": "implementation",
+          "prose_words": 73,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 282,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and inspection scope",
+          "role": "sources",
+          "prose_words": 101,
+          "display_equations": 0
+        }
+      ]
+    },
+    {
+      "label": "chapter-08-course-discussion-synthesis.html",
+      "body_sha256": "ca9a10ca2ce2ffd3d706383798a55adb2c7d204c48df9c6608f4847c5bcdaeb6",
+      "prose_words_excluding_math_code_solutions": 2340,
+      "major_sections": 12,
+      "central_sections": 9,
+      "median_central_section_prose_words": 195,
+      "minimum_central_section_prose_words": 129,
+      "developed_subsections": 0,
+      "displayed_equations": 14,
+      "integrated_nonvideo_links": 3,
+      "code_blocks_including_displayed_output": 1,
+      "recognized_python_source_blocks": 1,
+      "explicit_runnable_blocks": 1,
+      "worked_solutions": 9,
+      "solution_prose_words": [
+        64,
+        45,
+        43,
+        46,
+        63,
+        45,
+        40,
+        48,
+        69
+      ],
+      "figures": 0,
+      "tables": 0,
+      "section_metrics": [
+        {
+          "anchor": "scope",
+          "heading": "Identify the question before increasing model complexity Discussion \u00b7 14:27 Discussion \u00b7 39:48",
+          "role": "central",
+          "prose_words": 225,
+          "display_equations": 0
+        },
+        {
+          "anchor": "gravity",
+          "heading": "Keep gravitational head and perfusion pressure distinct Discussion \u00b7 27:06",
+          "role": "central",
+          "prose_words": 220,
+          "display_equations": 1
+        },
+        {
+          "anchor": "stores",
+          "heading": "Reduce two compliant stores without losing volume conservation",
+          "role": "central",
+          "prose_words": 195,
+          "display_equations": 2
+        },
+        {
+          "anchor": "feedback",
+          "heading": "Define what a pressure compensator actually changes",
+          "role": "central",
+          "prose_words": 182,
+          "display_equations": 2
+        },
+        {
+          "anchor": "response",
+          "heading": "Derive residual error and transient stability",
+          "role": "central",
+          "prose_words": 266,
+          "display_equations": 3
+        },
+        {
+          "anchor": "delay",
+          "heading": "Test a changed assumption instead of transferring a stability verdict",
+          "role": "central",
+          "prose_words": 129,
+          "display_equations": 3
+        },
+        {
+          "anchor": "energy",
+          "heading": "Check the mechanical energy ledger as well as the pressure trace",
+          "role": "central",
+          "prose_words": 168,
+          "display_equations": 2
+        },
+        {
+          "anchor": "identify",
+          "heading": "Determine which parameters the chosen measurement can identify",
+          "role": "central",
+          "prose_words": 170,
+          "display_equations": 1
+        },
+        {
+          "anchor": "regional",
+          "heading": "Unchanged global pressure does not establish unchanged organ perfusion",
+          "role": "central",
+          "prose_words": 291,
+          "display_equations": 0
+        },
+        {
+          "anchor": "code",
+          "heading": "Execute conservation, stability and identifiability checks",
+          "role": "implementation",
+          "prose_words": 78,
+          "display_equations": 0
+        },
+        {
+          "anchor": "problems",
+          "heading": "Problems and fully worked solutions",
+          "role": "exercises",
+          "prose_words": 125,
+          "display_equations": 0
+        },
+        {
+          "anchor": "sources",
+          "heading": "Sources and limits of inspection",
+          "role": "sources",
+          "prose_words": 158,
+          "display_equations": 0
+        }
+      ]
+    }
+  ],
+  "qualitative_decisions": [
+    {
+      "chapter": 1,
+      "running_case": "A narrowed uniform supply tube and a consuming tissue bed",
+      "central_section_review": [
+        [
+          "Denominators and engineering tasks",
+          "Specified populations, outcomes and intervention mechanisms",
+          "Different denominators forbid exchanging mortality share and case fatality",
+          "30% versus 5% exercise; device example has bounded FDA scope",
+          "Historical studies do not produce current personal probabilities"
+        ],
+        [
+          "Mechanical signals versus biological response",
+          "Separate fluid traction and solid stress; controlled cell culture",
+          "Normal and tangential components act through distinct mechanisms",
+          "Dai waveform experiment is empirical context, not a rupture model",
+          "Computed shear is not a clinical disease prediction"
+        ],
+        [
+          "Averaging and a continuum range",
+          "Independent Poisson particles only for the original counting example",
+          "Relative fluctuation equals N_c^-1/2 while averaging must remain below gradient scale",
+          "100/10000 particles and doubled-box exercise",
+          "Blood-cell interactions and confinement need not obey Poisson statistics"
+        ],
+        [
+          "Hierarchy, series flow and feedback",
+          "No shunts or long-term storage for equal mean circuit flow; scalar controller k>0",
+          "Conservation equates mean series flows; subtract d/k to solve feedback",
+          "Exact exponential and nonzero steady error",
+          "Negative feedback sign alone does not establish full physiological stability"
+        ],
+        [
+          "Delivery and hydraulic capacity",
+          "Steady no-slip rigid Newtonian tube and consuming control volume",
+          "Integrate radial momentum twice, then integrate annuli; combine nonnegative C_v with oxygen balance",
+          "Radius halving gives 1/16 flow and impossible -39 mmol/L; capacity ratio .759836",
+          "Necessary supply bound is not a diagnostic narrowing threshold"
+        ],
+        [
+          "Functional severity",
+          "Series resistances, fixed common driving pressures and minimal downstream resistance",
+          "Eliminate shared flow to derive (p_d-p_v)/(p_a-p_v)",
+          "100/10/55 pressure example yields .5 versus .55 approximation",
+          "Collateral supply, variable resistance and clinical thresholds are outside the derivation"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 2,
+      "running_case": "A moving myocardial patch and blood packet observed from a rotating camera",
+      "central_section_review": [
+        [
+          "Mass versus density",
+          "Absolute continuity for an integral density; additional smoothness for classical derivatives",
+          "Change variables in every material subbody and localize rho J=rho_0",
+          "Point mass counterexample; J=1.10 density calculation",
+          "Radon\u2013Nikodym existence does not supply smooth pointwise values"
+        ],
+        [
+          "Following particles",
+          "Smooth invertible motion and fixed material label",
+          "Chain rule separates local and convective derivatives",
+          "Steady exponential motion has nonzero acceleration .04/.08 m/s^2",
+          "Steady does not imply zero material acceleration"
+        ],
+        [
+          "Local line mapping",
+          "Differentiable orientation-preserving map",
+          "First-order Taylor expansion gives dx=F dX",
+          "Simple shear tilts/stretches one line while det F=1",
+          "Local invertibility is not global noninterpenetration"
+        ],
+        [
+          "Finite strain",
+          "Positive-definite metrics and proper rotations",
+          "Polar factorization and length-square identities distinguish metrics",
+          "Shear eigen-stretches and 90-degree rigid-rotation counterexample",
+          "Small physical stretch does not license large-rotation infinitesimal strain"
+        ],
+        [
+          "Stretching rate",
+          "Material line differentiation; Cartesian components",
+          "Skew contribution vanishes from length rate and E_dot=F^T D F",
+          "Scalar shear rate equals |s|, extension gives 2|k|",
+          "D is not generally Green strain rate"
+        ],
+        [
+          "Observer change",
+          "Same material reference, time-dependent proper spatial rotation",
+          "Added spin cancels in symmetric rate and convected derivative",
+          "Independent rotating-observer NumPy check; eta L rigid-rotation counterexample",
+          "Frame indifference is not isotropy or an inertial momentum statement"
+        ],
+        [
+          "Energy and stress area",
+          "Passive isothermal solid; constraint and traction-free lateral sides",
+          "Differentiate W(C), then use stress push-forward and lateral multiplier",
+          "Nominal5055.556 versus Cauchy6066.667 Pa at lambda1.2",
+          "Isotropic passive bar is not calibrated active myocardium"
+        ],
+        [
+          "Instantaneous versus memory response",
+          "Positive viscosity and specified objective derivative",
+          "At-rest Maxwell equation integrates to exponential relaxation; solvent elimination gives lambda_2/lambda_1",
+          "Power-law scaling and four-second relaxation exercise",
+          "Objectivity and one dissipation check do not select a blood model"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 3,
+      "running_case": "A left ventricle between atrial and arterial reservoirs with ideal or leaky valves",
+      "central_section_review": [
+        [
+          "Anatomical stores and connections",
+          "Ordinary adult chamber/valve connections",
+          "Assign stored volume, flow and moving wall to distinct compartments",
+          "Directional route and three wall-layer definitions",
+          "Towel analogy does not prove optimal tissue architecture"
+        ],
+        [
+          "Two pumps in series",
+          "Closed pulmonary-side compartment with no extra sources",
+          "Integrate dV_p/dt=Q_R-Q_L to separate mean balance from instantaneous equality",
+          "0.2 L/min mismatch for30s stores100mL",
+          "Detailed shunts/compartments need revised balances"
+        ],
+        [
+          "Valve law",
+          "Positive valve resistances and common pressure datum",
+          "Positive-part laws enforce direction; apply three pressure tuples",
+          "Both valves closed at ventricular50 mmHg with atrial10/aortic80",
+          "Ideal valves omit inertia and leakage; no replacement decision follows"
+        ],
+        [
+          "Cycle logic",
+          "Specified activation schedule and ideal closure",
+          "Track inequalities while separating changing pressure from fixed-volume stages",
+          "EDV/ESV are defined before the phase table",
+          "Fixed cycle durations and filling fractions are illustrative"
+        ],
+        [
+          "Arterial reservoir",
+          "Constant compliance and linear outflow to a fixed downstream pressure",
+          "Separate variables after outlet closure",
+          "73.0705mmHg at .5s and half-excess time1.03972s",
+          "Arterial diastolic pressure is not ventricular filling pressure"
+        ],
+        [
+          "Volume versus forward delivery",
+          "Specified leak destination and absence of other abnormal flows",
+          "Conservation subtracts regurgitant volume before computing net forward output",
+          "70mL chamber decrease gives5.25 or3.75 L/min",
+          "Ejection fraction alone does not identify delivery or intrinsic contractility"
+        ],
+        [
+          "Boundary work",
+          "Uniform chamber pressure and constant surrounding reference",
+          "Integrate four rectangle legs; vertical legs contribute zero",
+          "6300mmHg mL=.839931J and1.049914W",
+          "Boundary work excludes ATP use and local dissipation"
+        ],
+        [
+          "Endpoint loading",
+          "Positive elastance coefficients, common zero reference and fixed intercept",
+          "Equate chamber and load pressures, collect V_es",
+          "SV62.8571 versus44mL with unchanged E_es",
+          "Endpoint model is not a full physiological transient or fitted material modulus"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 4,
+      "running_case": "Two passive slab energies indistinguishable in coaxial biaxial tests but separable in shear",
+      "central_section_review": [
+        [
+          "Geometry and scale",
+          "Specified confocal or full-shell geometry, not universal human dimensions",
+          "Substitute prolate coordinates to obtain ellipsoid identity; subtract shell volumes",
+          "70.6858mL wall and74.2201g at stipulated density",
+          "Truncation, species and allometric fit population matter"
+        ],
+        [
+          "Symmetry and direction",
+          "Orthonormal material directions and declared deformation gradient",
+          "Construct directional invariants and distinguish rotation symmetry from spatial variation",
+          "Balanced plus/minus layers need equal weights for odd terms to cancel",
+          "Visible fibres alone do not prove a symmetry class"
+        ],
+        [
+          "Reference stress",
+          "Unloaded is distinct from fully relaxed; nearly incompressible is an approximation",
+          "Bonded-strip force balance permits equal/opposite internal forces",
+          "Delta V/V=.001 and natural-length exercise",
+          "One cut does not release every 3D residual stress component"
+        ],
+        [
+          "Deformation reconstruction",
+          "Positive in-plane determinant and isochoric slab",
+          "Expand determinant including both shear terms, then solve thickness factor",
+          "lambda_3=.793651 versus shear-ignored .757576",
+          "Grip loads and sparse markers do not establish uniform strain"
+        ],
+        [
+          "Passive work",
+          "Smooth incompressible hyperelastic solid and quasistatic closed state path",
+          "Constraint work is -p dJ=0, hence closed passive integral is zero",
+          "Two energies constructed with explicit pressure-unit coefficients",
+          "Nonlinearity alone cannot reproduce hysteresis or active energy input"
+        ],
+        [
+          "Experimental information",
+          "Coaxial material-axis biaxial family versus imposed simple shear",
+          "Added term and full first derivative vanish when I_8fs=0, but shear derivative is k_fs gamma",
+          "40J/m^3 and400Pa at gamma.2; uncertainty20Pa gives100/1000Pa parameter uncertainty",
+          "Priors or flexible inference cannot create information in an insensitive likelihood"
+        ],
+        [
+          "Surface versus volume energy",
+          "Constrained one-parameter path and reference area convention",
+          "Chain rule retains dE/dlambda=lambda in membrane resultant",
+          "132.200373N/m verified by finite difference",
+          "A membrane force/length is not bulk Cauchy stress"
+        ],
+        [
+          "Active input",
+          "Specified current fibre, objective scalar tension and constrained neutral bar",
+          "Transform f tensor under observer rotation; reaction equals T_a A",
+          "5000Pa times10mm^2 gives .05N at unchanged strain",
+          "No calcium, ATP accounting or clinical force calibration is supplied"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 5,
+      "running_case": "Choose experiments that separate cell geometry, instantaneous thinning, elastic stress and structural history",
+      "central_section_review": [
+        [
+          "Constituent accounting",
+          "Uniform illustrative sample, additive volumes and declared omissions",
+          "Cell number times mean volume gives hematocrit; volume-weight intrinsic densities",
+          "5million cells/microlitre times90fL=.45; density unit factor1000",
+          "Count fractions, volume fractions and individual sample measurements differ"
+        ],
+        [
+          "Binding and metabolism",
+          "Empirical Hill curve with P>=0,P50>0,n>0; biological claims retain primary scope",
+          "Cancel Hill odds denominator and differentiate logarithm",
+          "S100=.974347,S40=.761898, oxygen difference4.248975mL/dL",
+          "No donor fit, molecular binding derivation or personal oxygen interpretation"
+        ],
+        [
+          "Geometry under constraints",
+          "Fixed illustrative area/volume and chosen spherocylinder family",
+          "Eliminate cylinder length and compare required area with budget",
+          "r1.5um fits129.424778um^2; r1.3 needs145.540594",
+          "One excluded shape is not impossibility of all confined shapes"
+        ],
+        [
+          "Rheometry inversion",
+          "Small gap/no slip/steady common shear law and fixed disk geometry",
+          "Integrate torque, change variables and differentiate to recover rim stress",
+          "Newtonian torque3.015928947e-6Nm; nf.5 shortcut overestimates14.2857%",
+          "Noise, drift, migration and slip invalidate naive differential inversion"
+        ],
+        [
+          "Instantaneous thinning",
+          "Positive-rate power law with explicitly distinct n_f",
+          "Divide stress by rate and differentiate separately",
+          "At nf.5 viscosity falls while stress rises",
+          "Finite-rate fit has no finite low-rate plateau or independent memory"
+        ],
+        [
+          "Relaxation",
+          "Parallel solvent and linear Maxwell branch with positive parameters",
+          "Solvent drops immediately; branch solves one exponential",
+          "1Pa to.65Pa, then.239122Pa at.2s; normalize slope by amplitude",
+          "Finite-time recovery alone does not define permanent deformation or one universal relaxation time"
+        ],
+        [
+          "Oscillation",
+          "Small-amplitude sinusoidal strain and declared angular frequency",
+          "Substitute complex derivative and separate real/imaginary response",
+          "Gprime .016250Pa,Gdoubleprime .033750Pa at5rad/s",
+          "Linear one-mode calculation is not a fit to amplitude-dependent blood data"
+        ],
+        [
+          "Structural memory",
+          "ka>0,kb>=0,positive plateau viscosities and structure in[0,1]",
+          "Boundary signs preserve interval; solve affine ODE at constant rate",
+          "Same final10/s rate gives .672273 versus .098727Pa before common .385500Pa",
+          "Structural memory can exist with zero residual stress at cessation"
+        ],
+        [
+          "Mode transfer",
+          "Separate material relaxation time and process duration",
+          "Compare De and Wi; extension challenges a shear calibration",
+          "Brust primary abstract has bounded shear/extension distinction",
+          "A high-rate shear plateau does not certify universal Newtonian response"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 6,
+      "running_case": "Select a blood reduction by the observable: yield, normal stress, reverse motion or migration",
+      "central_section_review": [
+        [
+          "Scale and observable",
+          "Need representative cells and resolution below the gradient scale",
+          "Compare distinct length ratios rather than importing gas mean free path",
+          "8/800=.01; gap20um gives.4",
+          "No magic diameter simultaneously invalidates every fluid/solid continuum"
+        ],
+        [
+          "Casson branches",
+          "Positive viscosity, nonnegative yield parameter and ideal pipe conditions",
+          "Momentum fixes stress independently; integrate yielded rate outside plug",
+          "Q/QN=.190290179 at plug fraction.25; zero-yield and no-flow limits",
+          "Yield fit is protocol-dependent and plug is not a clot"
+        ],
+        [
+          "Objective invariant and plateaus",
+          "Incompressible frame-consistent rate law with positive viscosities",
+          "D contraction fixes shear factor; differentiate g eta(g)",
+          "Cross viscosity.005217686Pa s at100/s and monotonicity sweep",
+          "A viscosity transition time is not automatically a stress relaxation time"
+        ],
+        [
+          "Scalar to tensor memory",
+          "Positive spring/branch viscosities; declared objective rate",
+          "Add strains in series, stresses in parallel; eliminate constant solvent contribution",
+          "Gp=.0325Pa,lambda2=.07s; lambda2=.4s fails component interpretation",
+          "Objectivity does not uniquely choose a nonlinear 3D law"
+        ],
+        [
+          "Untested stresses",
+          "Homogeneous steady shear/extension with constant parameters",
+          "Solve tensor components and examine extension denominator",
+          "Shear1Pa withN1=26Pa at100/s",
+          "Constant shear viscosity does not imply zero normal stress or finite extension response"
+        ],
+        [
+          "Reverse motion and energy",
+          "Prescribed nonnegative Maxwell stress versus distinct Newtonian pipe assumptions",
+          "Differentiate prescribed stress and track stored-energy release",
+          "Minimum normalized rate1-sqrt2=-.414213562",
+          "Scalar counterexample is not a pulsatile pipe reproduction"
+        ],
+        [
+          "Internal state consistency",
+          "Positive-definite dimensionless conformation and positive modulus/time",
+          "Scalar f(a) minimum proves W>=0; eigenvalue identity proves dissipation",
+          "W1.806853J/m^3 and rest dissipation13.75W/m^3",
+          "This standard-form toy is not the cited fitted natural-configuration model"
+        ],
+        [
+          "Mixture balances",
+          "Constant intrinsic densities, no constituent mass exchange, internal force cancellation",
+          "Add volume balances; mass weighting differs; sum drag powers",
+          "Volume speed.014 versus mass speed.014230769m/s; drag100W/m^3",
+          "Equal constituent divergences or double full pressures are not implied"
+        ],
+        [
+          "Redistribution versus deposition",
+          "Prescribed RBC profile, positive diffusion and no-flux walls",
+          "Integrate zero flux to exponential equilibrium; shared finite-volume faces telescope",
+          "Analytic ratio4.953032 for .4fraction difference; discrete conservative equilibrium separately checked",
+          "No adhesion, activation, fibrin or clinical thrombosis is modeled"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 7,
+      "running_case": "One vessel couples parallel flow allocation, transmural loading and wall stress",
+      "central_section_review": [
+        [
+          "Network and exchange",
+          "Negligible junction storage and declared parallel equal-channel assumptions",
+          "Sum flows and areas; compare diffusion with transit time",
+          "5L/min over1billion4um channels gives.001657864m/s; one-bed share.674648621",
+          "Slow flow alone does not prove equilibration or uniform distribution"
+        ],
+        [
+          "Pressure observables",
+          "Common time/axial level/reference and specified reservoir model",
+          "Separate spatial driving drop, transmural difference and time waveform",
+          "Common pressure offsets; finite-frequency reservoir attenuation",
+          "A pressure trace alone does not give an axial gradient"
+        ],
+        [
+          "Layered wall",
+          "Representative arterial anatomy and regional material composition",
+          "Map named layers to structural/active roles",
+          "Existing NCI arterial-layer text supports local glosses",
+          "Histology/fixation and vessel classes are not constitutive experiments"
+        ],
+        [
+          "Fluid versus solid loading",
+          "Thin membrane and separately rigid Poiseuille flow",
+          "Balance half-cylinder pressure force against cut-wall stress",
+          "133000Pa hoop versus.165050Pa fluid shear",
+          "Biological signaling and material failure are distinct mechanisms"
+        ],
+        [
+          "Thick-wall distribution",
+          "Axisymmetric radial balance with prescribed boundary tractions",
+          "Integrate d(r sigma_r)/dr=sigma_theta; compare Lame field with average",
+          "34580Pa inner versus26600Pa average; Fig1 ratio1.3",
+          "Force-balance average is not a peak and material assumptions matter"
+        ],
+        [
+          "Finite inflation",
+          "Stress-free closed reference, constant axial stretch, incompressible neo-Hookean solid",
+          "Integrate isochoric map, eliminate multiplier, derive dimensionless-log antiderivative",
+          "b4.920366mm,pressure13845.183844Pa; quadrature and zero-inflation limit",
+          "Existence/stability/residual reference and nonlinear stiffening remain model-specific"
+        ],
+        [
+          "Direction versus nonlinearity",
+          "Symmetric two-family tension-only teaching energy",
+          "Differentiate directional invariant and sum two family contributions",
+          "Nominal fibre contribution59474.926046Pa verified by finite difference",
+          "An exponential alone is not anisotropy or a tissue-specific fit"
+        ],
+        [
+          "Waves and tangent compliance",
+          "Small perturbations, positive compliance, negligible damping/mean flow/wall inertia",
+          "Differentiate continuity/momentum and eliminate velocity",
+          "c4.856429m/s; quadrupled modulus doubles speed",
+          "Disturbance speed differs from mean particle transport and depends on axial constraint"
+        ],
+        [
+          "Identification and adaptation",
+          "Declared fitted subset and held-out loading condition",
+          "Separate geometric/stiffness/residual-reference ambiguities and constituent turnover",
+          "Proposed axial-force/torsion/held-out extension tests",
+          "Numerical convergence is not physical predictive validation or growth calibration"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    },
+    {
+      "chapter": 8,
+      "running_case": "A delivery deficit in two compliant stores, with feedback and competing hidden mechanisms",
+      "central_section_review": [
+        [
+          "Question and reduction",
+          "Beat-averaged two-store circuit with stated omissions",
+          "Choose observable before adding compartments or geometric detail",
+          "Pressure maintenance can coexist with altered regional flow",
+          "Discussion prompts do not supply a hemorrhage protocol"
+        ],
+        [
+          "Gravity and pressure reference",
+          "Constant density, stationary columns and upward coordinate",
+          "Integrate dp/dz=-rho g and compare arterial/venous differences",
+          "30cm gives3119.58Pa=23.398771mmHg",
+          "Hydrostatic cancellation does not remove compliant local storage or posture physiology"
+        ],
+        [
+          "Conserved stores",
+          "Positive constant compliances, fixed external pressure and no net loss",
+          "Add volume balances and subtract pressures to get harmonic compliance",
+          "Ce1 from1.2/6 and1.5/3; infinite venous-compliance limit",
+          "Pump flow and equilibrium pressure cannot be independently imposed incompatibly"
+        ],
+        [
+          "Effective control input",
+          "Small perturbations around positive baseline and fixed first-order controller",
+          "Linearize Q=p/R so pump and resistance actions share one pressure input",
+          "u=delta Qp+(Q0/R0)delta R",
+          "Equivalent pressure inputs do not imply equivalent regional delivery or metabolism"
+        ],
+        [
+          "Residual error and lagged stability",
+          "Finite K>=0,tau>0,Ce>0,R>0",
+          "Equilibrium equations and determinant of homogeneous exponential modes",
+          "x*=-10/3,u*=20/3,poles-.75 plus/minus.968246i; RK4 refinement",
+          "Stable lagged model need not recover monotonically or remove steady error"
+        ],
+        [
+          "Changed delay assumption",
+          "Pure delay replaces rather than supplements the prior lag",
+          "Separate imaginary characteristic root and differentiate its crossing",
+          "omega sqrt3,Tc1.209200s; positive crossing real derivative",
+          "Mathematical threshold is not a measured neural/clinical delay"
+        ],
+        [
+          "Energy accounting",
+          "Consistent linear storage references and positive resistance",
+          "Multiply each store balance by its own pressure; distinguish incremental identity",
+          "Baseline1.079911W; nonzero incremental powers can sum to zero",
+          "Hydraulic/incremental terms are not metabolic or neural energy expenditures"
+        ],
+        [
+          "Identifiable compliance",
+          "Known open-loop flow step and noiseless reduced model",
+          "Amplitude/time identify R andCe, while pressure partition supplies missing coordinate",
+          "Two compliance pairs same whole trace; beta5/6 versus2/3 distinguishes",
+          "More precise samples of one insensitive observable cannot identify absent parameters"
+        ],
+        [
+          "Hidden redistribution",
+          "Two positive parallel resistances and fixed common pressure",
+          "Preserve total conductance while reallocating its two terms",
+          "45/45 becomes30/60 with total90 unchanged",
+          "Global pressure/output do not establish oxygen delivery in every organ"
+        ]
+      ],
+      "parity_verdict": "Develops the consequential case through the listed assumptions, hinge steps, worked checks and boundaries. Differences from the two exemplars follow from subject and scope, not a word quota. Short code/source/endmatter units are not treated as abbreviated central derivations."
+    }
+  ]
+}

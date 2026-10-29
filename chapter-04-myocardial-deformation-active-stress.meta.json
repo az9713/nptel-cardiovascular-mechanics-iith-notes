@@ -1,8 +1,8 @@
 {
   "chapter": 4,
   "title": "Myocardial deformation, anisotropy and active stress",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "ef06ecc7777cfe3cfa97b42c3e873ba10c660d768556e59cbb4fb13cb898cc62",
   "recordings": [
     {
       "video_id": "entWodZ5lrM",
@@ -37,7 +37,7 @@
   ],
   "sections": [
     {
-      "section": "Geometry supplies a domain, not a constitutive law L6 \u00b7 00:48 L8 \u00b7 01:11",
+      "section": "Geometry supplies a domain, not a constitutive law L6 · 00:48 L8 · 01:11",
       "anchor": "geometry",
       "video_id": "entWodZ5lrM",
       "start": 48,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "section": "Material symmetry is a transformation statement L6 \u00b7 04:59 L8 \u00b7 04:11",
+      "section": "Material symmetry is a transformation statement L6 · 04:59 L8 · 04:11",
       "anchor": "symmetry",
       "video_id": "entWodZ5lrM",
       "start": 299,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "Unloaded tissue need not be stress-free L6 \u00b7 11:14 L8 \u00b7 14:58",
+      "section": "Unloaded tissue need not be stress-free L6 · 11:14 L8 · 14:58",
       "anchor": "reference-state",
       "video_id": "entWodZ5lrM",
       "start": 674,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "section": "Recover the complete in-plane map before imposing incompressibility L6 \u00b7 14:04 L8 \u00b7 17:28",
+      "section": "Recover the complete in-plane map before imposing incompressibility L6 · 14:04 L8 · 17:28",
       "anchor": "slab-map",
       "video_id": "entWodZ5lrM",
       "start": 844,
@@ -135,7 +135,7 @@
       ]
     },
     {
-      "section": "A passive energy stores work; it does not reproduce arbitrary hysteresis L6 \u00b7 15:39 L8 \u00b7 20:55",
+      "section": "A passive energy stores work; it does not reproduce arbitrary hysteresis L6 · 15:39 L8 · 20:55",
       "anchor": "passive-energy",
       "video_id": "entWodZ5lrM",
       "start": 939,
@@ -157,7 +157,7 @@
       ]
     },
     {
-      "section": "A perfect biaxial fit can leave a shear parameter completely unknown L6 \u00b7 19:53 L8 \u00b7 23:17",
+      "section": "A perfect biaxial fit can leave a shear parameter completely unknown L6 · 19:53 L8 · 23:17",
       "anchor": "identifiability",
       "video_id": "entWodZ5lrM",
       "start": 1193,
@@ -179,7 +179,7 @@
       ]
     },
     {
-      "section": "Membrane force per length differs from three-dimensional stress L6 \u00b7 28:08 L8 \u00b7 32:14",
+      "section": "Membrane force per length differs from three-dimensional stress L6 · 28:08 L8 · 32:14",
       "anchor": "membranes",
       "video_id": "entWodZ5lrM",
       "start": 1688,
@@ -285,7 +285,7 @@
     {
       "url": "https://biomechanics.stanford.edu/me338_09/me338_h04.pdf",
       "title": "Holzapfel and Ogden, Constitutive modelling of passive myocardium (2009)",
-      "supports": "Abstract, morphology and constitutive/experimental sections3\u20135 inspected; directional structure and test-mode context, not fitted polynomial toy parameters."
+      "supports": "Abstract, morphology and constitutive/experimental sections3–5 inspected; directional structure and test-mode context, not fitted polynomial toy parameters."
     },
     {
       "url": "https://arxiv.org/abs/2305.03184",
@@ -318,9 +318,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "2b2366a5f4e890470586c364c83895cf9ec25712c27d3c7051197010902f2256"
   },
   "limits": [
     "Fallible machine ASR and selected frames only; no comprehensive audiovisual audit",

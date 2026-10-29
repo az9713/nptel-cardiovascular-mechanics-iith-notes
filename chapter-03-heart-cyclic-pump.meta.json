@@ -1,8 +1,8 @@
 {
   "chapter": 3,
   "title": "The heart as a cyclic pump",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "495ab345e9f3a403e4feedab9ae0098a90e2f538f6a451e7c8dc53857942239b",
   "recordings": [
     {
       "video_id": "P8Mi0nvkidI",
@@ -12,7 +12,7 @@
       "decoded_audio_duration_seconds": 2012.2535,
       "complete_decoded_audio": true,
       "media_sha256": "9dd0b5f90632b68b3ee0ff1563f18915023bd49dbfa01d0378b9d73b4d2ffb56",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 2004.38,
       "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
       "source_read_complete": true,
@@ -27,7 +27,7 @@
       "decoded_audio_duration_seconds": 2403.1935,
       "complete_decoded_audio": true,
       "media_sha256": "3d565452ea7016ddb7e0a03f8374eb6786f5bea12e203769da5c4dc4f3ec3a5f",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 2403.12,
       "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
       "source_read_complete": true,
@@ -37,7 +37,7 @@
   ],
   "sections": [
     {
-      "section": "The anatomy separates receiving, pumping and directing flow L5 \u00b7 00:46 L7 \u00b7 00:35",
+      "section": "The anatomy separates receiving, pumping and directing flow L5 · 00:46 L7 · 00:35",
       "anchor": "anatomy",
       "video_id": "P8Mi0nvkidI",
       "start": 46,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "section": "Two side-by-side pumps belong to one series circulation L5 \u00b7 10:43 L7 \u00b7 13:08",
+      "section": "Two side-by-side pumps belong to one series circulation L5 · 10:43 L7 · 13:08",
       "anchor": "two-pumps",
       "video_id": "P8Mi0nvkidI",
       "start": 643,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "A valve responds to the pressure difference across it L5 \u00b7 13:22 L7 \u00b7 16:46",
+      "section": "A valve responds to the pressure difference across it L5 · 13:22 L7 · 16:46",
       "anchor": "valves",
       "video_id": "P8Mi0nvkidI",
       "start": 802,
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "section": "Read the cardiac cycle as a sequence of pressure inequalities L5 \u00b7 16:38 L7 \u00b7 22:20",
+      "section": "Read the cardiac cycle as a sequence of pressure inequalities L5 · 16:38 L7 · 22:20",
       "anchor": "cycle",
       "video_id": "P8Mi0nvkidI",
       "start": 998,
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "section": "Arterial pressure is not ventricular diastolic pressure L5 \u00b7 25:21 L7 \u00b7 36:19",
+      "section": "Arterial pressure is not ventricular diastolic pressure L5 · 25:21 L7 · 36:19",
       "anchor": "pressure-storage",
       "video_id": "P8Mi0nvkidI",
       "start": 1521,
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "section": "Stroke volume and ejection fraction describe different quantities L5 \u00b7 27:13 L7 \u00b7 35:53",
+      "section": "Stroke volume and ejection fraction describe different quantities L5 · 27:13 L7 · 35:53",
       "anchor": "output",
       "video_id": "P8Mi0nvkidI",
       "start": 1633,
@@ -169,7 +169,7 @@
       ]
     },
     {
-      "section": "The pressure\u2013volume loop measures boundary work L5 \u00b7 25:10",
+      "section": "The pressure–volume loop measures boundary work L5 · 25:10",
       "anchor": "work",
       "video_id": "P8Mi0nvkidI",
       "start": 1510,
@@ -191,7 +191,7 @@
       ]
     },
     {
-      "section": "Loading and contractile response interact L5 \u00b7 28:35 L7 \u00b7 37:25",
+      "section": "Loading and contractile response interact L5 · 28:35 L7 · 37:25",
       "anchor": "loading",
       "video_id": "P8Mi0nvkidI",
       "start": 1715,
@@ -293,6 +293,11 @@
       "url": "https://biomechanics.stanford.edu/me338_09/me338_h04.pdf",
       "title": "Holzapfel and Ogden, Constitutive modelling of passive myocardium (2009)",
       "supports": "Inspected morphology/directional framework; bounds on simple towel analogy and context for next tissue chapter."
+    },
+    {
+      "title": "NCI Dictionary: Adenosine triphosphate",
+      "url": "https://www.cancer.gov/publications/dictionaries/cancer-terms/def/adenosine-triphosphate",
+      "supports": "Official local ATP definition inspected during independent amendment review; no treatment or metabolic efficiency inference."
     }
   ],
   "review_rounds": [
@@ -320,9 +325,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "bca077fc8bfb148d733320a104e6acc76deb3a3f455dea15bb34d7aa7d6b85ee"
   },
   "limits": [
     "Fallible machine ASR and selected frames only; no comprehensive audiovisual audit",

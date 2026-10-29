@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764">
+<meta name="color-scheme" content="dark light"><meta name="book-content-sha256" content="275382d4a7e9699dccc917af5d6e772942d5b0c38780e4cc507571899604d512">
 <title>Vascular structure and wall mechanics · Introduction to Cardiovascular Mechanics</title><link rel="stylesheet" href="assets/book.css">
 <script>window.MathJax={tex:{inlineMath:[['$','$'],['\\(','\\)']],displayMath:[['$$','$$'],['\\[','\\]']],processEscapes:true},svg:{fontCache:'local'},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};</script>
 <script defer src="assets/mathjax-tex-svg.js"></script><script defer src="assets/book.js"></script><script defer src="assets/vessel-lab.js"></script></head>
 <body><a class="skip" href="#main">Skip to content</a><header class="site-header"><a class="brand" href="index.html">Introduction to Cardiovascular Mechanics · NPTEL IIT Hyderabad</a><nav class="course-nav" aria-label="Book"><a href="index.html">Chapters</a><a href="source-map.html">Source map</a><a href="references.html">References</a><a href="numerical-lab.html">Numerical lab</a></nav></header>
-<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2>On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
-<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1>7. Vascular structure and wall mechanics</h1>
+<div class="layout"><aside class="toc" id="chapter-toc" aria-label="On this page"><h2 id="toc-heading">On this page</h2></aside><main id="main"><div class="reading-tools" aria-label="Reading controls"><button id="theme-toggle" aria-pressed="false">Light theme</button><button id="text-toggle" aria-pressed="false">Larger text</button><button id="solutions-toggle" aria-pressed="false">Expand solutions</button><button id="print-page">Print with solutions</button></div>
+<article id="chapter-content"><!-- BOOK-CONTENT-START --><h1 id="chapter-title">7. Vascular structure and wall mechanics</h1>
 <p class="lede">The same vessel simultaneously carries a flow, contains a pressure and sustains a solid-wall stress. Its radius couples all three. A larger lumen can lower hydraulic resistance while increasing the wall tension needed to contain a specified pressure. Understanding the vascular network therefore requires more than replacing each vessel by an isolated rigid pipe.</p>
-<p>Lessons 13 and 14 complete the course with vascular anatomy, function, regional structure and a constitutive-modeling workflow. Both full local machine transcripts were read. The source leaves inflation/extension boundary-value problems for further study; this chapter supplies original complete examples, with explicit geometry and limits. No individual artery, histology image or clinical pressure reading is calibrated by these constructions.</p>
+<p class="source-note">Lessons 13 and 14 complete the course with vascular anatomy, function, regional structure and a constitutive-modeling workflow. Both full local machine transcripts were read. The source leaves inflation/extension boundary-value problems for further study; this chapter supplies original complete examples, with explicit geometry and limits. No individual artery, histology image or clinical pressure reading is calibrated by these constructions.</p>
 
 <h2 id="network">A branch network must conserve flow at the right level <a class="timestamp" href="https://www.youtube.com/watch?v=EljNMQ_e-70&amp;t=221s">L13 · 03:41</a> <a class="timestamp" href="https://www.youtube.com/watch?v=_aYXAcft_BM&amp;t=75s">L14 · 01:15</a></h2>
 <p>Arteries carry blood away from the heart and veins return it. These names concern direction of transport, not an absolute oxygen label: pulmonary vessels provide the familiar reversal of the usual systemic oxygen association. Arterioles connect the distributing arteries to exchange networks, and capillaries drain through venules into veins. The <a href="https://training.seer.cancer.gov/anatomy/cardiovascular/blood/classification.html">NCI vessel-structure resource</a> describes this hierarchy and its differences in wall construction.</p>
@@ -24,7 +24,7 @@
 <p>Even a simple reservoir has only finite attenuation. If compliance $C_V=dV/dp$ feeds a resistance $R$ toward a constant reference pressure, then $C_V\dot p=Q_{\rm in}-(p-p_v)/R$. A sinusoidal input at angular frequency $\omega$ gives an outflow-amplitude ratio $[1+(\omega R C_V)^2]^{-1/2}$ relative to the input. It tends towards zero at high frequency but is not exactly zero for finite positive parameters. The time constant $RC_V$ has units seconds. Chapter 3 derived the associated decay and energy storage.</p>
 
 <h2 id="layers">The wall is a regional, layered and active material <a class="timestamp" href="https://www.youtube.com/watch?v=EljNMQ_e-70&amp;t=822s">L13 · 13:42</a> <a class="timestamp" href="https://www.youtube.com/watch?v=_aYXAcft_BM&amp;t=1048s">L14 · 17:28</a></h2>
-<p>In a representative artery, the lumen is bounded by intima, media and adventitia. Endothelium faces the blood. Elastin, collagen, smooth muscle and other constituents differ among layers and along the network. Those differences motivate region-specific constitutive parameters and sometimes different model forms. They also make a single scalar modulus an incomplete description of large-deformation behavior.</p>
+<p>In a representative artery, the intima is the inner layer containing the blood-facing endothelial cell lining. The media is the middle layer containing smooth muscle and elastic structure. The adventitia is the outer connective layer attaching the vessel to surrounding tissue. Elastin, collagen, smooth muscle and other constituents differ among layers and along the network. Those differences motivate region-specific constitutive parameters and sometimes different model forms. They also make a single scalar modulus an incomplete description of large-deformation behavior.</p>
 <p>Elastic arteries near the heart provide substantial compliance. Muscular arteries and arterioles actively influence distribution through smooth-muscle tone, with neural, circulating and local signals. The regulation is not exclusively a command sent from the brain. Veins accommodate substantial volume at relatively low pressure and can have valves that limit reverse flow. Their storage behavior depends on compliance, geometry and tone; it is not caused by valves alone. External muscle action and respiratory pressure differences can contribute to venous return.</p>
 <p>Capillaries have thin exchange barriers, rather than the fully developed three-layer structure of a large artery. The smallest arterioles do retain functionally important smooth muscle, so the source's informal “one and a half layers” should not become a universal histological law that removes the very cells responsible for resistance control. The approximate diameter bands in the lecture are teaching classifications, not sharp universal boundaries.</p>
 <p>Likewise, a histological cross-section showing a collapsed vein and a round artery is not an in-vivo constitutive experiment. Fixation, unloading and surrounding support affect shape. The solid tissue can be modeled as a continuum even when the fluid description needs cell-scale or mixture refinement; the geometric cell-size warning from chapter 6 is not a prohibition on all small-vessel mechanics.</p>
@@ -38,7 +38,7 @@
 <p>Doubling radius at fixed pressure and thickness doubles the membrane stress. Doubling radius at fixed Newtonian flow reduces the shear by eight. At fixed pressure gradient and viscosity, however, Poiseuille flow grows as $r^4$ and wall shear grows as $r$. Every scaling statement needs its held-fixed variables. Aneurysm rupture cannot be inferred from one of these algebraic scalings without material strength, wall structure, geometry and loading data.</p>
 
 <h2 id="thick">A thick wall requires a stress distribution, not one representative value</h2>
-<p>In an axisymmetric circular tube with no shear and negligible body forces, radial equilibrium is</p>
+<p>Let $a\gt0$ and $b\gt a$ be the current inner and outer radii, in metres, and let $\sigma_r$ and $\sigma_\theta$ be radial and hoop normal stresses in Pa. In an axisymmetric circular tube with no shear and negligible body forces, radial equilibrium is</p>
 \[\frac{d\sigma_r}{dr}+\frac{\sigma_r-\sigma_\theta}{r}=0.\]
 <p>Boundary tractions are $\sigma_r(a)=-p_i$ and $\sigma_r(b)=-p_o$. Rearrangement gives $d(r\sigma_r)/dr=\sigma_\theta$, so the exact thickness integral is</p>
 \[\int_a^b\sigma_\theta\,dr=p_i a-p_o b.\]
@@ -46,6 +46,8 @@
 <p>As an original small-deformation, homogeneous isotropic linear-elastic control, the Lamé stresses have the form $\sigma_r=A_L-B_L/r^2$ and $\sigma_\theta=A_L+B_L/r^2$. At $p_o=0$,</p>
 \[A_L=\frac{p_i a^2}{b^2-a^2},\qquad B_L=\frac{p_i a^2b^2}{b^2-a^2}.\]
 <p>For $a=3$ mm, $b=4.5$ mm and $p_i=13300$ Pa, the inner-wall hoop stress is $34580$ Pa while its thickness average is $26600$ Pa. Using the average as the inner-wall value would underestimate that local value by $23.0769\%$. These fields are a linear-elastic idealization, not a nonlinear layered-artery solution. Different constitutive laws, axial constraints and residual stresses alter the distribution while the radial force-balance integral remains essential.</p>
+<p>Fig. 1 varies wall thickness while keeping this zero-external-pressure linear-elastic comparison. The ratio approaches one in the thin-wall limit, but reaches 1.3 at thickness-to-inner-radius ratio 0.5, as in the worked example.</p>
+<figure id="wall-stress-figure"><img src="assets/wall-stress.svg" alt="Computed ratio of inner-wall hoop stress to thickness-averaged hoop stress, increasing from near one toward 1.3 as relative wall thickness grows to 0.5"><figcaption>Lamé stress divided by the exact force-balance average. A thickness average can satisfy equilibrium while missing the peak local stress. The plot uses a homogeneous, small-deformation isotropic cylinder with zero external pressure.</figcaption></figure>
 <p>The wall is generally not stress-free when excised and unloaded. A radial cut can release residual strain, and a ring may open. An open-sector reference is one modeling construction; it does not prove that every layer and direction becomes simultaneously stress-free after one cut. The <a href="https://link.springer.com/article/10.1023/A:1010835316564">Holzapfel–Gasser–Ogden 2000 primary abstract</a> explicitly separates a load-free closed tube from an assumed relaxed open sector and studies its influence on wall stress.</p>
 
 <h2 id="inflation">Solve an incompressible finite-inflation boundary-value problem <a class="timestamp" href="https://www.youtube.com/watch?v=EljNMQ_e-70&amp;t=1542s">L13 · 25:42</a> <a class="timestamp" href="https://www.youtube.com/watch?v=_aYXAcft_BM&amp;t=1956s">L14 · 32:36</a></h2>
@@ -58,7 +60,7 @@
 <p>Integrating radial equilibrium determines the required transmural pressure:</p>
 \[p_i-p_o=\int_a^b\frac{\mu_s(\lambda_\theta^2-\lambda_r^2)}r\,dr.\]
 <p>For prescribed geometry and axial stretch this integral is the pressure prediction. For prescribed pressure it becomes a nonlinear equation for $a$; one must examine solution existence, stability and parameter sensitivity rather than assume a unique physically stable radius.</p>
-<p>At $\lambda_z=1$, integration gives a closed form that can be checked independently:</p>
+<p>At $\lambda_z=1$, set $c_r=a^2-A^2$, in square metres. The kinematic map gives $R^2=r^2-c_r$, so the pressure integrand divided by $\mu_s$ is $r/(r^2-c_r)-1/r+c_r/r^3$. An antiderivative is $\tfrac12\ln(1-c_r/r^2)-c_r/(2r^2)$, whose logarithm has a positive dimensionless argument. Evaluating at $r=a,b$, where the reference radii are $A,B$, gives</p>
 \[\Delta p=\mu_s\left[\ln\frac{Ba}{Ab}+\frac{a^2-A^2}{2}\left(\frac1{a^2}-\frac1{b^2}\right)\right].\]
 <p>With $A=3$ mm, $B=3.6$ mm, $a=4.5$ mm and $\mu_s=100000$ Pa, $b=4.920366$ mm and $\Delta p=13845.183844$ Pa. The code compares numerical quadrature of the original equilibrium integral with this analytic expression and checks $J=1$. At $a=A$, $b=B$ and pressure vanishes. At arbitrarily large inflation, this simplified model approaches $\mu_s\ln(B/A)$ rather than stiffening without bound. That is a limitation of the chosen material idealization, not a prediction of a safe anatomical pressure or a universal rupture threshold.</p>
 
@@ -71,9 +73,9 @@
 <p>The primary 2000 model uses separate media/adventitia fibre structure and considers combined inflation, extension and torsion. Its abstract supports the architecture, not our parameter values. The source's named tissue-specific exponential forms should similarly be read as calibrated proposals within particular tests, rather than a rule assigning one universal energy to every aorta or carotid.</p>
 
 <h2 id="waves">Pressure waves connect tangent wall compliance to flow</h2>
-<p>Let $A_0$ be a uniform reference lumen area, $u$ a small axial fluid-velocity perturbation and $a$ the small area perturbation. Neglect mean flow, viscous damping, wall inertia and distributed forcing in a long-wave tube model. Linearized incompressible continuity and axial momentum are</p>
-\[\partial_ta+A_0\partial_xu=0,\qquad \rho\partial_tu+\partial_xp=0.\]
-<p>If the local wall law has positive tangent area compliance $C_A=dA/dp$, so $a=C_Ap$ for these perturbations, eliminate $u$ to obtain $\partial_{tt}p=c^2\partial_{xx}p$ with</p>
+<p>Let $A_0$ be a uniform reference lumen area in $\mathrm{m^2}$, $u$ a small axial fluid-velocity perturbation in $\mathrm{m/s}$, $\delta A$ a small area perturbation, and $\delta p$ a small pressure perturbation in Pa. Let $x$ be axial position in metres and $\rho\gt0$ constant fluid density in $\mathrm{kg/m^3}$. Neglect mean flow, viscous damping, wall inertia and distributed forcing in a long-wave tube model. Linearized continuity and momentum are</p>
+\[\partial_t\delta A+A_0\partial_xu=0,\qquad \rho\partial_tu+\partial_x\delta p=0.\]
+<p>Suppose the local wall law has positive tangent area compliance $C_A=dA/dp$ in $\mathrm{m^2/Pa}$, giving $\delta A=C_A\delta p$ to first order. Differentiate continuity in time and momentum in space. Substituting $\partial_{xt}u=-\partial_{xx}\delta p/\rho$ eliminates velocity and gives $\partial_{tt}\delta p=c^2\partial_{xx}\delta p$, where $c$ is wave speed and</p>
 \[c^2=\frac{A_0}{\rho C_A}.\]
 <p>The speed of the pressure disturbance is not the mean material speed $Q/A$. A pulse can travel several metres per second while blood particles move much more slowly. It is also a tangent property at a loading state: a nonlinear wall can have a different wave speed at a different mean pressure.</p>
 <p>For a thin, linearly elastic incremental wall with an effective circumferential modulus $E_{\rm eff}$ incorporating the stated axial constraint, $dr/r\simeq r\,dp/(E_{\rm eff}h)$. Since $dA/A=2dr/r$, the reduced expression is $c^2\simeq E_{\rm eff}h/(2\rho r)$. This is not a universal formula with every possible Poisson constraint hidden. With $E_{\rm eff}=500000$ Pa, $h=0.5$ mm, $r=5$ mm and $\rho=1060\;\mathrm{kg/m^3}$, $c=4.856429\;\mathrm{m/s}$. Quadrupling modulus at fixed geometry doubles it.</p>
@@ -86,51 +88,104 @@
 <p>On longer timescales, wall composition can adapt. The <a href="https://pubmed.ncbi.nlm.nih.gov/14586812/">Humphrey–Rajagopal 2003 constrained-mixture primary abstract</a> distinguishes immediate vasoactive response from growth/remodeling under sustained flow change. A passive elastic snapshot cannot predict that evolution without constituent turnover, deposition states and regulation laws. This is an important bridge from mechanics to mechanobiology and an informative limit of the short course's final constitutive framework.</p>
 
 <h2 id="code">Execute network, force-balance and finite-inflation checks</h2>
-<p>The NumPy listing checks the exact local fields and integrated loads against separate expressions. Its tissue coefficients and channel counts are stipulated. All reported output was produced by executing the exact code.</p>
+<p>The listing requires NumPy and uses the stipulated positive dimensions, tissue coefficients, channel counts and orientation-preserving stretches. It prints network, stress, inflation, fibre-derivative and wave-speed comparisons to standard output. Assertions compare local fields and integrated loads with separately derived expressions; a failed identity or tolerance raises an error. It reads and writes no files and makes no network requests. These checks establish implementation agreement for the specified teaching models, not an arterial calibration.</p>
 <pre data-run="code/ch07_vessels.py"><code class="language-python">"""Original vascular geometry and mechanics checks, not fitted tissue data."""
 import numpy as np
-from math import pi,sqrt,log,cos,sin,exp
+from math import pi, sqrt, log, cos, sin, exp
 
-Q=5e-3/60;N=10**9;r_cap=4e-6;area=N*pi*r_cap*r_cap
-speed=Q/area
-print(f'Parallel capillary toy: total area={area:.9f} m^2; mean speed={speed:.9f} m/s; 1mm transit={.001/speed:.6f} s')
-conductance_gain=1.2**4
-print(f'One dilated equal bed: fixed-pressure flow gain={conductance_gain:.6f}; fixed-total share={conductance_gain/(1+conductance_gain):.9f}')
-p,r,t,mu,q=13300.,.003,.0003,.0035,1e-6
-hoop=p*r/t;wall_shear=4*mu*q/(pi*r**3)
+Q = 5e-3/60
+N = 10**9
+r_cap = 4e-6
+area = N*pi*r_cap*r_cap
+speed = Q/area
+print(
+    (
+        f'Parallel capillary toy: total area={area:.9f} '
+        f'm^2; mean speed={speed:.9f} m/s; 1mm transit={.001/speed:.6f} '
+        f's'
+    ))
+conductance_gain = 1.2**4
+print(
+    (
+        f'One dilated equal bed: fixed-pressure flow '
+        f'gain={conductance_gain:.6f}; fixed-total '
+        f'share={conductance_gain/(1+conductance_gain):.9f}'
+    ))
+p, r, t, mu, q = 13300., .003, .0003, .0035, 1e-6
+hoop = p*r/t
+wall_shear = 4*mu*q/(pi*r**3)
 print(f'Thin wall hoop/fluid shear: {hoop:.6f}/{wall_shear:.6f} Pa')
 # Linear-elastic thick cylinder at a stated small-deformation geometry.
-a,b=.003,.0045;Aconst=p*a*a/(b*b-a*a);Bconst=p*a*a*b*b/(b*b-a*a)
-rgrid=np.linspace(a,b,100001)
-sigma_r=Aconst-Bconst/rgrid**2;sigma_theta=Aconst+Bconst/rgrid**2
-assert abs(sigma_r[0]+p)&lt;1e-10 and abs(sigma_r[-1])&lt;1e-10
-average=np.trapezoid(sigma_theta,rgrid)/(b-a)
-assert abs(average-p*a/(b-a))&lt;1e-5
-print(f'Thick cylinder: inner hoop={sigma_theta[0]:.6f} Pa; thickness average={average:.6f} Pa')
-# Incompressible neo-Hookean tube, fixed axial stretch1, stress-free closed reference.
-Ar,Br,ai,modulus=.003,.0036,.0045,100000.
-bo=sqrt(Br*Br+ai*ai-Ar*Ar)
-rgrid=np.linspace(ai,bo,100001);Rref=np.sqrt(rgrid*rgrid+Ar*Ar-ai*ai)
-lamtheta=rgrid/Rref;lamr=Rref/rgrid
-assert np.allclose(lamtheta*lamr,1.)
-pquad=np.trapezoid(modulus*(lamtheta**2-lamr**2)/rgrid,rgrid)
-panalytic=modulus*(log(Br*ai/(Ar*bo))+(ai*ai-Ar*Ar)/2*(1/ai**2-1/bo**2))
-assert abs(pquad-panalytic)&lt;1e-5
-assert abs(modulus*(log(Br*Ar/(Ar*Br))))&lt;1e-12
-print(f'Neo-Hookean inflation: current outer radius={bo*1000:.6f} mm; pressure={panalytic:.6f} Pa')
-# Original symmetric two-fibre energy: orientation, not exponential alone, carries anisotropy.
-alpha=pi/6;lt,lz=1.2,1.1;k1,k2=10000.,10.
-fibre_I=lambda x,z:x*x*cos(alpha)**2+z*z*sin(alpha)**2
-Wf=lambda x,z:k1/k2*(exp(k2*max(fibre_I(x,z)-1,0.)**2)-1)
-e=fibre_I(lt,lz)-1
-nominal=4*k1*e*exp(k2*e*e)*lt*cos(alpha)**2
-h=1e-6;finite=(Wf(lt+h,lz)-Wf(lt-h,lz))/(2*h)
-assert abs(finite-nominal)&lt;1e-3
-print(f'Two fibres: I4={fibre_I(lt,lz):.6f}; nominal circumferential contribution={nominal:.6f} Pa')
-E,hwall,radius,rho=500000.,.0005,.005,1060.
-c=sqrt(E*hwall/(2*rho*radius))
-print(f'Linear tube wave speed={c:.6f} m/s; fourfold modulus speed={2*c:.6f} m/s')
-print('All conservation, stress, inflation, fibre derivative and wave checks passed.')
+a, b = .003, .0045
+Aconst = p*a*a/(b*b-a*a)
+Bconst = p*a*a*b*b/(b*b-a*a)
+rgrid = np.linspace(a, b, 100001)
+sigma_r = Aconst-Bconst/rgrid**2
+sigma_theta = Aconst+Bconst/rgrid**2
+assert abs(sigma_r[0]+p) &lt; 1e-10 and abs(sigma_r[-1]) &lt; 1e-10
+average = np.trapezoid(sigma_theta, rgrid)/(b-a)
+assert abs(average-p*a/(b-a)) &lt; 1e-5
+print(
+    (
+        f'Thick cylinder: inner hoop={sigma_theta[0]:.6f} '
+        f'Pa; thickness average={average:.6f} Pa'
+    ))
+# Incompressible neo-Hookean tube, fixed axial stretch1, stress-free closed
+# reference.
+Ar, Br, ai, modulus = .003, .0036, .0045, 100000.
+bo = sqrt(Br*Br+ai*ai-Ar*Ar)
+rgrid = np.linspace(ai, bo, 100001)
+Rref = np.sqrt(rgrid*rgrid+Ar*Ar-ai*ai)
+lamtheta = rgrid/Rref
+lamr = Rref/rgrid
+assert np.allclose(lamtheta*lamr, 1.)
+pquad = np.trapezoid(modulus*(lamtheta**2-lamr**2)/rgrid, rgrid)
+panalytic = modulus*(log(Br*ai/(Ar*bo))+(ai*ai-Ar*Ar)/2*(1/ai**2-1/bo**2))
+assert abs(pquad-panalytic) &lt; 1e-5
+assert abs(modulus*(log(Br*Ar/(Ar*Br)))) &lt; 1e-12
+print(
+    (
+        f'Neo-Hookean inflation: current outer radius={bo*1000:.6f} '
+        f'mm; pressure={panalytic:.6f} Pa'
+    ))
+# Original symmetric two-fibre energy: orientation, not exponential alone,
+# carries anisotropy.
+alpha = pi/6
+lt, lz = 1.2, 1.1
+k1, k2 = 10000., 10.
+
+
+def fibre_I(x, z):
+    return x*x*cos(alpha)**2+z*z*sin(alpha)**2
+
+
+def Wf(x, z):
+
+    return k1/k2*(exp(k2*max(fibre_I(x, z)-1, 0.)**2)-1)
+
+
+e = fibre_I(lt, lz)-1
+nominal = 4*k1*e*exp(k2*e*e)*lt*cos(alpha)**2
+h = 1e-6
+finite = (Wf(lt+h, lz)-Wf(lt-h, lz))/(2*h)
+assert abs(finite-nominal) &lt; 1e-3
+print(
+    (
+        f'Two fibres: I4={fibre_I(lt, lz):.6f}; nominal '
+        f'circumferential contribution={nominal:.6f} '
+        f'Pa'
+    ))
+E, hwall, radius, rho = 500000., .0005, .005, 1060.
+c = sqrt(E*hwall/(2*rho*radius))
+print(
+    (
+        f'Linear tube wave speed={c:.6f} m/s; fourfold '
+        f'modulus speed={2*c:.6f} m/s'
+    ))
+print((
+    'All conservation, stress, inflation, fibre '
+    'derivative and wave checks passed.'
+))
 </code></pre>
 <pre data-output="code/ch07_vessels.py">Parallel capillary toy: total area=0.050265482 m^2; mean speed=0.001657864 m/s; 1mm transit=0.603186 s
 One dilated equal bed: fixed-pressure flow gain=2.073600; fixed-total share=0.674648621
@@ -143,23 +198,23 @@ All conservation, stress, inflation, fibre derivative and wave checks passed.</p
 
 <h2 id="problems">Problems and fully worked solutions</h2>
 <p><strong>1. Sum the right area.</strong> Ten identical parallel channels carry total flow $Q$. If each has area $A_c$, what are the equal channel flows and velocities? What error follows from assigning total $Q$ to every channel?</p>
-<details><summary>Solution</summary><p>Each carries $Q/10$, so its mean speed is $Q/(10A_c)$. This equals total flow divided by total area $10A_c$. Assigning $Q$ to each would predict ten times the actual speed and ten times the total supplied flow. Equal distribution is itself an assumption; unequal resistances give unequal branch flows.</p></details>
+<details><summary>Worked solution</summary><p>Each carries $Q/10$, so its mean speed is $Q/(10A_c)$. This equals total flow divided by total area $10A_c$. Assigning $Q$ to each would predict ten times the actual speed and ten times the total supplied flow. Equal distribution is itself an assumption; unequal resistances give unequal branch flows.</p></details>
 <p><strong>2. Change the supply condition.</strong> One of two equal parallel Poiseuille beds expands its radius by20%. Find its fraction of total flow. Does its absolute flow always double?</p>
-<details><summary>Solution</summary><p>The conductance ratio becomes $g=1.2^4=2.0736$, so its share is $g/(1+g)=0.674648621$. At fixed pressure drop its absolute flow multiplies by $g$. At fixed total flow, it grows from half the total to that fraction, a factor $2g/(1+g)=1.349297242$. A statement about conductance does not determine which external constraint is maintained.</p></details>
+<details><summary>Worked solution</summary><p>The conductance ratio becomes $g=1.2^4=2.0736$, so its share is $g/(1+g)=0.674648621$. At fixed pressure drop its absolute flow multiplies by $g$. At fixed total flow, it grows from half the total to that fraction, a factor $2g/(1+g)=1.349297242$. A statement about conductance does not determine which external constraint is maintained.</p></details>
 <p><strong>3. Separate transmural and axial pressure.</strong> A segment has inlet/outlet lumen pressures15/14kPa and external pressure2kPa. Both lumen pressures rise by3kPa while external pressure is unchanged. What happens to the driving drop and wall loading?</p>
-<details><summary>Solution</summary><p>The axial drop remains1kPa, but the inlet/outlet transmural loads rise from13/12kPa to16/15kPa. If geometry and material response were held fixed, the simple pressure-driven flow would remain unchanged while wall stresses increase. In an actual compliant segment, the changed geometry can feed back on flow, so this fixed-geometry conclusion is only a control calculation.</p></details>
+<details><summary>Worked solution</summary><p>The axial drop remains1kPa, but the inlet/outlet transmural loads rise from13/12kPa to16/15kPa. If geometry and material response were held fixed, the simple pressure-driven flow would remain unchanged while wall stresses increase. In an actual compliant segment, the changed geometry can feed back on flow, so this fixed-geometry conclusion is only a control calculation.</p></details>
 <p><strong>4. Compare stress types.</strong> At fixed flow, viscosity, pressure and thickness, double the radius in the thin-wall/Poiseuille estimates. Give the factors for hoop stress, fluid wall shear and hydraulic resistance.</p>
-<details><summary>Solution</summary><p>Hoop stress scales as $r$ and doubles. Fluid wall shear scales as $r^{-3}$ and becomes one eighth. Resistance at fixed length/viscosity scales as $r^{-4}$ and becomes one sixteenth. These factors refer to different mechanical quantities and rely on the imposed pressure and flow being treated as independent held-fixed controls for their respective estimates; a coupled network would determine them together.</p></details>
+<details><summary>Worked solution</summary><p>Hoop stress scales as $r$ and doubles. Fluid wall shear scales as $r^{-3}$ and becomes one eighth. Resistance at fixed length/viscosity scales as $r^{-4}$ and becomes one sixteenth. These factors refer to different mechanical quantities and rely on the imposed pressure and flow being treated as independent held-fixed controls for their respective estimates; a coupled network would determine them together.</p></details>
 <p><strong>5. Verify a thick-wall average.</strong> Integrate radial equilibrium to derive the mean hoop stress for nonzero external pressure. Why does adding the same constant pressure to both sides change the absolute hoop stress even when transmural pressure is unchanged?</p>
-<details><summary>Solution</summary><p>$d(r\sigma_r)/dr=\sigma_\theta$ gives $\langle\sigma_\theta\rangle=(p_i a-p_o b)/(b-a)=\Delta p\,a/(b-a)-p_o$. Raising both pressures by $c$ therefore subtracts $c$ from the mean hoop stress, an added uniform hydrostatic compression. The load differences controlling deformation of an incompressible idealization can remain unchanged while the absolute stress tensor shifts by $-c\mathbf I$. Transmural pressure alone does not define every absolute stress component.</p></details>
+<details><summary>Worked solution</summary><p>$d(r\sigma_r)/dr=\sigma_\theta$ gives $\langle\sigma_\theta\rangle=(p_i a-p_o b)/(b-a)=\Delta p\,a/(b-a)-p_o$. Raising both pressures by $c$ therefore subtracts $c$ from the mean hoop stress, an added uniform hydrostatic compression. The load differences controlling deformation of an incompressible idealization can remain unchanged while the absolute stress tensor shifts by $-c\mathbf I$. Transmural pressure alone does not define every absolute stress component.</p></details>
 <p><strong>6. Impose incompressibility.</strong> For the finite tube map, derive $b^2-a^2$ at fixed axial stretch. If $\lambda_z$ doubles while the reference wall volume is unchanged, what happens to the current wall cross-sectional area?</p>
-<details><summary>Solution</summary><p>From $\lambda_z r\,dr=R\,dR$, integration gives $\lambda_z(b^2-a^2)=B^2-A^2$. Thus current wall area is $\pi(B^2-A^2)/\lambda_z$, which halves when axial stretch doubles. This is a kinematic constraint; pressures and stresses needed to attain that state require the constitutive law and boundary-value solution.</p></details>
+<details><summary>Worked solution</summary><p>From $\lambda_z r\,dr=R\,dR$, integration gives $\lambda_z(b^2-a^2)=B^2-A^2$. Thus current wall area is $\pi(B^2-A^2)/\lambda_z$, which halves when axial stretch doubles. This is a kinematic constraint; pressures and stresses needed to attain that state require the constitutive law and boundary-value solution.</p></details>
 <p><strong>7. Diagnose a false anisotropy claim.</strong> Is $W=c[\exp(k(I_1-3)^2)-1]$ anisotropic merely because it is exponential? Compare it with the directional invariant in the two-family model.</p>
-<details><summary>Solution</summary><p>The first energy depends only on the isotropic invariant $I_1$, so material rotations preserving $\mathbf C$'s eigenvalues leave its value unchanged; it is isotropic. In contrast $I_4=\mathbf f_0\cdot\mathbf C\mathbf f_0$ compares stretch with a specified material direction. Rotating the material direction relative to unequal principal stretches changes the energy. Functional nonlinearity and material symmetry are independent features.</p></details>
+<details><summary>Worked solution</summary><p>The first energy depends only on the isotropic invariant $I_1$, so material rotations preserving $\mathbf C$'s eigenvalues leave its value unchanged; it is isotropic. In contrast $I_4=\mathbf f_0\cdot\mathbf C\mathbf f_0$ compares stretch with a specified material direction. Rotating the material direction relative to unequal principal stretches changes the energy. Functional nonlinearity and material symmetry are independent features.</p></details>
 <p><strong>8. Check a pulse-speed inference.</strong> In the reduced wave model, area compliance doubles at fixed density and area. What happens to wave speed? Can that speed be identified with mean blood speed?</p>
-<details><summary>Solution</summary><p>Since $c^2=A/(\rho C_A)$, the speed becomes $c/\sqrt2$. Mean blood speed is $Q/A$ and is a different variable. The wave formula describes propagation of small coupled pressure/area disturbances under specified assumptions; no conservation identity sets it equal to particle transport speed.</p></details>
+<details><summary>Worked solution</summary><p>Since $c^2=A/(\rho C_A)$, the speed becomes $c/\sqrt2$. Mean blood speed is $Q/A$ and is a different variable. The wave formula describes propagation of small coupled pressure/area disturbances under specified assumptions; no conservation identity sets it equal to particle transport speed.</p></details>
 <p><strong>9. Design a predictive wall test.</strong> A model fits pressure–radius data at one imposed axial stretch. State two measurements that could improve its identification and a separate test of predictive transfer.</p>
-<details><summary>Solution</summary><p>Measure axial force during inflation and independently characterize unloaded geometry/residual opening or directional fibre structure; these constrain different sources of pressure–radius ambiguity. Biaxial or torsional measurements provide further independent loading modes. After fitting a declared subset, predict a held-out axial stretch or torsional loading without retuning. Numerical convergence of that prediction is necessary but separate from agreement with the held-out physical measurement. No single extra measurement guarantees unique identification of an arbitrarily rich model.</p></details>
+<details><summary>Worked solution</summary><p>Measure axial force during inflation and independently characterize unloaded geometry/residual opening or directional fibre structure; these constrain different sources of pressure–radius ambiguity. Biaxial or torsional measurements provide further independent loading modes. After fitting a declared subset, predict a held-out axial stretch or torsional loading without retuning. Numerical convergence of that prediction is necessary but separate from agreement with the held-out physical measurement. No single extra measurement guarantees unique identification of an arbitrarily rich model.</p></details>
 
 <h2 id="sources">Sources and inspection scope</h2>
 <ul><li><a href="https://www.youtube.com/watch?v=EljNMQ_e-70">Official lesson13</a> and <a href="https://www.youtube.com/watch?v=_aYXAcft_BM">official lesson14</a>: both complete local ASRs read; no comprehensive visual/histology audit. Named constitutive examples are not reproduced as verified fitted curves.</li>

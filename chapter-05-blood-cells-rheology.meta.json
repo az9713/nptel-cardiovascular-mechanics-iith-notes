@@ -1,8 +1,8 @@
 {
   "chapter": 5,
   "title": "Blood cells, plasma and whole-blood rheology",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "efcf438b8f5c1ebb0a56761c470dc25c060e68c6bf604952b88e9f6be1e359cc",
   "recordings": [
     {
       "video_id": "i-1ZJizdpnE",
@@ -52,7 +52,7 @@
   ],
   "sections": [
     {
-      "section": "Define the amount of each constituent before assigning a material law L9 \u00b7 10:48 L11 \u00b7 10:56",
+      "section": "Define the amount of each constituent before assigning a material law L9 · 10:48 L11 · 10:56",
       "anchor": "composition",
       "video_id": "i-1ZJizdpnE",
       "start": 648,
@@ -79,7 +79,7 @@
       ]
     },
     {
-      "section": "Transport specialization still requires cellular energy L9 \u00b7 04:52 L11 \u00b7 05:45",
+      "section": "Transport specialization still requires cellular energy L9 · 04:52 L11 · 05:45",
       "anchor": "transport",
       "video_id": "i-1ZJizdpnE",
       "start": 292,
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "section": "Deformability means changing shape under constraints L9 \u00b7 06:01 L11 \u00b7 18:34",
+      "section": "Deformability means changing shape under constraints L9 · 06:01 L11 · 18:34",
       "anchor": "cell-geometry",
       "video_id": "i-1ZJizdpnE",
       "start": 361,
@@ -133,7 +133,7 @@
       ]
     },
     {
-      "section": "A measured torque is an integral, not a local viscosity L9 \u00b7 13:16 L11 \u00b7 21:53",
+      "section": "A measured torque is an integral, not a local viscosity L9 · 13:16 L11 · 21:53",
       "anchor": "rheometry",
       "video_id": "i-1ZJizdpnE",
       "start": 796,
@@ -160,7 +160,7 @@
       ]
     },
     {
-      "section": "Shear thinning concerns a steady stress-rate relation L9 \u00b7 16:19 L11 \u00b7 26:44",
+      "section": "Shear thinning concerns a steady stress-rate relation L9 · 16:19 L11 · 26:44",
       "anchor": "steady",
       "video_id": "i-1ZJizdpnE",
       "start": 979,
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "section": "Elastic stress and delayed recovery require time-resolved observations L9 \u00b7 25:10 L11 \u00b7 40:04",
+      "section": "Elastic stress and delayed recovery require time-resolved observations L9 · 25:10 L11 · 40:04",
       "anchor": "relaxation",
       "video_id": "i-1ZJizdpnE",
       "start": 1510,
@@ -214,7 +214,7 @@
       ]
     },
     {
-      "section": "Frequency response supplies an independent axis of evidence L9 \u00b7 20:08 L11 \u00b7 31:56",
+      "section": "Frequency response supplies an independent axis of evidence L9 · 20:08 L11 · 31:56",
       "anchor": "oscillation",
       "video_id": "i-1ZJizdpnE",
       "start": 1208,
@@ -341,6 +341,16 @@
       "url": "https://www.youtube.com/watch?v=HJ0GgBPtZos",
       "title": "Alternate Blood1 upload",
       "supports": "Full ASR read and compared with lesson9; no additional substantive topic found. Twelve distributed decoded-audio windows with codec alignment corroborate the same sequence; not byte identity or a full audiovisual audit."
+    },
+    {
+      "title": "NLM MeSH: Megakaryocytes",
+      "url": "https://www.ncbi.nlm.nih.gov/mesh/68008533/",
+      "supports": "Local definition of megakaryocytes; official terminology record inspected during compliance repairs."
+    },
+    {
+      "title": "Kinetics of linear rouleaux formation studied by visual monitoring of red cell dynamic organization",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10777743/",
+      "supports": "Primary abstract inspected for linear red-cell aggregates and subsequent branching; no quantitative replication."
     }
   ],
   "review_rounds": [
@@ -368,9 +378,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "d7db3f93308f69852140e85a3ea1ad08700ad5f50427779247b02311c53314a8"
   },
   "limits": [
     "Fallible local ASR; no comprehensive audiovisual audit",

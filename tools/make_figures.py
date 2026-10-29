@@ -1,5 +1,6 @@
 from pathlib import Path
 import os
+import sys
 os.environ.setdefault('MPLCONFIGDIR', str(Path.cwd()/'work'/'matplotlib-cache'))
 import numpy as np
 import matplotlib
@@ -7,6 +8,19 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 R=Path.cwd();A=R/'assets';W=R/'work';plt.style.use('dark_background')
 plt.rcParams.update({'font.family':'DejaVu Serif','font.size':11,'svg.fonttype':'none'})
+checks = {
+    'radius_halving_flow_ratio': 0.5**4,
+    'rotation_90_degrees_small_strain': np.cos(np.pi/2)-1,
+    'coupling_energy_at_shear_point_2': 1000*0.2**2,
+    'pressure_volume_net_work_mmhg_ml': (100-10)*(120-50),
+    'inner_to_average_hoop_at_thickness_ratio_point_5':
+        ((1+1.5**2)/(1.5**2-1))/(1/0.5),
+}
+assert np.allclose(list(checks.values()), [0.0625, -1, 40, 6300, 1.3])
+for name, value in checks.items():
+    print(name, float(value))
+if '--check-only' in sys.argv:
+    raise SystemExit(0)
 r=np.linspace(0.4,1.2,201);q=r**4
 fig,ax=plt.subplots(figsize=(7,4));ax.plot(r,q,color='#77c7f7',lw=2)
 ax.plot([0.5,1.0],[0.5**4,1.0],'o',color='#ffc875')

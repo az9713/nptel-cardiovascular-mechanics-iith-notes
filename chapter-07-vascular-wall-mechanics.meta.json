@@ -1,8 +1,8 @@
 {
   "chapter": 7,
   "title": "Vascular structure and wall mechanics",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "275382d4a7e9699dccc917af5d6e772942d5b0c38780e4cc507571899604d512",
   "recordings": [
     {
       "video_id": "EljNMQ_e-70",
@@ -12,7 +12,7 @@
       "decoded_audio_duration_seconds": 1967.9535,
       "complete_decoded_audio": true,
       "media_sha256": "538845ec6e2441777c64e4f4ad8bec29708f25b619558ea3f9d08111243a37fa",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 1960.3,
       "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
       "source_read_complete": true,
@@ -27,7 +27,7 @@
       "decoded_audio_duration_seconds": 2466.4135,
       "complete_decoded_audio": true,
       "media_sha256": "f9067f38b66ca749a183d40261f99d2c3e3b9c29a09c355806ca5178c0809385",
-      "transcript_first_start": 0.0,
+      "transcript_first_start": 0,
       "transcript_last_end": 2458.78,
       "transcript_provenance": "Local faster-whisper small.en machine ASR;90-second cores with2-second context; not publisher captions",
       "source_read_complete": true,
@@ -37,7 +37,7 @@
   ],
   "sections": [
     {
-      "section": "A branch network must conserve flow at the right level L13 \u00b7 03:41 L14 \u00b7 01:15",
+      "section": "A branch network must conserve flow at the right level L13 · 03:41 L14 · 01:15",
       "anchor": "network",
       "video_id": "EljNMQ_e-70",
       "start": 221,
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "section": "Pressure, its gradient and its oscillation are different observables L13 \u00b7 08:12 L14 \u00b7 08:58",
+      "section": "Pressure, its gradient and its oscillation are different observables L13 · 08:12 L14 · 08:58",
       "anchor": "pressure",
       "video_id": "EljNMQ_e-70",
       "start": 492,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "The wall is a regional, layered and active material L13 \u00b7 13:42 L14 \u00b7 17:28",
+      "section": "The wall is a regional, layered and active material L13 · 13:42 L14 · 17:28",
       "anchor": "layers",
       "video_id": "EljNMQ_e-70",
       "start": 822,
@@ -123,7 +123,7 @@
       "teaching_construction": "Original radial equilibrium integral, exact thickness-mean versus local Lame control; primary residual-reference context."
     },
     {
-      "section": "Solve an incompressible finite-inflation boundary-value problem L13 \u00b7 25:42 L14 \u00b7 32:36",
+      "section": "Solve an incompressible finite-inflation boundary-value problem L13 · 25:42 L14 · 32:36",
       "anchor": "inflation",
       "video_id": "EljNMQ_e-70",
       "start": 1542,
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "section": "The directional arguments create anisotropy, not the exponential alone L13 \u00b7 27:10 L14 \u00b7 35:05",
+      "section": "The directional arguments create anisotropy, not the exponential alone L13 · 27:10 L14 · 35:05",
       "anchor": "anisotropy",
       "video_id": "EljNMQ_e-70",
       "start": 1630,
@@ -177,7 +177,7 @@
       "teaching_construction": "Original linear coupled continuity/momentum derivation and tangent-compliance wave speed;2021primary reduced-flow architecture context."
     },
     {
-      "section": "Calibration, prediction and adaptation are separate tasks L13 \u00b7 22:43 L14 \u00b7 30:39",
+      "section": "Calibration, prediction and adaptation are separate tasks L13 · 22:43 L14 · 30:39",
       "anchor": "identification",
       "video_id": "EljNMQ_e-70",
       "start": 1363,
@@ -291,9 +291,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "0e97e262a42dedec3e89205c22a26847b71e4b325e97134768202b8ce143a764"
   },
   "limits": [
     "Fallible ASR and no comprehensive audiovisual/histology audit",

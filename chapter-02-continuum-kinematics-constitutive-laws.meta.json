@@ -1,8 +1,8 @@
 {
   "chapter": 2,
   "title": "Continuum kinematics and constitutive laws",
-  "status": "scientifically accepted after two independent review rounds",
-  "authored_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
+  "status": "compliance repairs awaiting independent acceptance",
+  "authored_body_sha256": "eade13f2866dab362afd6827f3c5394c4003578d0f01758e750e08d9ecfbb6e6",
   "recordings": [
     {
       "video_id": "ANXLnQJRc9A",
@@ -37,13 +37,13 @@
   ],
   "sections": [
     {
-      "section": "Mass is a measure; density needs an assumption L2 \u00b7 01:10 L4 \u00b7 00:27",
+      "section": "Mass is a measure; density needs an assumption L2 · 01:10 L4 · 00:27",
       "anchor": "body-density",
       "video_id": "ANXLnQJRc9A",
       "start": 70,
       "end": 251,
       "lecture_material": "Body, mass and volume measures, density and material mass conservation.",
-      "research_extension": "Radon\u2013Nikodym absolute continuity and a.e. density conditions; original point-mass counterexample and local Jacobian derivation.",
+      "research_extension": "Radon–Nikodym absolute continuity and a.e. density conditions; original point-mass counterexample and local Jacobian derivation.",
       "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
       "source_spans": [
         {
@@ -59,7 +59,7 @@
       ]
     },
     {
-      "section": "Follow a particle or inspect a fixed position L2 \u00b7 04:22 L4 \u00b7 10:39",
+      "section": "Follow a particle or inspect a fixed position L2 · 04:22 L4 · 10:39",
       "anchor": "material-derivative",
       "video_id": "ANXLnQJRc9A",
       "start": 262,
@@ -81,7 +81,7 @@
       ]
     },
     {
-      "section": "The deformation gradient maps local material lines L2 \u00b7 09:15 L4 \u00b7 17:27",
+      "section": "The deformation gradient maps local material lines L2 · 09:15 L4 · 17:27",
       "anchor": "deformation-gradient",
       "video_id": "ANXLnQJRc9A",
       "start": 555,
@@ -103,12 +103,12 @@
       ]
     },
     {
-      "section": "Separate stretch from rotation before measuring strain L2 \u00b7 16:14 L4 \u00b7 23:32",
+      "section": "Separate stretch from rotation before measuring strain L2 · 16:14 L4 · 23:32",
       "anchor": "finite-strain",
       "video_id": "ANXLnQJRc9A",
       "start": 974,
       "end": 1148,
-      "lecture_material": "Cauchy\u2013Green tensors, polar decomposition, Green and Almansi strain.",
+      "lecture_material": "Cauchy–Green tensors, polar decomposition, Green and Almansi strain.",
       "research_extension": "Metric derivation, principal-stretch calculation and rigid-rotation counterexample to small-gradient strain.",
       "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
       "source_spans": [
@@ -125,7 +125,7 @@
       ]
     },
     {
-      "section": "A fluid responds to stretching rate, not accumulated stretch alone L2 \u00b7 19:08 L4 \u00b7 24:01",
+      "section": "A fluid responds to stretching rate, not accumulated stretch alone L2 · 19:08 L4 · 24:01",
       "anchor": "stretching-rate",
       "video_id": "ANXLnQJRc9A",
       "start": 1148,
@@ -147,7 +147,7 @@
       ]
     },
     {
-      "section": "Changing observer must not create a material response L2 \u00b7 23:42 L4 \u00b7 30:02",
+      "section": "Changing observer must not create a material response L2 · 23:42 L4 · 30:02",
       "anchor": "objectivity",
       "video_id": "ANXLnQJRc9A",
       "start": 1422,
@@ -169,12 +169,12 @@
       ]
     },
     {
-      "section": "Turn an energy into a stress, with the area convention stated L2 \u00b7 28:51",
+      "section": "Turn an energy into a stress, with the area convention stated L2 · 28:51",
       "anchor": "solid-law",
       "video_id": "ANXLnQJRc9A",
       "start": 1731,
       "end": 1776,
-      "lecture_material": "Neo-Hookean and Mooney\u2013Rivlin stress examples.",
+      "lecture_material": "Neo-Hookean and Mooney–Rivlin stress examples.",
       "research_extension": "Explicit energy/area conventions, traction-free uniaxial solution and passive directional myocardium context.",
       "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
       "source_spans": [
@@ -191,13 +191,13 @@
       ]
     },
     {
-      "section": "Viscosity, rate dependence and memory are separate choices L2 \u00b7 29:36 L4 \u00b7 32:01",
+      "section": "Viscosity, rate dependence and memory are separate choices L2 · 29:36 L4 · 32:01",
       "anchor": "fluid-law",
       "video_id": "ANXLnQJRc9A",
       "start": 1776,
       "end": 1989,
       "lecture_material": "Newtonian, generalized Newtonian, power-law and memory-model examples; corrected upper-convected derivative.",
-      "research_extension": "Dissipation/rate-limit checks, observer-cancellation proof, Maxwell relaxation and solvent\u2013polymer Oldroyd-B parameter relation.",
+      "research_extension": "Dissipation/rate-limit checks, observer-cancellation proof, Maxwell relaxation and solvent–polymer Oldroyd-B parameter relation.",
       "teaching_construction": "Original exposition, derivations, numerical checks, code and exercises; timestamps locate related lecture topics rather than attributing these constructions to the lecturer.",
       "source_spans": [
         {
@@ -266,8 +266,8 @@
     },
     {
       "url": "https://math.mit.edu/~sheffield/175/Lecture25.pdf",
-      "title": "Scott Sheffield, MIT18.175 lecture25, slides12\u201314",
-      "supports": "Directly inspected absolute-continuity/Radon\u2013Nikodym statement; not a full proof."
+      "title": "Scott Sheffield, MIT18.175 lecture25, slides12–14",
+      "supports": "Directly inspected absolute-continuity/Radon–Nikodym statement; not a full proof."
     },
     {
       "url": "https://solidmechanics.org/Text/Chapter2_7/Chapter2_7.php",
@@ -282,7 +282,7 @@
     {
       "url": "https://biomechanics.stanford.edu/me338_09/me338_h04.pdf",
       "title": "Holzapfel and Ogden, Constitutive modelling of passive myocardium (2009)",
-      "supports": "Abstract, morphology and constitutive/experimental sections3\u20135 inspected; directional passive-tissue context only."
+      "supports": "Abstract, morphology and constitutive/experimental sections3–5 inspected; directional passive-tissue context only."
     }
   ],
   "review_rounds": [
@@ -314,9 +314,8 @@
     }
   ],
   "acceptance": {
-    "status": "accepted",
-    "accepted_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93",
-    "scope": "Educational scientific review; separate from code/browser/source-free/publication validation"
+    "status": "pending independent repair reviews",
+    "prior_accepted_body_sha256": "b188d8ac7ca88dbf567478e4f42103c6eac5e29553d83376e2db309359f20d93"
   },
   "limits": [
     "Fallible machine ASR and selected frames only; no comprehensive audiovisual audit",
